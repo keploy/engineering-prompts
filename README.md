@@ -1,4 +1,3 @@
-````markdown
 # Engineering Prompts
 
 Welcome to the **Engineering Prompts** repository! This repository contains a collection of **AI prompt chains** organized by different domains, primarily for assisting developers in various tasks such as code refactoring, CI/CD setup, database management, cloud, and Kubernetes deployment, web development, security, and more.
@@ -461,14 +460,11 @@ This repository contains prompt chains for the following domains:
 
 ### **13. API Development**
 
-* \*\*Generate
+* **Generate OpenAPI Schema from Source Code**
 
-
-OpenAPI Schema from Source Code\*\*
-
-```text
-"Given the following source code for a RESTful API implemented in {programming_language} with endpoints {list_of_endpoints}, generate an OpenAPI 3.0 schema that describes the API. The schema should include paths, request/response parameters, status codes, authentication methods, and other relevant details. Return the complete OpenAPI schema in YAML format."
-```
+   ```text
+   "Given the following source code for a RESTful API implemented in {programming_language} with endpoints {list_of_endpoints}, generate an OpenAPI 3.0 schema that describes the API. The schema should include paths, request/response parameters, status codes, authentication methods, and other relevant details. Return the complete OpenAPI schema in YAML format."
+   ```
 
 * **Generate Curl Commands for Testing OpenAPI Endpoints**
 
