@@ -356,6 +356,12 @@ This repository contains prompt chains for the following domains:
   "Set up Keploy in your full-stack application to test both the backend and frontend after an update. Configure Keploy for automatic integration testing, focusing on testing API endpoints, data handling, and the interaction between the frontend and backend. Ensure that Keploy is set to capture all changes in the API response, including edge cases, and validate that the frontend works correctly with the updated backend. Return the setup configuration and steps to trigger Keploy for testing."
   ```
 
+* **Integrate an AI Text Generation API into a Full-Stack App**Add commentMore actions
+
+ ```text
+  "Integrate an AI API such as OpenAI or Hugging Face into a full-stack application with Django and React. Set up the backend to handle API requests and the frontend to interact with the model for generating AI-powered responses. Return the complete code for integration."
+  ```
+
 ---
 
 ### **6. UX/UI & Design**
