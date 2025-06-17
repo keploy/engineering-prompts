@@ -495,3 +495,15 @@ This repository contains prompt chains for the following domains:
   ```text
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
   ```
+
+* **Keploy Mocking and Dependency Management Prompt**
+
+  ```text
+  "Configure Keploy to mock external dependencies such as databases and third-party APIs during test replay. Include setup instructions to isolate tests from production services for accurate results."
+  ```
+
+* **Keploy Test Coverage and Report Integration**
+
+  ```text
+  "Set up Keploy to generate test coverage reports and integrate them into your CI/CD pipeline dashboard. Ensure reports are uploaded to platforms like Codecov or SonarQube for visibility and analysis."
+  ```
