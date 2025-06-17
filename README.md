@@ -3,10 +3,10 @@
 <div align="center">
 
 ![Engineering Prompts Banner](https://img.shields.io/badge/AI%20Prompts-Engineering-blue?style=for-the-badge&logo=openai)
-![GitHub stars](https://img.shields.io/github/stars/hritika2409/engineering-prompts?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/hritika2409/engineering-prompts?style=for-the-badge)
-![GitHub issues](https://img.shields.io/github/issues/hritika2409/engineering-prompts?style=for-the-badge)
-![License](https://img.shields.io/github/license/hritika2409/engineering-prompts?style=for-the-badge)
+![GitHub stars](https://img.shields.io/github/stars/keploy/engineering-prompts?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/keploy/engineering-prompts?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/keploy/engineering-prompts?style=for-the-badge)
+![License](https://img.shields.io/github/license/keploy/engineering-prompts?style=for-the-badge)
 
 **🎯 Your Ultimate Collection of AI-Powered Engineering Prompts**
 
@@ -61,7 +61,7 @@
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/hritika2409/engineering-prompts.git
+git clone https://github.com/keploy/engineering-prompts.git
 cd engineering-prompts
 ```
 
@@ -237,7 +237,7 @@ We love contributions! Here's how you can help make Engineering Prompts even bet
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=hritika2409&repo=engineering-prompts&show_icons=true&theme=radical)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=keploy&repo=engineering-prompts&show_icons=true&theme=radical)
 
 **📊 Repository Impact:**
 - 🌟 **150+** Stars from the developer community
@@ -279,10 +279,11 @@ Built with the belief that **great engineering** should be **accessible to every
 
 ### 🚀 Ready to Supercharge Your Development Workflow?
 
-**[⭐ Star this repo](https://github.com/hritika2409/engineering-prompts)** • **[🍴 Fork it](https://github.com/hritika2409/engineering-prompts/fork)** • **[📖 Read the docs](docs/)** • **[💬 Join discussions](https://github.com/hritika2409/engineering-prompts/discussions)**
+**[⭐ Star this repo](https://github.com/keploy/engineering-prompts)** • **[🍴 Fork it](https://github.com/keploy/engineering-prompts/fork)** • **[📖 Read the docs](docs/)** • **[💬 Join discussions](https://github.com/keploy/engineering-prompts/discussions)**
 
 ---
 
+**Made with ❤️ by [Keploy](https://github.com/keploy) and the Engineering Community**
 
 *Last Updated: June 2025*
 
