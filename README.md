@@ -1,6 +1,7 @@
+````markdown
 # Engineering Prompts
 
-Welcome to the **Engineering  Prompts** repository! This repository contains a collection of **AI prompt chains** organized by different domains, primarily for assisting developers in various tasks such as code refactoring, CI/CD setup, database management, cloud, and Kubernetes deployment, web development, security, and more.
+Welcome to the **Engineering Prompts** repository! This repository contains a collection of **AI prompt chains** organized by different domains, primarily for assisting developers in various tasks such as code refactoring, CI/CD setup, database management, cloud, and Kubernetes deployment, web development, security, and more.
 
 Each prompt chain is designed to build context for ChatGPT before executing a task. They can be used in **ChatGPT Queue** for bulk prompting, job, or task-focused automation.
 
@@ -21,6 +22,7 @@ This repository contains prompt chains for the following domains:
 11. **System Monitoring & Debugging**
 12. **Web Development**
 13. **API Development**
+
 ---
 
 ## Use Cases and Prompts
@@ -31,7 +33,7 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Please review the provided code and identify areas where readability can be improved. Focus on simplifying complex functions, improving variable names, and removing redundant code. Return the refactored code and explain the changes made to improve readability."
-  ```
+````
 
 * **Translate Code from One Language to Another**
 
@@ -122,11 +124,12 @@ This repository contains prompt chains for the following domains:
   ```text
   "Review the provided code and provide feedback. Focus on aspects like readability, performance, security, and maintainability. Suggest improvements and explain the rationale behind each recommendation."
   ```
+
 * **Test for Compatibility After Upgrading Node.js Version**
 
-```text
-"After upgrading Node.js from version 14 to 18, use Keploy to run automated tests to ensure that the application is working as expected. Set up Keploy to perform integration tests and verify that the backend, APIs, and frontend components are compatible with the new Node.js version. The tests should focus on key areas such as API responses, performance, and compatibility with external dependencies that may have been affected by the Node.js upgrade. Ensure that Keploy compares the results with the previous behavior recorded under Node.js 14 to detect any regressions or issues introduced by the upgrade. Return the Keploy test configuration, test cases, and results."
-```
+  ```text
+  "After upgrading Node.js from version 14 to 18, use Keploy to run automated tests to ensure that the application is working as expected. Set up Keploy to perform integration tests and verify that the backend, APIs, and frontend components are compatible with the new Node.js version. The tests should focus on key areas such as API responses, performance, and compatibility with external dependencies that may have been affected by the Node.js upgrade. Ensure that Keploy compares the results with the previous behavior recorded under Node.js 14 to detect any regressions or issues introduced by the upgrade. Return the Keploy test configuration, test cases, and results."
+  ```
 
 * **Integrate Third-Party Services**
 
@@ -154,9 +157,9 @@ This repository contains prompt chains for the following domains:
 
 * **Test for Regressions After Refactoring Code with Keploy**
 
-```text
-"After refactoring the code, use Keploy to run automated tests to check if any regressions have been introduced. Set up Keploy to verify that the refactored code behaves as expected, ensuring that all existing functionalities remain intact. The tests should include integration tests to verify that API endpoints, data handling, and user interactions still function properly. Ensure that Keploy is set to compare the current behavior with previously recorded test cases to detect any discrepancies or regressions. Return the Keploy test configuration, test cases, and results showing the behavior of the refactored code."
-```
+  ```text
+  "After refactoring the code, use Keploy to run automated tests to check if any regressions have been introduced. Set up Keploy to verify that the refactored code behaves as expected, ensuring that all existing functionalities remain intact. The tests should include integration tests to verify that API endpoints, data handling, and user interactions still function properly. Ensure that Keploy is set to compare the current behavior with previously recorded test cases to detect any discrepancies or regressions. Return the Keploy test configuration, test cases, and results showing the behavior of the refactored code."
+  ```
 
 ---
 
@@ -347,11 +350,12 @@ This repository contains prompt chains for the following domains:
   ```text
   "Set up real-time updates in the application using WebSockets. Provide the necessary code for both the server (using socket.io or similar) and the frontend to enable live updates."
   ```
+
 * **Test Backend and Frontend for Regression Using Keploy**
 
   ```text
-  ""Set up Keploy in your full-stack application to test both the backend and frontend after an update. Configure Keploy for automatic integration testing, focusing on testing API endpoints, data handling, and the interaction between the frontend and backend. Ensure that Keploy is set to capture all changes in the API response, including edge cases, and validate that the frontend works correctly with the updated backend. Return the setup configuration and steps to trigger Keploy for testing."
-```
+  "Set up Keploy in your full-stack application to test both the backend and frontend after an update. Configure Keploy for automatic integration testing, focusing on testing API endpoints, data handling, and the interaction between the frontend and backend. Ensure that Keploy is set to capture all changes in the API response, including edge cases, and validate that the frontend works correctly with the updated backend. Return the setup configuration and steps to trigger Keploy for testing."
+  ```
 
 ---
 
@@ -394,11 +398,7 @@ This repository contains prompt chains for the following domains:
   ```text
   "Integrate {third_party_service} into the existing project. Provide step-by-step instructions for setup, authentication, and API interaction. Return the integration code with explanations of how it works."
   ```
-* **Help Integrate Keploy for Integration Testing**
-  
-  ```text
-  "Integrate **Keploy** into the existing project for automated integration testing. Provide step-by-step instructions for setting up Keploy in your environment, including authentication, configuration, and API interaction. The instructions should include how to configure Keploy for generating tests, running them, and capturing coverage. Ensure that Keploy is set up to monitor API calls, validate the generated test cases, and integrate with your existing CI/CD pipeline. Return the integration code along with explanations of how it works, including how to trigger tests and retrieve the results."
-  ```
+
 ---
 
 ### **9. Content Creation & Marketing**
@@ -459,40 +459,43 @@ This repository contains prompt chains for the following domains:
 
 ---
 
-### **13. API Development **
+### **13. API Development**
 
-* **Generate OpenAPI Schema from Source Code**
+* \*\*Generate
+
+
+OpenAPI Schema from Source Code\*\*
 
 ```text
 "Given the following source code for a RESTful API implemented in {programming_language} with endpoints {list_of_endpoints}, generate an OpenAPI 3.0 schema that describes the API. The schema should include paths, request/response parameters, status codes, authentication methods, and other relevant details. Return the complete OpenAPI schema in YAML format."
 ```
+
 * **Generate Curl Commands for Testing OpenAPI Endpoints**
 
-```text
-"For the OpenAPI schema provided, generate `curl` commands to test the endpoints. Include examples for GET, POST, PUT, and DELETE requests. The `curl` commands should include the correct headers, body content (for POST/PUT), and any required authentication tokens (if applicable)."
-```
+  ```text
+  "For the OpenAPI schema provided, generate `curl` commands to test the endpoints. Include examples for GET, POST, PUT, and DELETE requests. The `curl` commands should include the correct headers, body content (for POST/PUT), and any required authentication tokens (if applicable)."
+  ```
 
 * **Generate OpenAPI Schema for a Custom API with Source Code**
 
-```text
-"Given the following source code for an API implemented in {programming_language}, generate the OpenAPI schema for this API. The schema should cover all routes, parameters, request/response types, and status codes. Include both request body and query parameters where applicable, and provide the schema in YAML format."
-```
+  ```text
+  "Given the following source code for an API implemented in {programming_language}, generate the OpenAPI schema for this API. The schema should cover all routes, parameters, request/response types, and status codes. Include both request body and query parameters where applicable, and provide the schema in YAML format."
+  ```
+
 * **Create OpenAPI Schema and Curl Commands for a CRUD API**
 
-```text
-"Create an OpenAPI schema for a simple CRUD API with the following endpoints: `GET /items`, `POST /items`, `PUT /items/{id}`, and `DELETE /items/{id}`. Based on the schema, generate `curl` commands to test these endpoints with sample data, including headers and request bodies as necessary."
-```
+  ```text
+  "Create an OpenAPI schema for a simple CRUD API with the following endpoints: `GET /items`, `POST /items`, `PUT /items/{id}`, and `DELETE /items/{id}`. Based on the schema, generate `curl` commands to test these endpoints with sample data, including headers and request bodies as necessary."
+  ```
 
 * **Generate OpenAPI Schema for a Node.js API and Curl Examples**
 
-```text
-"Given the following source code for a Node.js API using Express, generate the corresponding OpenAPI 3.0 schema. Then, create `curl` commands to test each endpoint in the API, covering all HTTP methods (GET, POST, PUT, DELETE) and including sample request bodies for each method."
-```
+  ```text
+  "Given the following source code for a Node.js API using Express, generate the corresponding OpenAPI 3.0 schema. Then, create `curl` commands to test each endpoint in the API, covering all HTTP methods (GET, POST, PUT, DELETE) and including sample request bodies for each method."
+  ```
 
 * **Keploy CI/CD Integration Setup**
 
-```text
-"Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
-```
-
-
+  ```text
+  "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
+  ```
