@@ -1,6 +1,6 @@
 # Engineering Prompts
 
-Welcome to the **Engineering Prompts** repository! This repository contains a collection of **AI prompt chains** organized by different domains, primarily for assisting developers in various tasks such as code refactoring, CI/CD setup, database management, cloud, and Kubernetes deployment, web development, security, and more.
+Welcome to the **Engineering Prompts** repository! This repository contains a collection of **AI prompt chains** organized by different domains, primarily for assisting developers in various tasks such as code refactoring, CI/CD setup, database management, cloud, Kubernetes deployment, web development, API Development, security, and more.
 
 Each prompt chain is designed to build context for ChatGPT before executing a task. They can be used in **ChatGPT Queue** for bulk prompting, job, or task-focused automation.
 
@@ -32,7 +32,7 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Please review the provided code and identify areas where readability can be improved. Focus on simplifying complex functions, improving variable names, and removing redundant code. Return the refactored code and explain the changes made to improve readability."
-````
+  ```
 
 * **Translate Code from One Language to Another**
 
@@ -458,13 +458,16 @@ This repository contains prompt chains for the following domains:
 
 ---
 
-### **13. API Development**
+###
+
+
+**13. API Development**
 
 * **Generate OpenAPI Schema from Source Code**
 
-   ```text
-   "Given the following source code for a RESTful API implemented in {programming_language} with endpoints {list_of_endpoints}, generate an OpenAPI 3.0 schema that describes the API. The schema should include paths, request/response parameters, status codes, authentication methods, and other relevant details. Return the complete OpenAPI schema in YAML format."
-   ```
+  ```text
+  "Given the following source code for a RESTful API implemented in {programming_language} with endpoints {list_of_endpoints}, generate an OpenAPI 3.0 schema that describes the API. The schema should include paths, request/response parameters, status codes, authentication methods, and other relevant details. Return the complete OpenAPI schema in YAML format."
+  ```
 
 * **Generate Curl Commands for Testing OpenAPI Endpoints**
 
