@@ -283,7 +283,6 @@ Built with the belief that **great engineering** should be **accessible to every
 
 ---
 
-**Made with ❤️ by [Hritika](https://github.com/hritika2409) and the Engineering Community**
 
 *Last Updated: June 2025*
 
