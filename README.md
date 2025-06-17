@@ -458,10 +458,7 @@ This repository contains prompt chains for the following domains:
 
 ---
 
-###
-
-
-**13. API Development**
+### **13. API Development**
 
 * **Generate OpenAPI Schema from Source Code**
 
