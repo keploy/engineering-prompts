@@ -465,6 +465,12 @@ Accelerate software quality improvements with prompts focused on clarity, optimi
   ```text
   "Write unit and integration tests for the provided front-end components using {testing_framework}. Ensure the tests cover all major use cases and edge cases. Return the test code with explanations."
   ```
+* **Perform End-to-End Testing with Cypress**
+   ```text
+  ""Set up Cypress for end-to-end (E2E) testing of the front-end application. Write Cypress tests that simulate user interactions such as adding, completing, and deleting items in a To-Do list. Ensure tests validate full user flows, handle edge cases, and assert the correct UI behavior. Provide setup instructions, Cypress configuration, and E2E test code with comments explaining each scenario."
+  ```
+    
+  
 
 ---
 
