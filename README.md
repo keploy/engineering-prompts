@@ -495,3 +495,111 @@ This repository contains prompt chains for the following domains:
   ```text
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
   ```
+
+### **14. AI / ML**
+
+* **Build a Text Classification Model Using Scikit-learn**
+
+  ```text
+  "You're a Python ML assistant. Build a binary text classifier using Scikit-learn.
+  1. Load `sci.space` and `comp.graphics` from the 20 Newsgroups dataset.
+  2. Preprocess using `TfidfVectorizer` (stop words removed, max_df=0.7).
+  3. Split data 80/20.
+  4. Train a `LogisticRegression` model.
+  5. Evaluate with `classification_report`.
+  Return: commented code, sample output, and a suggestion for improvement."
+  ```
+
+* **Fine-Tune a BERT Model for Sentiment Analysis**
+
+  ```text
+  "Fine-tune a BERT model using Hugging Face Transformers for sentiment analysis.
+  1. Load IMDB or custom dataset.
+  2. Tokenize using `BertTokenizer`.
+  3. Use `Trainer` API for training and evaluation.
+  4. Run prediction on new input.
+  Return: training code, evaluation metrics, and how to save the fine-tuned model."
+  ```
+
+* **Build an Image Classifier Using CNN (Keras/TensorFlow)**
+
+  ```text
+  "Build an image classification model using CNN in TensorFlow/Keras.
+  1. Load CIFAR-10 dataset.
+  2. Normalize and augment images.
+  3. Create a CNN model with Conv2D, MaxPooling, and Dense layers.
+  4. Train and evaluate the model.
+  Return: training accuracy graph and confusion matrix."
+  ```
+
+* **Detect Anomalies in Streaming Data Using Isolation Forest**
+
+  ```text
+  "Simulate real-time anomaly detection using Isolation Forest.
+  1. Generate synthetic streaming data.
+  2. Train Isolation Forest on initial batch.
+  3. Detect and flag anomalies in subsequent batches.
+  Return: Python code with anomaly detection logic and visualization using matplotlib."
+  ```
+
+* **Deploy a Machine Learning Model Using FastAPI**
+
+  ```text
+  "Create a FastAPI service to serve ML predictions.
+  1. Train and save a Scikit-learn model (e.g., RandomForest).
+  2. Build a FastAPI app with a `/predict` endpoint.
+  3. Accept JSON input and return predictions.
+  Return: Python code for API setup and example API call with curl."
+  ```
+
+* **Tune Hyperparameters of XGBoost Using Optuna**
+
+  ```text
+  "Use Optuna to find optimal hyperparameters for an XGBoost model.
+  1. Load any tabular dataset (e.g., Titanic).
+  2. Define objective function for `study.optimize()`.
+  3. Output best parameters and accuracy.
+  Return: Python code with study summary and plot."
+  ```
+
+* **Build a PDF Q&A Bot Using LangChain and FAISS**
+
+  ```text
+  "Create a bot that answers questions from a PDF using LangChain and FAISS.
+  1. Extract text using PyMuPDF.
+  2. Generate embeddings with Hugging Face.
+  3. Store vectors in FAISS.
+  4. Use LangChain’s Retriever to answer queries.
+  Return: complete pipeline and example Q&A results."
+  ```
+
+* **Train a Regression Model Using PyCaret**
+
+  ```text
+  "Build and evaluate a regression model using PyCaret.
+  1. Load a housing dataset.
+  2. Use `setup()`, `compare_models()`, and `predict_model()` functions.
+  3. Analyze performance (R², MAE).
+  Return: code with minimal effort using PyCaret."
+  ```
+
+* **Generate Synthetic Data Using SDV for Tabular ML Tasks**
+
+  ```text
+  "Use SDV to generate synthetic tabular data.
+  1. Load a real CSV dataset.
+  2. Train SDV's `GaussianCopula` model.
+  3. Generate synthetic samples.
+  4. Compare real vs. synthetic distributions.
+  Return: Python code with evaluation using `sdmetrics`."
+  ```
+
+* **Real-Time Face Recognition System Using OpenCV**
+
+  ```text
+  "Build a real-time face recognition system using OpenCV and face encodings.
+  1. Load and encode known faces.
+  2. Capture webcam video and detect faces.
+  3. Match detected faces with known encodings.
+  Return: working code with recognition overlay on video."
+  ```
