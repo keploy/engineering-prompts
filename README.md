@@ -21,6 +21,7 @@ This repository contains prompt chains for the following domains:
 11. **System Monitoring & Debugging**
 12. **Web Development**
 13. **API Development**
+14. **Legal Tech & AI**
 
 ---
 
@@ -495,3 +496,15 @@ This repository contains prompt chains for the following domains:
   ```text
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
   ```
+### **14. Legal Tech & AI**
+
+* **Evaluate Factual Accyracy of LLM Outputs**
+
+  ```text
+  "Given the following user query and the LLM's response, evaluate the factual accuracy of the output. Check if the response is consistent with the provided source text or expected knowledge base. Return a rating (1-5) and a brief explanation."
+
+  User Query: {query}  
+  LLM Response: {response}  
+  Reference Text: {reference}"
+  ```
+
