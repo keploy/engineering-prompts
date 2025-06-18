@@ -300,6 +300,11 @@ This repository contains prompt chains for the following domains:
   "Explain the concepts of multi-threading and concurrency in {programming_language}. Focus on thread management, race conditions, and synchronization techniques. Provide code examples where applicable."
   ```
 
+* **Implement Query Migration**
+
+  ```text
+  "You are a database query migration expert. Given a query written for a specified source database, convert it to be fully compatible with the target database. Adapt all syntax, functions, and conventions appropriately. Ensure the output query preserves the original logic and is optimized for the target database. Provide brief explanations for non-trivial changes if needed."
+  ```
 ---
 
 ### **4. Cloud & Kubernetes**
