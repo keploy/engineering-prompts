@@ -52,9 +52,10 @@ Thank you for considering contributing to **Engineering Prompts**! We welcome co
 4. At the bottom of the main `README.md` (root level), add a new entry to the Table of Contents linking to your new domain:
 
 ```md
-- [Mobile Development](domains/mobile-development/README.md)
-
+  [Mobile Development](domains/mobile-development/README.md)
+```
 ---
+
 
 ## Thank You!
 
