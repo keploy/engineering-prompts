@@ -21,6 +21,15 @@ This repository contains prompt chains for the following domains:
 11. **System Monitoring & Debugging**
 12. **Web Development**
 13. **API Development**
+14. **Mobile Development**
+15. **Machine Learning & AI**
+16. **Data Engineering & Analytics**
+17. **Performance Optimization**
+18. **Quality Assurance & Testing**
+19. **Blockchain & Web3**
+20. **IoT & Embedded Systems**
+21. **Game Development**
+22. **Legacy System Modernization**
 
 ---
 
@@ -49,7 +58,7 @@ This repository contains prompt chains for the following domains:
 * **Provide Code Explanations**
 
   ```text
-  "Please analyze the provided code and explain its functionality step-by-step. Include explanations for each major part of the code and why it’s necessary. Keep the explanation clear and concise."
+  "Please analyze the provided code and explain its functionality step-by-step. Include explanations for each major part of the code and why it's necessary. Keep the explanation clear and concise."
   ```
 
 * **Generate Git Commit Messages**
@@ -160,6 +169,24 @@ This repository contains prompt chains for the following domains:
   "After refactoring the code, use Keploy to run automated tests to check if any regressions have been introduced. Set up Keploy to verify that the refactored code behaves as expected, ensuring that all existing functionalities remain intact. The tests should include integration tests to verify that API endpoints, data handling, and user interactions still function properly. Ensure that Keploy is set to compare the current behavior with previously recorded test cases to detect any discrepancies or regressions. Return the Keploy test configuration, test cases, and results showing the behavior of the refactored code."
   ```
 
+* **Generate Design Patterns Implementation**
+
+  ```text
+  "Implement the {design_pattern} pattern in {programming_language} for the following use case: {use_case_description}. Provide a complete implementation with explanations of how the pattern solves the problem and when to use it."
+  ```
+
+* **Create Code Metrics Dashboard**
+
+  ```text
+  "Set up a code metrics dashboard using tools like SonarQube or CodeClimate. Configure it to track code quality metrics such as cyclomatic complexity, code coverage, and technical debt. Return the configuration and setup instructions."
+  ```
+
+* **Implement Error Handling Strategies**
+
+  ```text
+  "Implement comprehensive error handling for the provided code in {programming_language}. Include try-catch blocks, custom error classes, logging, and user-friendly error messages. Return the enhanced code with error handling explanations."
+  ```
+
 ---
 
 ### **2. CI/CD & DevOps**
@@ -248,6 +275,30 @@ This repository contains prompt chains for the following domains:
   "Optimize the provided Docker development environment. Focus on reducing build time, improving caching, and streamlining container configurations. Return the optimized Dockerfile and Docker Compose file."
   ```
 
+* **Implement Blue-Green Deployment Strategy**
+
+  ```text
+  "Design and implement a blue-green deployment strategy for {application} using {deployment_tool}. Include scripts for traffic switching, rollback procedures, and health checks. Return the deployment configuration and scripts."
+  ```
+
+* **Set up Multi-Environment Configuration Management**
+
+  ```text
+  "Create a configuration management system for multiple environments (dev, staging, prod) using {config_tool}. Include environment-specific variables, secrets management, and configuration validation. Return the setup configuration."
+  ```
+
+* **Implement GitOps Workflow with ArgoCD**
+
+  ```text
+  "Set up a GitOps workflow using ArgoCD for continuous deployment. Configure ArgoCD to sync with Git repositories and automatically deploy changes to Kubernetes clusters. Return the ArgoCD configuration and Git repository structure."
+  ```
+
+* **Create Monitoring and Alerting with Prometheus and Grafana**
+
+  ```text
+  "Set up monitoring and alerting for {application} using Prometheus and Grafana. Include custom metrics, alerting rules, and dashboard configurations. Return the complete monitoring stack setup."
+  ```
+
 ---
 
 ### **3. Database Management**
@@ -300,6 +351,30 @@ This repository contains prompt chains for the following domains:
   "Explain the concepts of multi-threading and concurrency in {programming_language}. Focus on thread management, race conditions, and synchronization techniques. Provide code examples where applicable."
   ```
 
+* **Design Database Migration Strategy**
+
+  ```text
+  "Create a database migration strategy for transitioning from {old_database} to {new_database}. Include data migration scripts, rollback procedures, and zero-downtime migration techniques. Return the migration plan and scripts."
+  ```
+
+* **Implement Database Connection Pooling**
+
+  ```text
+  "Set up database connection pooling for {application} using {connection_pool_library}. Configure optimal pool sizes, connection timeouts, and error handling. Return the configuration and implementation code."
+  ```
+
+* **Create Database Backup and Recovery Procedures**
+
+  ```text
+  "Design automated database backup and recovery procedures for {database_system}. Include incremental backups, point-in-time recovery, and disaster recovery plans. Return the backup scripts and recovery procedures."
+  ```
+
+* **Implement Database Replication Setup**
+
+  ```text
+  "Set up database replication for {database_system} with master-slave configuration. Include failover mechanisms, read replica setup, and data consistency checks. Return the replication configuration and monitoring setup."
+  ```
+
 ---
 
 ### **4. Cloud & Kubernetes**
@@ -320,6 +395,30 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Please provide the steps for setting up cloud storage using Amazon S3. Include how to create a bucket, set permissions, and manage files programmatically via AWS SDKs. Return the necessary code examples for integration."
+  ```
+
+* **Implement Kubernetes Autoscaling**
+
+  ```text
+  "Set up Horizontal Pod Autoscaler (HPA) and Vertical Pod Autoscaler (VPA) in Kubernetes. Configure scaling policies based on CPU, memory, and custom metrics. Return the autoscaling configuration files."
+  ```
+
+* **Create Kubernetes Ingress Controller Setup**
+
+  ```text
+  "Configure an Ingress controller in Kubernetes using {ingress_controller}. Set up SSL termination, load balancing, and routing rules for multiple services. Return the Ingress configuration and setup instructions."
+  ```
+
+* **Implement Kubernetes Secrets and ConfigMaps Management**
+
+  ```text
+  "Set up secrets and ConfigMaps management in Kubernetes. Include encryption at rest, secret rotation, and best practices for sensitive data handling. Return the configuration files and management scripts."
+  ```
+
+* **Design Multi-Cloud Architecture Strategy**
+
+  ```text
+  "Design a multi-cloud architecture strategy using {cloud_providers}. Include data replication, failover mechanisms, and cost optimization across different cloud platforms. Return the architecture design and implementation plan."
   ```
 
 ---
@@ -356,6 +455,24 @@ This repository contains prompt chains for the following domains:
   "Set up Keploy in your full-stack application to test both the backend and frontend after an update. Configure Keploy for automatic integration testing, focusing on testing API endpoints, data handling, and the interaction between the frontend and backend. Ensure that Keploy is set to capture all changes in the API response, including edge cases, and validate that the frontend works correctly with the updated backend. Return the setup configuration and steps to trigger Keploy for testing."
   ```
 
+* **Implement Server-Side Rendering with Next.js**
+
+  ```text
+  "Set up server-side rendering (SSR) for a React application using Next.js. Include dynamic routing, API routes, and optimization for SEO. Return the Next.js configuration and example pages."
+  ```
+
+* **Create GraphQL API with Apollo Server**
+
+  ```text
+  "Implement a GraphQL API using Apollo Server for {application}. Define schemas, resolvers, and mutations for CRUD operations. Include authentication and error handling. Return the complete GraphQL implementation."
+  ```
+
+* **Implement Microservices Architecture**
+
+  ```text
+  "Design and implement a microservices architecture for {application}. Include service discovery, API gateway, inter-service communication, and data consistency patterns. Return the architecture design and implementation."
+  ```
+
 ---
 
 ### **6. UX/UI & Design**
@@ -364,6 +481,24 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Provide UX/UI design recommendations for the provided {website/app}. Focus on improving usability, accessibility, and aesthetics. Return a list of specific design improvements with examples where necessary."
+  ```
+
+* **Create Responsive Design System**
+
+  ```text
+  "Design a comprehensive design system for {application} including color palette, typography, component library, and responsive breakpoints. Return the design system documentation and CSS/styled-components implementation."
+  ```
+
+* **Implement Accessibility (A11y) Improvements**
+
+  ```text
+  "Audit the provided {website/application} for accessibility compliance and implement WCAG 2.1 AA standards. Include ARIA labels, keyboard navigation, screen reader compatibility, and color contrast improvements. Return the accessibility implementation and testing checklist."
+  ```
+
+* **Design Progressive Web App (PWA) Features**
+
+  ```text
+  "Convert the existing web application into a Progressive Web App (PWA). Implement service workers, offline functionality, push notifications, and app manifest. Return the PWA implementation and configuration files."
   ```
 
 ---
@@ -382,6 +517,30 @@ This repository contains prompt chains for the following domains:
   "Implement JSON Web Token (JWT) authentication in the provided application. The system should handle token generation, validation, and secure access to protected routes. Return the code with explanations."
   ```
 
+* **Implement OAuth 2.0 with Social Login**
+
+  ```text
+  "Set up OAuth 2.0 authentication with social login providers (Google, Facebook, GitHub) for {application}. Include token validation, user profile management, and security best practices. Return the implementation code."
+  ```
+
+* **Perform Security Vulnerability Assessment**
+
+  ```text
+  "Conduct a security vulnerability assessment of the provided application. Check for common vulnerabilities like SQL injection, XSS, CSRF, and insecure dependencies. Return a security report with remediation recommendations."
+  ```
+
+* **Implement Rate Limiting and DDoS Protection**
+
+  ```text
+  "Implement rate limiting and DDoS protection for {application} using {rate_limiting_tool}. Configure request throttling, IP blocking, and monitoring. Return the security configuration and implementation."
+  ```
+
+* **Set up Web Application Firewall (WAF)**
+
+  ```text
+  "Configure a Web Application Firewall (WAF) for {application} using {WAF_provider}. Set up rules for common attacks, custom filtering, and monitoring. Return the WAF configuration and security policies."
+  ```
+
 ---
 
 ### **8. Event-Driven Architecture & Integration**
@@ -398,6 +557,18 @@ This repository contains prompt chains for the following domains:
   "Integrate {third_party_service} into the existing project. Provide step-by-step instructions for setup, authentication, and API interaction. Return the integration code with explanations of how it works."
   ```
 
+* **Implement Event Sourcing Pattern**
+
+  ```text
+  "Implement event sourcing pattern for {application} using {event_store}. Design event schemas, aggregate handling, and event replay mechanisms. Return the event sourcing implementation and configuration."
+  ```
+
+* **Create Message Queue System with RabbitMQ**
+
+  ```text
+  "Set up a message queue system using RabbitMQ for {use_case}. Configure exchanges, queues, routing keys, and dead letter queues. Return the RabbitMQ setup and producer/consumer code."
+  ```
+
 ---
 
 ### **9. Content Creation & Marketing**
@@ -405,7 +576,7 @@ This repository contains prompt chains for the following domains:
 * **Create a Personal Portfolio Website**
 
   ```text
-  "Help me build a personal portfolio website. The site should include sections for my bio, projects, skills, and contact information. Make sure it’s responsive and easy to navigate. Return the basic HTML/CSS/JS code for the website."
+  "Help me build a personal portfolio website. The site should include sections for my bio, projects, skills, and contact information. Make sure it's responsive and easy to navigate. Return the basic HTML/CSS/JS code for the website."
   ```
 
 * **Write SEO-Optimized Blog Content**
@@ -418,6 +589,18 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Generate a compelling LinkedIn summary and job description based on the following details: {job_title}, {skills}, {experience}. Ensure the summary is concise, professional, and highlights key achievements."
+  ```
+
+* **Create Technical Documentation Website**
+
+  ```text
+  "Build a technical documentation website using {documentation_tool} for {project}. Include API documentation, tutorials, code examples, and search functionality. Return the documentation structure and configuration."
+  ```
+
+* **Implement Content Management System (CMS)**
+
+  ```text
+  "Set up a content management system using {CMS_platform} for {website_type}. Configure custom content types, user roles, and publishing workflows. Return the CMS setup and customization code."
   ```
 
 ---
@@ -436,6 +619,18 @@ This repository contains prompt chains for the following domains:
   "Create a serverless architecture using Google Cloud Functions for {task}. The functions should trigger based on specific events and return the necessary code with setup instructions."
   ```
 
+* **Implement Infrastructure Monitoring with Terraform**
+
+  ```text
+  "Create Terraform configurations for provisioning and monitoring infrastructure on {cloud_provider}. Include resource monitoring, alerting, and cost tracking. Return the Terraform modules and monitoring setup."
+  ```
+
+* **Set up Load Balancer Configuration**
+
+  ```text
+  "Configure load balancers for {application} using {load_balancer_type}. Set up health checks, SSL termination, and traffic distribution algorithms. Return the load balancer configuration and setup instructions."
+  ```
+
 ---
 
 ### **11. System Monitoring & Debugging**
@@ -446,6 +641,24 @@ This repository contains prompt chains for the following domains:
   "Analyze the performance of the production system and identify bottlenecks. Suggest and implement optimizations to improve speed, reduce memory usage, and increase scalability. Return the optimized code and explanations."
   ```
 
+* **Set up Application Performance Monitoring (APM)**
+
+  ```text
+  "Implement application performance monitoring using {APM_tool} for {application}. Configure performance metrics, error tracking, and alerting. Return the APM setup and dashboard configuration."
+  ```
+
+* **Create Log Aggregation and Analysis System**
+
+  ```text
+  "Set up log aggregation and analysis using {logging_stack} (e.g., ELK Stack). Configure log parsing, indexing, and visualization dashboards. Return the logging infrastructure setup and configuration."
+  ```
+
+* **Implement Distributed Tracing**
+
+  ```text
+  "Set up distributed tracing for microservices using {tracing_tool} (e.g., Jaeger, Zipkin). Configure trace collection, analysis, and performance monitoring across services. Return the tracing implementation and configuration."
+  ```
+
 ---
 
 ### **12. Web Development**
@@ -454,6 +667,24 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Write unit and integration tests for the provided front-end components using {testing_framework}. Ensure the tests cover all major use cases and edge cases. Return the test code with explanations."
+  ```
+
+* **Implement Advanced CSS Animations and Transitions**
+
+  ```text
+  "Create advanced CSS animations and transitions for {website_elements}. Include keyframe animations, transform effects, and performance optimizations. Return the CSS code with explanations and examples."
+  ```
+
+* **Set up Modern JavaScript Build Pipeline**
+
+  ```text
+  "Configure a modern JavaScript build pipeline using {build_tool} (e.g., Webpack, Vite, Rollup). Include code splitting, tree shaking, and optimization plugins. Return the build configuration and setup instructions."
+  ```
+
+* **Implement Web Performance Optimization**
+
+  ```text
+  "Optimize web performance for {website/application}. Include lazy loading, image optimization, code splitting, and caching strategies. Return the optimization implementation and performance metrics."
   ```
 
 ---
@@ -495,3 +726,414 @@ This repository contains prompt chains for the following domains:
   ```text
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
   ```
+
+* **Implement API Rate Limiting and Throttling**
+
+  ```text
+  "Implement rate limiting and throttling for {API} using {rate_limiting_library}. Configure different rate limits for different endpoints and user tiers. Return the rate limiting implementation and configuration."
+  ```
+
+* **Create API Gateway Configuration**
+
+  ```text
+  "Set up an API Gateway for microservices using {gateway_tool}. Configure routing, authentication, rate limiting, and request/response transformation. Return the gateway configuration and deployment instructions."
+  ```
+
+* **Implement API Versioning Strategy**
+
+  ```text
+  "Design and implement an API versioning strategy for {API}. Include URL versioning, header versioning, and backward compatibility handling. Return the versioning implementation and migration guide."
+  ```
+
+---
+
+### **14. Mobile Development**
+
+* **Create React Native Cross-Platform App**
+
+  ```text
+  "Develop a cross-platform mobile application using React Native for {app_description}. Include navigation, state management, and platform-specific optimizations. Return the app structure and key components."
+  ```
+
+* **Implement Mobile App Authentication**
+
+  ```text
+  "Implement authentication for a mobile app using {authentication_method}. Include biometric authentication, secure token storage, and session management. Return the authentication implementation for {platform}."
+  ```
+
+* **Set up Mobile App Push Notifications**
+
+  ```text
+  "Configure push notifications for a mobile app using {notification_service} (e.g., Firebase Cloud Messaging). Include notification scheduling, targeting, and analytics. Return the push notification setup and implementation."
+  ```
+
+* **Optimize Mobile App Performance**
+
+  ```text
+  "Optimize performance for a {platform} mobile app. Include memory management, rendering optimizations, and battery usage improvements. Return the optimization strategies and implementation code."
+  ```
+
+* **Implement Mobile App Offline Functionality**
+
+  ```text
+  "Implement offline functionality for a mobile app including data synchronization, offline storage, and conflict resolution. Use {offline_storage_solution} and return the offline implementation strategy and code."
+  ```
+
+* **Create Mobile App CI/CD Pipeline**
+
+  ```text
+  "Set up a CI/CD pipeline for mobile app deployment using {CI_tool}. Include automated building, testing, and deployment to app stores. Return the pipeline configuration and deployment scripts."
+  ```
+
+---
+
+### **15. Machine Learning & AI**
+
+* **Implement Machine Learning Model Training Pipeline**
+
+  ```text
+  "Create a machine learning pipeline for {ml_task} using {ml_framework}. Include data preprocessing, model training, validation, and hyperparameter tuning. Return the complete pipeline code and configuration."
+  ```
+
+* **Deploy ML Model with REST API**
+
+  ```text
+  "Deploy a trained machine learning model as a REST API using {deployment_framework}. Include model serving, request validation, and response formatting. Return the deployment code and API documentation."
+  ```
+
+* **Implement Data Preprocessing for Machine Learning**
+
+  ```text
+  "Implement comprehensive data preprocessing for {dataset_type}. Include data cleaning, feature engineering, encoding, and normalization. Return the preprocessing pipeline and data quality checks."
+  ```
+
+* **Create MLOps Pipeline with Model Versioning**
+
+  ```text
+  "Set up an MLOps pipeline with model versioning using {mlops_tool}. Include experiment tracking, model registry, and automated deployment. Return the MLOps configuration and workflow."
+  ```
+
+* **Implement Real-time ML Inference**
+
+  ```text
+  "Set up real-time machine learning inference for {use_case} using {streaming_platform}. Include data streaming, model serving, and result processing. Return the real-time inference implementation."
+  ```
+
+* **Create AI Chatbot with Natural Language Processing**
+
+  ```text
+  "Develop an AI chatbot using {nlp_framework} for {domain}. Include intent recognition, entity extraction, and conversation management. Return the chatbot implementation and training data structure."
+  ```
+
+* **Implement Computer Vision Pipeline**
+
+  ```text
+  "Create a computer vision pipeline for {cv_task} using {cv_framework}. Include image preprocessing, model inference, and result visualization. Return the complete computer vision solution."
+  ```
+
+---
+
+### **16. Data Engineering & Analytics**
+
+* **Design Data Lake Architecture**
+
+  ```text
+  "Design a data lake architecture for {organization} using {cloud_provider}. Include data ingestion, storage layers, processing engines, and governance. Return the architecture design and implementation plan."
+  ```
+
+* **Create ETL Pipeline with Apache Airflow**
+
+  ```text
+  "Build an ETL pipeline using Apache Airflow for {data_source} to {destination}. Include data extraction, transformation, validation, and scheduling. Return the Airflow DAG and pipeline configuration."
+  ```
+
+* **Implement Real-time Data Streaming**
+
+  ```text
+  "Set up real-time data streaming pipeline using {streaming_technology}. Include data ingestion, processing, and analytics. Return the streaming pipeline implementation and monitoring setup."
+  ```
+
+* **Create Data Warehouse Schema Design**
+
+  ```text
+  "Design a data warehouse schema for {business_domain} using {dimensional_modeling_approach}. Include fact tables, dimension tables, and ETL processes. Return the schema design and implementation scripts."
+  ```
+
+* **Implement Data Quality Monitoring**
+
+  ```text
+  "Set up data quality monitoring and validation for {data_pipeline}. Include data profiling, anomaly detection, and quality metrics. Return the data quality framework and monitoring dashboards."
+  ```
+
+* **Create Analytics Dashboard with BI Tools**
+
+  ```text
+  "Build analytics dashboards using {bi_tool} for {business_metrics}. Include data connections, visualizations, and interactive filtering. Return the dashboard configuration and deployment guide."
+  ```
+
+---
+
+### **17. Performance Optimization**
+
+* **Optimize Database Query Performance**
+
+  ```text
+  "Analyze and optimize slow database queries for {database_system}. Include query plan analysis, index optimization, and query rewriting. Return the optimized queries and performance improvements."
+  ```
+
+* **Implement Application Caching Strategy**
+
+  ```text
+  "Design and implement a caching strategy for {application} using {caching_solution}. Include cache invalidation, TTL configuration, and cache warming. Return the caching implementation and configuration."
+  ```
+
+* **Optimize Frontend Bundle Size**
+
+  ```text
+  "Optimize frontend bundle size for {web_application}. Include code splitting, tree shaking, lazy loading, and compression techniques. Return the optimization configuration and performance metrics."
+  ```
+
+* **Implement CDN and Static Asset Optimization**
+
+  ```text
+  "Set up CDN and optimize static assets for {website}. Include image optimization, minification, and cache headers configuration. Return the CDN setup and asset optimization pipeline."
+  ```
+
+* **Create Performance Testing Suite**
+
+  ```text
+  "Create a comprehensive performance testing suite for {application} using {testing_tool}. Include load testing, stress testing, and performance monitoring. Return the test scripts and reporting setup."
+  ```
+
+---
+
+### **18. Quality Assurance & Testing**
+
+* **Implement Automated Testing Framework**
+
+  ```text
+  "Set up an automated testing framework for {application} using {testing_framework}. Include unit tests, integration tests, and end-to-end tests. Return the testing setup and example test cases."
+  ```
+
+* **Create API Testing Suite**
+
+  ```text
+  "Develop comprehensive API testing suite for {api} using {api_testing_tool}. Include functional testing, contract testing, and performance testing. Return the test suite and execution configuration."
+  ```
+
+* **Implement Visual Regression Testing**
+
+  ```text
+  "Set up visual regression testing for {web_application} using {visual_testing_tool}. Include screenshot comparison, responsive testing, and CI integration. Return the visual testing setup and configuration."
+  ```
+
+* **Create Test Data Management Strategy**
+
+  ```text
+  "Design test data management strategy for {application}. Include test data generation, anonymization, and environment management. Return the test data framework and management tools."
+  ```
+
+* **Implement Behavior-Driven Development (BDD)**
+
+  ```text
+  "Set up Behavior-Driven Development framework using {bdd_tool} for {project}. Include feature specifications, step definitions, and test execution. Return the BDD implementation and example scenarios."
+  ```
+
+---
+
+### **19. Blockchain & Web3**
+
+* **Create Smart Contract Development Environment**
+
+  ```text
+  "Set up a smart contract development environment for {blockchain_platform}. Include development tools, testing framework, and deployment scripts. Return the development setup and example contracts."
+  ```
+
+* **Implement DeFi Protocol Integration**
+
+  ```text
+  "Integrate with DeFi protocols for {use_case}. Include wallet connection, transaction handling, and protocol interactions. Return the DeFi integration code and security considerations."
+  ```
+
+* **Create NFT Marketplace**
+
+  ```text
+  "Build an NFT marketplace on {blockchain_platform}. Include smart contracts, frontend interface, and IPFS integration. Return the marketplace implementation and deployment guide."
+  ```
+
+* **Implement Blockchain Data Indexing**
+
+  ```text
+  "Set up blockchain data indexing and querying using {indexing_solution}. Include event monitoring, data transformation, and API creation. Return the indexing implementation and query interface."
+  ```
+
+---
+
+### **20. IoT & Embedded Systems**
+
+* **Create IoT Device Communication Protocol**
+
+  ```text
+  "Implement communication protocol for IoT devices using {protocol}. Include device registration, data transmission, and security measures. Return the protocol implementation and device code."
+  ```
+
+* **Set up IoT Data Pipeline**
+
+  ```text
+  "Build IoT data pipeline for sensor data processing. Include data ingestion, real-time processing, and storage. Return the pipeline architecture and implementation code."
+  ```
+
+* **Implement Edge Computing Solution**
+
+  ```text
+  "Design edge computing solution for {iot_use_case}. Include edge device configuration, local processing, and cloud synchronization. Return the edge computing implementation and deployment guide."
+  ```
+
+* **Create IoT Device Management System**
+
+  ```text
+  "Build IoT device management system for {device_fleet}. Include device provisioning, monitoring, and over-the-air updates. Return the management system implementation and device integration."
+  ```
+
+---
+
+### **21. Game Development**
+
+* **Create Game Engine Architecture**
+
+  ```text
+  "Design game engine architecture for {game_type} using {game_framework}. Include rendering system, physics engine, and asset management. Return the engine design and core components."
+  ```
+
+* **Implement Multiplayer Game Networking**
+
+  ```text
+  "Set up multiplayer networking for {game_type}. Include client-server architecture, state synchronization, and lag compensation. Return the networking implementation and server setup."
+  ```
+
+* **Create Game Analytics and Telemetry**
+
+  ```text
+  "Implement game analytics and telemetry system for {game}. Include player behavior tracking, performance metrics, and monetization analytics. Return the analytics implementation and dashboard setup."
+  ```
+
+* **Optimize Game Performance**
+
+  ```text
+  "Optimize game performance for {platform}. Include rendering optimizations, memory management, and frame rate improvements. Return the optimization strategies and implementation code."
+  ```
+
+---
+
+### **22. Legacy System Modernization**
+
+* **Create Legacy System Migration Strategy**
+
+  ```text
+  "Design migration strategy for legacy system {legacy_system} to modern architecture. Include risk assessment, migration phases, and rollback procedures. Return the migration plan and implementation roadmap."
+  ```
+
+* **Implement API Gateway for Legacy Integration**
+
+  ```text
+  "Create API gateway to integrate legacy systems with modern applications. Include protocol translation, data transformation, and security layers. Return the gateway implementation and integration guide."
+  ```
+
+* **Refactor Monolith to Microservices**
+
+  ```text
+  "Plan and implement refactoring of monolithic application to microservices architecture. Include service boundaries, data separation, and deployment strategy. Return the refactoring plan and implementation steps."
+  ```
+
+* **Implement Strangler Fig Pattern**
+
+  ```text
+  "Implement Strangler Fig pattern for gradual legacy system replacement. Include proxy setup, traffic routing, and feature migration. Return the pattern implementation and migration strategy."
+  ```
+
+---
+
+## Advanced Prompt Combinations
+
+### **Cross-Domain Integration Prompts**
+
+* **Full-Stack Application with ML Integration**
+
+  ```text
+  "Create a full-stack application that integrates machine learning capabilities. Include model serving API, real-time predictions, and result visualization. The application should use {frontend_framework} for UI, {backend_framework} for API, and {ml_framework} for model serving. Return the complete application architecture and implementation."
+  ```
+
+* **Cloud-Native Application with Advanced Monitoring**
+
+  ```text
+  "Build a cloud-native application with comprehensive monitoring and observability. Include distributed tracing, metrics collection, log aggregation, and alerting. Deploy on {cloud_platform} with {container_orchestration}. Return the application code, infrastructure configuration, and monitoring setup."
+  ```
+
+* **Secure API Gateway with Authentication and Analytics**
+
+  ```text
+  "Implement a secure API gateway with OAuth2 authentication, rate limiting, and analytics. Include JWT validation, request/response transformation, and usage analytics. Use {gateway_technology} and integrate with {analytics_platform}. Return the gateway configuration and security implementation."
+  ```
+
+* **Real-time Data Processing with Event-Driven Architecture**
+
+  ```text
+  "Design real-time data processing system using event-driven architecture. Include data ingestion, stream processing, event sourcing, and real-time analytics. Use {streaming_platform} for events and {processing_framework} for computations. Return the architecture design and implementation code."
+  ```
+
+* **DevSecOps Pipeline with Automated Security Testing**
+
+  ```text
+  "Create a DevSecOps pipeline that integrates security testing throughout the development lifecycle. Include SAST, DAST, dependency scanning, and compliance checks. Use {ci_cd_platform} and {security_tools}. Return the pipeline configuration and security automation scripts."
+  ```
+
+---
+
+## Prompt Usage Guidelines
+
+### **Best Practices for Using These Prompts**
+
+1. **Customize Variables**: Replace placeholders like `{programming_language}`, `{application}`, `{tool}` with specific values relevant to your project.
+
+2. **Provide Context**: Always include relevant context about your current setup, constraints, and requirements when using these prompts.
+
+3. **Iterative Refinement**: Use these prompts as starting points and refine them based on the initial responses to get more specific and actionable results.
+
+4. **Combine Prompts**: For complex projects, combine multiple prompts to address different aspects of your system.
+
+5. **Specify Output Format**: Always specify the desired output format (code, documentation, configuration files, etc.) in your prompts.
+
+### **Prompt Enhancement Techniques**
+
+* **Add Constraints**: Include specific constraints like performance requirements, security standards, or technology limitations.
+
+* **Request Explanations**: Always ask for explanations of the provided solutions to better understand the implementation.
+
+* **Include Testing**: Request test cases, validation steps, or monitoring setup along with the main implementation.
+
+* **Ask for Alternatives**: Request multiple approaches or alternatives to compare different solutions.
+
+* **Specify Experience Level**: Indicate whether you need beginner-friendly explanations or advanced technical details.
+
+---
+
+## Contributing
+
+To contribute new prompts or improve existing ones:
+
+1. Follow the established format and structure
+2. Include clear use cases and expected outcomes
+3. Test prompts with different scenarios
+4. Provide examples where applicable
+5. Ensure prompts are specific enough to generate actionable results
+
+---
+
+## Changelog
+
+### Version 2.0
+- Added 8 new domains (Mobile Development, ML/AI, Data Engineering, Performance Optimization, QA/Testing, Blockchain/Web3, IoT/Embedded Systems, Game Development, Legacy System Modernization)
+- Expanded existing domains with 60+ new prompts
+- Added cross-domain integration prompts
+- Included prompt usage guidelines and best practices
+- Enhanced prompt structure with more specific examples and use cases
