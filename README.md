@@ -455,7 +455,15 @@ This repository contains prompt chains for the following domains:
   ```text
   "Write unit and integration tests for the provided front-end components using {testing_framework}. Ensure the tests cover all major use cases and edge cases. Return the test code with explanations."
   ```
+* **Performance Optimization (Lighthouse 100)**
+  ```text
+  "Analyze this [URL/code] and generate specific, actionable fixes to achieve 90+ Lighthouse scores across all metrics, prioritizing [mobile/desktop], including code snippets for: bundle optimization, critical CSS, image compression, and caching strategies."
+  ```
 
+* **Legacy System Modernization**
+  ```text
+  "Convert this [jQuery/Backbone] code to [React/Vue] with zero feature regression, including: automated codemod suggestions, gradual migration strategy, TypeScript integration, and compatibility layer for legacy dependencies."
+  ```
 ---
 
 ### **13. API Development**
