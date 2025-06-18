@@ -322,6 +322,18 @@ This repository contains prompt chains for the following domains:
   "Please provide the steps for setting up cloud storage using Amazon S3. Include how to create a bucket, set permissions, and manage files programmatically via AWS SDKs. Return the necessary code examples for integration."
   ```
 
+* **Enable Auto-Scaling for Kubernetes Workloads**
+
+  ```text
+  "Guide me through setting up Horizontal Pod Autoscaler (HPA) in Kubernetes. Include CPU-based scaling configuration, metric server setup, and example deployment with auto-scaling enabled. Return sample YAML files and scaling thresholds."
+  ```
+  
+* **Deploy a Multi-Container Pod in Kubernetes**
+
+  ```text
+  "Demonstrate how to deploy a multi-container pod (sidecar pattern) in Kubernetes. Explain use cases, share the pod definition YAML, and describe container interaction."
+  ```
+
 ---
 
 ### **5. Full-Stack Development**
@@ -364,6 +376,21 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Provide UX/UI design recommendations for the provided {website/app}. Focus on improving usability, accessibility, and aesthetics. Return a list of specific design improvements with examples where necessary."
+  ```
+* **Create a Wireframe from App Description**
+
+  ```text
+  "Based on the following app idea or description, suggest a low-fidelity wireframe layout for key screens. Include layout, navigation flow, and key UI elements. Return the structure as a textual or block-based wireframe."
+  ```
+* **Suggest a Color Palette and Typography**
+
+  ```text
+  "Suggest a modern, accessible color palette and complementary typography for a {type of app/website}. Justify the choices based on contrast, readability, and emotional impact."
+  ```
+* **Improve Landing Page Layout**
+
+  ```text
+  "Evaluate the provided landing page layout. Suggest improvements in layout hierarchy, visual balance, and call-to-action placement. Return a list of actionable layout changes."
   ```
 
 ---
