@@ -154,11 +154,19 @@ This repository contains prompt chains for the following domains:
   "Suggest a comprehensive testing strategy for {project_type}. The strategy should include unit tests, integration tests, and end-to-end tests. Provide recommendations for testing frameworks and tools, along with examples."
   ```
 
+  * **Intelligent Legacy Code Modernizer**
+
+  ```text
+  "Analyze this legacy codebase and produce a step-by-step modernization plan. Suggest incremental refactoring, API replacements, and removal of deprecated dependencies. For each step, provide sample code snippets or commands to automate the transformation safely, with explanations of risks and benefits."
+  ```
+
 * **Test for Regressions After Refactoring Code with Keploy**
 
   ```text
   "After refactoring the code, use Keploy to run automated tests to check if any regressions have been introduced. Set up Keploy to verify that the refactored code behaves as expected, ensuring that all existing functionalities remain intact. The tests should include integration tests to verify that API endpoints, data handling, and user interactions still function properly. Ensure that Keploy is set to compare the current behavior with previously recorded test cases to detect any discrepancies or regressions. Return the Keploy test configuration, test cases, and results showing the behavior of the refactored code."
   ```
+
+
 
 ---
 
