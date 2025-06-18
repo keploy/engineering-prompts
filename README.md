@@ -494,12 +494,16 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
-
-  
+  ```
+  ---
   ### **14. Machine Learning**
+  
  * **AI Career Tools**
 - **Resume Compatibility Evaluator**  
-   "Create a prompt chain that takes as input a resume and job description. The output should include: a compatibility percentage, key aligned skills, missing qualifications, and actionable improvement tips for better job matching."
-
+  
+ ```text
+ "Create a prompt chain that takes as input a resume and job description. The output should include: a compatibility percentage, key aligned skills, missing qualifications, and actionable improvement tips for better job matching."
+  ```
+  ---
   
   ```
