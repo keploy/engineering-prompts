@@ -326,6 +326,50 @@ This repository contains prompt chains for the following domains:
 
 ### **5. Full-Stack Development**
 
+* **Build a Full-Stack Web Application (Any Stack)**
+
+  ```text
+  "Create a full-stack web application using a stack of your choice (e.g., MERN, MEVN, Django + React, etc.). Implement authentication, RESTful API communication, and a basic CRUD interface. Provide the project structure and example code."
+  ```
+
+* **Integrate a Payment Gateway (Generic)**
+
+  ```text
+  "Integrate a payment gateway (e.g., Stripe, Razorpay, or PayPal) in a full-stack application. Set up the backend to handle secure payment processing and the frontend to trigger and confirm transactions. Return example code for both layers."
+  ```
+
+* **Create a RESTful API Backend**
+
+  ```text
+  "Develop a RESTful API backend using Express.js, Django, or any other framework. Define routes and controllers for CRUD operations on a generic resource. Include code snippets and brief documentation for endpoints."
+  ```
+
+* **Implement Real-Time Updates (Any Stack)**
+
+  ```text
+  "Add real-time updates to a full-stack application using WebSockets (e.g., socket.io). Provide server-side and client-side integration code to handle live data streams such as chat, notifications, or dashboards."
+  ```
+
+* **Regression Testing with Keploy (Generic Full-Stack)**
+
+  ```text
+  "Configure Keploy in a full-stack app to perform regression testing. Set up automatic testing of backend APIs and frontend components post-update. Include steps to install, configure, and trigger Keploy for API snapshotting and validation."
+  ```
+
+* **Set Up Monorepo Architecture for Full-Stack App**
+
+  ```text
+  "Organize a full-stack web application in a monorepo using tools like Turborepo, Nx, or Yarn Workspaces. Structure the project for shared libraries, isolated services, and better CI/CD scalability."
+  ```
+
+* **Implement File Upload and Storage**
+
+  ```text
+  "Add support for file uploads in a full-stack application. Use Multer or a similar middleware on the backend, and integrate file previews and upload status on the frontend. Optionally integrate cloud storage like AWS S3."
+  ```
+
+---
+
 * **Develop a Full-Stack Web Application Using Django and React**
 
   ```text
@@ -367,8 +411,43 @@ This repository contains prompt chains for the following domains:
   ```
 
 ---
-
 ### **7. Security & Authentication**
+
+* **Offer Security Best Practices**
+
+  ```text
+  "Provide a list of security best practices for {application_type}. Focus on areas like authentication, authorization, data protection, and secure coding practices. Return actionable advice with examples where necessary."
+  ```
+
+* **Implement JWT-Based Authentication**
+
+  ```text
+  "Implement JSON Web Token (JWT) authentication in the provided application. The system should handle token generation, validation, and secure access to protected routes. Return the code with explanations."
+  ```
+
+* **Add OAuth2 Login and Consent Flow**
+
+  ```text
+  "Integrate OAuth2 login (Google, GitHub, etc.) in a secure manner. Set up authorization code flow, handle consent screen, and store access/refresh tokens safely. Return frontend and backend integration code."
+  ```
+
+* **Set Up Role-Based Access Control (RBAC)**
+
+  ```text
+  "Implement role-based access control in the application. Define user roles and secure specific routes or components accordingly. Return the middleware logic and example usage."
+  ```
+
+* **Prevent Brute-Force Attacks**
+
+  ```text
+  "Add rate limiting and brute-force protection using libraries like express-rate-limit or helmet. Show examples of how to throttle login attempts and protect sensitive endpoints."
+  ```
+
+* **Secure Password Management**
+
+  ```text
+  "Implement secure password storage and validation using bcrypt or argon2. Provide the logic for hashing, salting, and verifying passwords. Include do's and don'ts."
+  ```
 
 * **Offer Security Best Practices**
 
@@ -450,11 +529,60 @@ This repository contains prompt chains for the following domains:
 
 ### **12. Web Development**
 
-* **Write Tests for Front-End Components**
+* **Create a Reusable UI Component**
 
   ```text
-  "Write unit and integration tests for the provided front-end components using {testing_framework}. Ensure the tests cover all major use cases and edge cases. Return the test code with explanations."
+  "Build a reusable and responsive UI component (e.g., modal, card, dropdown) using any frontend library or framework. Ensure accessibility, mobile responsiveness, and support for customization via props or config."
   ```
+
+* **Integrate with an External API**
+
+  ```text
+  "Develop a service or hook in your frontend that connects to an external API using Axios or Fetch. Manage loading, error, and success states. Include retry logic and usage examples in a component."
+  ```
+
+* **Test OAuth Authentication Flow**
+
+  ```text
+  "Simulate an OAuth login/logout flow in a web app using Jest and MSW. Mock external API responses and verify token storage/removal. Validate the flow from login to secure route access."
+  ```
+
+* **Test API Routes on Backend**
+
+  ```text
+  "Write unit and integration tests for backend API routes using testing libraries (e.g., Jest, Supertest). Cover success cases, validation failures, and authentication checks."
+  ```
+
+* **Refactor Folder Structure for Maintainability**
+
+  ```text
+  "Restructure a full-stack or frontend-only project for better scalability and maintainability. Group files by feature, separate core logic, and organize shared utilities for cleaner architecture."
+  ```
+
+* **Build a Responsive Layout**
+
+  ```text
+  "Design a responsive layout using CSS frameworks like Tailwind CSS or Styled Components. Include a collapsible sidebar, a fixed header, and a flexible content area. Ensure mobile compatibility."
+  ```
+
+* **Configure Environment Variables**
+
+  ```text
+  "Set up and manage environment variables in a full-stack application using .env files. Demonstrate secure usage in both frontend and backend, and explain how to configure these variables in production (e.g., Render, Vercel)."
+  ```
+
+* **Optimize Web App Performance**
+
+  ```text
+  "Analyze and improve the performance of a web application using tools like Lighthouse or Web Vitals. Address key areas like bundle size, lazy loading, caching, and image optimization."
+  ```
+
+* **Implement Theme Switching (Dark/Light Mode)**
+
+  ```text
+  "Add theme switching to your web app (e.g., dark/light mode). Use context or global state for managing themes and apply styles conditionally. Ensure the theme preference persists across sessions."
+  ```
+
 
 ---
 
