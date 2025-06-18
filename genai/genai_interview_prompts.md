@@ -1,21 +1,21 @@
 # Generative AI Interview Prompts
 
-## Prompt 1: RAG Pipeline Design
+## Prompt 1: RAG System Design
 
-Design a Retrieval-Augmented Generation (RAG) system that can query a company’s internal documentation (PDFs, Notion, internal wiki) to generate real-time customer responses.
+Design a RAG (Retrieval-Augmented Generation) pipeline for a chatbot that uses internal documentation from PDFs and Notion pages.
 
-## Prompt 2: LLM Evaluation Metrics
+## Prompt 2: LLM Evaluation
 
-You are tasked with evaluating three LLMs (e.g., GPT-4, Gemini, Claude). Define objective metrics and testing strategies for accuracy, hallucination, and latency in a QA chatbot.
+How would you benchmark GPT-4 vs Claude vs Gemini for factual accuracy, speed, and context understanding?
 
-## Prompt 3: Prompt Injection Mitigation
+## Prompt 3: Prompt Injection
 
-Explain how prompt injection attacks work. Propose a defense mechanism to secure your GenAI app used by thousands of users daily.
+Explain prompt injection in LLMs. How would you protect an app like ChatGPT from it?
 
-## Prompt 4: Fine-Tuning vs RAG
+## Prompt 4: Fine-tuning vs RAG
 
-Compare and contrast fine-tuning an LLM with using a RAG system. In what scenarios would one be preferred over the other?
+Compare fine-tuning vs using a RAG approach. Which is better for enterprise Q&A systems?
 
-## Prompt 5: Multimodal GenAI Product Design
+## Prompt 5: Multimodal GenAI Design
 
-Design a GenAI tool that accepts images and voice inputs from doctors and generates medical notes. What models, pipelines, and data formats would you use?
+Design a GenAI tool where doctors speak symptoms and it generates medical summaries. What models and architecture will you use?
