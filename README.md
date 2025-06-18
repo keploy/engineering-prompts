@@ -36,17 +36,18 @@ This repository provides AI-powered prompt chains tailored for specific engineer
 ## Use Cases and Prompts
 
 ### **1. Code Refactoring & Development**
+Accelerate software quality improvements with prompts focused on clarity, optimization, and productivity. Ideal for developers who want to refactor, debug, or automate coding tasks
 
 * **Refactor Code for Better Readability**
 
   ```text
-  "Please review the provided code and identify areas where readability can be improved. Focus on simplifying complex functions, improving variable names, and removing redundant code. Return the refactored code and explain the changes made to improve readability."
+  "Please review the provided code and identify areas where readability can be improved. Focus on simplifying complex functions, improving variable names, and removing redundant code. Return the refactored code and explain the changes made."
   ```
 
 * **Translate Code from One Language to Another**
 
   ```text
-  "Translate the provided code from {source_language} to {target_language}. Ensure that the functionality remains equivalent. Highlight major differences in syntax or constructs between the two languages and explain the changes."
+  "Translate the provided code from {source_language} to {target_language}. Ensure equivalent functionality and highlight key syntax or structural differences."
   ```
 
 * **Create Documentation from Code**
