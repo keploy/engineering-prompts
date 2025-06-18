@@ -21,7 +21,7 @@ This repository contains prompt chains for the following domains:
 11. **System Monitoring & Debugging**
 12. **Web Development**
 13. **API Development**
-
+14. **Machine Learning**
 ---
 
 ## Use Cases and Prompts
@@ -494,4 +494,10 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
+### **AI Career Tools**
+
+- **Resume Compatibility Evaluator**  
+   "Create a prompt chain that takes as input a resume and job description. The output should include: a compatibility percentage, key aligned skills, missing qualifications, and actionable improvement tips for better job matching."
+
+  
   ```
