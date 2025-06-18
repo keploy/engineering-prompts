@@ -4,6 +4,27 @@ Welcome to the **Engineering Prompts** repository! This repository contains a co
 
 Each prompt chain is designed to build context for ChatGPT before executing a task. They can be used in **ChatGPT Queue** for bulk prompting, job, or task-focused automation.
 
+## 📚 Table of Contents
+
+- [Domains Covered](#domains-covered)
+- [Use Cases and Prompts](#use-cases-and-prompts)
+  - [1. Code Refactoring & Development](#1-code-refactoring--development)
+  - [2. CI/CD & DevOps](#2-cicd--devops)
+  - [3. Database Management](#3-database-management)
+  - [4. Cloud & Kubernetes](#4-cloud--kubernetes)
+  - [5. Full-Stack Development](#5-full-stack-development)
+  - [6. UX/UI & Design](#6-uxui--design)
+  - [7. Security & Authentication](#7-security--authentication)
+  - [8. Event-Driven Architecture & Integration](#8-event-driven-architecture--integration)
+  - [9. Content Creation & Marketing](#9-content-creation--marketing)
+  - [10. Infrastructure & System Administration](#10-infrastructure--system-administration)
+  - [11. System Monitoring & Debugging](#11-system-monitoring--debugging)
+  - [12. Web Development](#12-web-development)
+  - [13. API Development](#13-api-development)
+  - [14. AI/ML & Data Science](#14-aiml--data-science)
+
+
+
 ## Domains Covered
 
 This repository contains prompt chains for the following domains:
@@ -21,6 +42,7 @@ This repository contains prompt chains for the following domains:
 11. **System Monitoring & Debugging**
 12. **Web Development**
 13. **API Development**
+14. **AI/ML & Data Science**
 
 ---
 
@@ -495,3 +517,58 @@ This repository contains prompt chains for the following domains:
   ```text
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
   ```
+
+---
+
+  ### **14. AI/ML & Data Science**
+
+* **Train a Model Using scikit-learn**
+
+  ```text
+  "Using the following dataset schema, generate code to train a classification model using scikit-learn. Include preprocessing, model training, evaluation, and cross-validation."
+  ```
+
+* **Visualize Data with Matplotlib/Seaborn**
+
+  ```text
+  "Generate Python code to create insightful visualizations for the provided dataset using Matplotlib and Seaborn. Include histograms, boxplots, and correlation heatmaps."
+  ```
+
+* **Explain Machine Learning Model Predictions**
+
+  ```text
+  "Provide an explanation of the following ML model's predictions using SHAP or LIME. Explain the influence of features and how to interpret the results."
+  ```
+
+* **Deploy a Trained Model Using Flask**
+
+  ```text
+  "Provide a Flask application that loads a trained ML model and exposes a REST API for inference. Include an example input and response format for testing the endpoint."
+  ```
+
+---
+
+## 🙌 **Contributing**
+
+We welcome **all types of contributions** to improve and expand this repository! Whether you're a beginner or an expert, there's something meaningful you can do 💡
+
+### 🛠️ How You Can Contribute
+
+- ✏️ Fix typos or improve grammar  
+- 💡 Add new **prompt ideas** for any domain  
+- 📖 Expand prompt descriptions with more detail or examples  
+- ➕ Add a new **domain** that's currently missing  
+
+### 📌 **Steps to Contribute**
+
+1. 🍴 **Fork** this repository  
+2. 🌿 Create a new branch:  
+   ```bash
+   git checkout -b your-name-edits
+   ```
+3. 🧾 Make your changes
+
+4. 🚀 Open a Pull Request
+
+### 💬 Need help?
+Feel free to open an issue – we're here to help!
