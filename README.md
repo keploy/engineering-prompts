@@ -366,6 +366,10 @@ This repository contains prompt chains for the following domains:
   "Provide UX/UI design recommendations for the provided {website/app}. Focus on improving usability, accessibility, and aesthetics. Return a list of specific design improvements with examples where necessary."
   ```
 
+* **Design for inclusivity**
+  ```text
+  "Choose an existing popular app or website (e.g., a social media platform, an e-commerce site, or a news portal) and redesign a specific section or feature to be more inclusive and accessible for users with a particular disability (e.g., visual impairment, motor impairment, cognitive disability)."
+  ```
 ---
 
 ### **7. Security & Authentication**
