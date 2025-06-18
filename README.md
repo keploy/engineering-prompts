@@ -1,5 +1,6 @@
 # Engineering Prompts
 
+
 Welcome to the *Engineering Prompts* repository! This repository contains a collection of *AI prompt chains* organized by different domains, primarily for assisting developers in various tasks such as code refactoring, CI/CD setup, database management, cloud, Kubernetes deployment, web development, API Development, security, and more.
 
 Each prompt chain is designed to build context for ChatGPT before executing a task. They can be used in *ChatGPT Queue* for bulk prompting, job, or task-focused automation.
@@ -7,6 +8,7 @@ Each prompt chain is designed to build context for ChatGPT before executing a ta
 ## Domains Covered
 
 This repository contains prompt chains for the following domains:
+
 
 1. *Code Refactoring & Development*
 2. *CI/CD & DevOps*
@@ -34,6 +36,7 @@ This repository contains prompt chains for the following domains:
 ---
 
 ## Use Cases and Prompts
+
 
 ### *1. Code Refactoring & Development*
 
@@ -1087,4 +1090,4 @@ This repository contains prompt chains for the following domains:
   "Create a DevSecOps pipeline that integrates security testing throughout the development lifecycle. Include SAST, DAST, dependency scanning, and compliance checks. Use {ci_cd_platform} and {security_tools}. Return the pipeline configuration and security automation scripts."
   
 
----
+
