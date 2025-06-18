@@ -367,7 +367,35 @@ This repository contains prompt chains for the following domains:
   ```text
   "Set up Keploy in your full-stack application to test both the backend and frontend after an update. Configure Keploy for automatic integration testing, focusing on testing API endpoints, data handling, and the interaction between the frontend and backend. Ensure that Keploy is set to capture all changes in the API response, including edge cases, and validate that the frontend works correctly with the updated backend. Return the setup configuration and steps to trigger Keploy for testing."
   ```
+* **Implement JWT-Based Authentication**
+```text
+"Set up JWT-based authentication in a full-stack app using Express.js and React. Include login, token handling, and protected routes."
+```
 
+* **Use Context API and Custom Hooks in React**
+
+```text
+"Show how to manage global state in React using Context API and custom hooks for session management or theme switching."
+```
+
+* **Connect React Frontend to Flask Backend**
+```text
+"Build a full-stack app with a Flask backend and React frontend. Show how the frontend fetches data from Flask APIs."
+```
+* **Write Tests for Backend and Frontend**
+```text
+"Guide me on writing unit and integration tests for a full-stack app using Jest for the backend and React Testing Library for the frontend."
+```
+
+* **Use Redux Toolkit in E-Commerce App**
+```text
+"Build a full-stack e-commerce app where Redux Toolkit manages cart and user state in the frontend and Express/MongoDB powers the backend."
+```
+
+* **Deploy Full-Stack App on Render or Vercel**
+```text
+"Explain how to deploy a full-stack app with React frontend on Vercel and Node.js/Django backend on Railway or Render. Include environment setup steps."
+```
 ---
 
 ### **6. UX/UI & Design**
