@@ -252,6 +252,13 @@ This repository contains prompt chains for the following domains:
 
 ### **3. Database Management**
 
+
+* **Design a General Entity-Relationship Diagram**
+
+  ```text
+  "Design an Entity-Relationship (ER) diagram for a sample application with multiple entities and relationships. Clearly define the primary keys, foreign keys, and relationship types (1:1, 1:N, N:M)."
+  ```
+
 * **Generate SQL Queries**
 
   ```text
