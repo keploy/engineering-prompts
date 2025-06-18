@@ -322,6 +322,12 @@ This repository contains prompt chains for the following domains:
   "Please provide the steps for setting up cloud storage using Amazon S3. Include how to create a bucket, set permissions, and manage files programmatically via AWS SDKs. Return the necessary code examples for integration."
   ```
 
+* **Kubernetes Observability Stack with Prometheus, Grafana, and Loki**
+
+  ```text
+  "Help me deploy a complete observability stack (Prometheus, Grafana, Loki) in Kubernetes using Helm charts. Configure dashboards, alerts, and log aggregation. Provide the YAML and values files required for each component."
+  ```
+
 ---
 
 ### **5. Full-Stack Development**
