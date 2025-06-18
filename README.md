@@ -994,7 +994,6 @@ This repository contains prompt chains for the following domains:
 
 * *Create IoT Device Management System*
 
-  text
   `Build IoT device management system for {device_fleet}. Include device provisioning, monitoring, and over-the-air updates. Return the management system implementation and device integration.`
   
 
