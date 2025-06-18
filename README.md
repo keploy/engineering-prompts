@@ -32,10 +32,10 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Review the provided code and refactor it to enhance readability and maintainability.
-    Simplify complex logic** by breaking large functions into smaller, well-named units  
-    Rename variables and functions** with descriptive, self-explanatory names  
-    Remove redundant or unused code**  
-    Improve structure and formatting** without changing functionality  
+    **Simplify complex logic** by breaking large functions into smaller, well-named units  
+    **Rename variables and functions** with descriptive, self-explanatory names  
+    **Remove redundant or unused code**  
+    **Improve structure and formatting** without changing functionality  
   Return the refactored code plus a concise summary of each change and its impact on readability."
   ```
 
