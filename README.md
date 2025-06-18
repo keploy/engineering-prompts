@@ -21,6 +21,7 @@ This repository contains prompt chains for the following domains:
 11. **System Monitoring & Debugging**
 12. **Web Development**
 13. **API Development**
+14. **Design a Scalable Sentiment Analysis Service**
 
 ---
 
@@ -494,4 +495,10 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
+  ```
+
+* **Design a Scalable Sentiment Analysis Service**
+  
+  ```text
+  "Design a sentiment analysis service using a pre-trained BERT model that classifies product reviews. The service should support real-time inference via API calls and         handle high user traffic. Consider RESTful API design, model deployment strategy, horizontal scaling, caching, and model retraining pipelines."
   ```
