@@ -37,15 +37,22 @@ Thank you for considering contributing to **Engineering Prompts**! We welcome co
 
 ---
 
-## Adding a New Use Case
+## Adding a New Use Case or Domain
 
-If you're adding a completely new use case that doesn't fit into the existing categories, follow these steps:
+#### If it fits into an existing domain:
+1. Navigate to the appropriate domain folder inside the `domains/` directory.
+2. Open its `README.md`.
+3. Add your new use case as a bullet point or sub-section in that file.
+4. Follow the existing formatting for consistency.
 
-1. **Find the right domain**
-   If it fits into an existing category, place it under the right domain section in **README.md**.
+#### If it's a completely new domain:
+1. Inside the `domains/` directory, create a new folder with a meaningful name (e.g., `mobile-development`).
+2. Inside that folder, create a `README.md` file.
+3. Add your use cases and prompts inside this new `README.md`.
+4. At the bottom of the main `README.md` (root level), add a new entry to the Table of Contents linking to your new domain:
 
-2. **Create a new section**
-   If it's a completely new use case and domain, add a new section at the bottom of the **README.md**.
+```md
+- [Mobile Development](domains/mobile-development/README.md)
 
 ---
 
