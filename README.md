@@ -160,6 +160,12 @@ This repository contains prompt chains for the following domains:
   "After refactoring the code, use Keploy to run automated tests to check if any regressions have been introduced. Set up Keploy to verify that the refactored code behaves as expected, ensuring that all existing functionalities remain intact. The tests should include integration tests to verify that API endpoints, data handling, and user interactions still function properly. Ensure that Keploy is set to compare the current behavior with previously recorded test cases to detect any discrepancies or regressions. Return the Keploy test configuration, test cases, and results showing the behavior of the refactored code."
   ```
 
+* **Concurrency & Multithreading**
+
+  ```text 
+  "Rewrite the following Python code using multithreading to parallelize I/O-bound operations. Ensure thread safety and measure performance gains. Use appropriate synchronization techniques if needed, and explain how concurrency improves efficiency in this context."
+  ```
+
 ---
 
 ### **2. CI/CD & DevOps**
@@ -495,9 +501,3 @@ This repository contains prompt chains for the following domains:
   ```text
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
   ```
-
-* **Concurrency & Multithreading**
-
-```text 
-  "Rewrite the following Python code using multithreading to parallelize I/O-bound operations. Ensure thread safety and measure performance gains. Use appropriate synchronization techniques if needed, and explain how concurrency improves efficiency in this context."
-```
