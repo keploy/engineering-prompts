@@ -42,8 +42,8 @@ This repository contains prompt chains for the following domains:
 
 * *Refactor Code for Better Readability*
 
-  text
-  ```Please review the provided code and identify areas where readability can be improved. Focus on simplifying complex functions, improving variable names, and removing redundant code. Return the refactored code and explain the changes made to improve readability.```
+  ```text
+  Please review the provided code and identify areas where readability can be improved. Focus on simplifying complex functions, improving variable names, and removing redundant code. Return the refactored code and explain the changes made to improve readability.```
   
 
 * *Translate Code from One Language to Another*
