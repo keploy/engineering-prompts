@@ -31,7 +31,8 @@ This repository contains prompt chains for the following domains:
 - **GitHub Repo Insight Generator**  
 
 ```text
-  "Generate a structured insight into any public GitHub repository using its metadata (e.g., stars, forks, issues, contributors, README content, and file structure). This helps developers quickly understand unfamiliar projects before contributing or refactoring."
+ "Take a public GitHub repository link and give a simple summary of what the project is about. Include basic details like stars, forks, issues, contributors, README info, and file structure. This will help new developers quickly understand the project before working on it."
+
   ```
 
 
