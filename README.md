@@ -370,21 +370,26 @@ This repository contains prompt chains for the following domains:
   ```text
   "Evaluate how the provided {website/app} adapts to various viewport sizes and orientations. Suggest UX/UI changes to improve layout flexibility and content readability on mobile, tablet, and desktop devices."
   ```
-* **Redesign Landing Page for Conversions with Code Samples**
+* **Review Wireframe for Visual Hierarchy**
 
   ```text
-  "Review the frontend code for the landing page of the provided {website/app}. Offer UX/UI design advice to optimize for conversions, focusing on clarity, visual hierarchy, and call-to-action placement. Provide specific suggestions and corrected code examples where needed."
+  "Review a provided UI wireframe and offer feedback on the visual hierarchy and element placement. Suggest improvements for clarity and user focus."
   ```
-* **Make Navigation More User-Friendly with Code Fixes**
+* **Make Navigation More User-Friendly**
 
   ```text
-  "Evaluate the frontend code for the navigation structure of the provided {website/app}. Propose UX/UI changes to make navigation more intuitive and accessible. List concrete recommendations and include corrected frontend code snippets."
+  "Evaluate the navigation structure of the provided {website/app}. Propose UI/UX changes to make navigation more intuitive and accessible. List concrete recommendations with examples."
   ```
 * **Strengthen Visual Consistency and Branding**
 
   ```text
   "Evaluate the frontend implementation for visual consistency and branding on the provided {website/app}. Recommend UX/UI improvements to align design elements with brand guidelines."
   ```
+* **Improve Visual Balance with Typography and Color**
+
+  ```text
+  "Analyze the visual balance created by typography and color on the provided {website/app}. Recommend improvements to font pairings, size, weight, and color contrasts for a more harmonious and professional look."
+  ```  
 ---
 
 ### **7. Security & Authentication**
