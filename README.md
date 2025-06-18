@@ -4,23 +4,32 @@ Welcome to the **Engineering Prompts** repository! This repository contains a co
 
 Each prompt chain is designed to build context for ChatGPT before executing a task. They can be used in **ChatGPT Queue** for bulk prompting, job, or task-focused automation.
 
-## Domains Covered
+## Features
 
-This repository contains prompt chains for the following domains:
+Comprehensive Prompt Library: Covers a wide range of engineering domains.
+Structured & Searchable: Prompts are categorized and tagged for easy navigation.
+Ready-to-Use Templates: Includes prompt templates and usage examples.
+Collaboration Friendly: Supports team contributions and versioning.
+Automation Integration: Designed for use with tools like ChatGPT Queue and CI/CD pipelines.
 
-1. **Code Refactoring & Development**
-2. **CI/CD & DevOps**
-3. **Database Management**
-4. **Cloud & Kubernetes**
-5. **Full-Stack Development**
-6. **UX/UI & Design**
-7. **Security & Authentication**
-8. **Event-Driven Architecture & Integration**
-9. **Content Creation & Marketing**
-10. **Infrastructure & System Administration**
-11. **System Monitoring & Debugging**
-12. **Web Development**
-13. **API Development**
+## Domain Overview & Example Use Cases
+This repository provides AI-powered prompt chains tailored for specific engineering domains. Each domain includes real-world use cases to help developers automate and accelerate common tasks.
+
+| **Domain**                         | **Example Use Cases**                                               |
+| ---------------------------------- | ------------------------------------------------------------------- |
+| **Code Refactoring & Development** | Code readability, language translation, debugging assistance        |
+| **CI/CD & DevOps**                 | CI/CD pipeline setup, deployment automation                         |
+| **Database Management**            | SQL query generation, database optimization                         |
+| **Cloud & Kubernetes**             | Cluster provisioning, cloud storage configuration                   |
+| **Full-Stack Development**         | Building web apps, API integration                                  |
+| **UX/UI & Design**                 | UI/UX enhancements, accessibility improvements                      |
+| **Security & Authentication**      | Security audits, JWT and OAuth2 implementation                      |
+| **Event-Driven Architecture**      | Kafka pipelines, webhook and third-party integrations               |
+| **Content Creation & Marketing**   | Portfolio writing, SEO content generation                           |
+| **Infrastructure & SysAdmin**      | Infrastructure as Code (IaC), serverless setup, system provisioning |
+| **System Monitoring & Debugging**  | Performance analysis, logging configuration                         |
+| **Web Development**                | Testing strategies, deployment pipelines                            |
+| **API Development**                | OpenAPI spec generation, curl/HTTP request building                 |
 
 ---
 
