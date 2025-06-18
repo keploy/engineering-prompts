@@ -21,6 +21,7 @@ This repository contains prompt chains for the following domains:
 11. **System Monitoring & Debugging**
 12. **Web Development**
 13. **API Development**
+14. **AI/ML Ops**
 
 ---
 
@@ -495,3 +496,21 @@ This repository contains prompt chains for the following domains:
   ```text
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
   ```
+
+
+### **14.AI/ML Ops**
+
+- **Set Up ML Model Monitoring**
+```text
+  Design a system to monitor the performance and drift of a deployed machine learning model. Include steps for collecting model metrics, setting up alerts, and visualizing results. Return a sample configuration and explanation.
+```
+
+
+- **Automate ML Pipeline Deployment**
+```text
+  Create a pipeline to automate the training, evaluation, and deployment of a machine learning model using {tool/framework}. Return the pipeline definition and instructions for setup.
+```
+- **Explain Model Interpretability Techniques**
+```text
+  Explain the key techniques for interpreting and explaining machine learning model predictions, such as SHAP, LIME, or feature importance. Provide example code for one technique.
+```
