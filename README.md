@@ -497,66 +497,66 @@ This repository contains prompt chains for the following domains:
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
   ```
 
+
 ### **14. Agentic AI**
 
-1. **Design a Multi-Agent Workflow**
-
+1. **Design a Multi-Agent Workflow**  
    ```text
-   "Outline a multi-agent workflow for {task}, defining each agent’s role (e.g., DataCollector, Planner, Executor, Verifier), their inputs/outputs, and how they communicate. Provide a sequence diagram or step-by-step description."
-   ```
+   "Outline a multi-agent workflow for {task} using frameworks like LangGraph or CrewAI. Define each agent’s role (e.g., DataCollector, Planner, Executor, Verifier), their inputs/outputs, and how they communicate. Provide a sequence diagram or step-by-step description."
+   ``` 
 
 2. **Implement an Agent with Memory**
 
    ```text
-   "Show me how to implement an agent that persists its conversation history and key facts in a vector database (e.g., ChromaDB). Include code snippets for saving, retrieving, and integrating memory into prompts."
+   "Show me how to implement an agent in Autogen that persists conversation history and key facts in ChromaDB. Include code snippets (e.g., using the langchain or CrewAI SDK) for saving, retrieving, and integrating memory into prompts."
    ```
 
 3. **Agent Task Delegation Strategy**
 
    ```text
-   "Given a high-level goal (e.g., ‘Analyze market trends and generate a summary report’), write a prompt chain that breaks it into subtasks, assigns them to specialized agents, and then aggregates their outputs."
+   "Given a high-level goal (e.g., ‘Analyze market trends and generate a summary report’), write a prompt chain that uses LangGraph to break it into subtasks, assigns them to specialized agents, and then aggregates their outputs."
    ```
 
 4. **Error Handling & Recovery in Agents**
 
    ```text
-   "Demonstrate how to detect and handle failures in an autonomous agent pipeline (e.g., a web-scraping agent times out). Provide code or prompt templates for retry logic, fallback strategies, and alerting."
+   "Demonstrate how to detect and handle failures in an autonomous agent pipeline built with CrewAI (e.g., a web-scraping agent times out). Provide prompt or code templates for retry logic, fallback strategies, and alerting."
    ```
 
 5. **Evaluate Agent Performance Metrics**
 
    ```text
-   "Define a set of quantitative and qualitative metrics (e.g., task completion rate, average response time, accuracy) to evaluate an autonomous agent’s performance, and show how to log and visualize these metrics."
+   "Define quantitative and qualitative metrics (e.g., task completion rate, avg. response time, accuracy) to evaluate an autonomous agent’s performance in Autogen, and show how to log and visualize these using a monitoring framework like Prometheus or Grafana."
    ```
 
-6. **Agent-Orchestration with LangGraph (or similar)**
+6. **Agent Orchestration with LangGraph**
 
    ```text
-   "Write a LangGraph (or CrewAI) configuration that orchestrates three agents—ResearchAgent, AnalysisAgent, and NotificationAgent—with dependencies and data passing defined."
+   "Write a LangGraph configuration that orchestrates three agents—ResearchAgent, AnalysisAgent, and NotificationAgent—with dependencies and data passing defined. Include sample YAML or JSON."
    ```
 
 7. **Secure Agent Actions**
 
    ```text
-   "Explain best practices for sandboxing or restricting file, network, and system access for autonomous agents. Provide examples of how to configure permissions or use containers to enforce them."
+   "Explain best practices for sandboxing or restricting file, network, and system access for agents running under CrewAI. Provide examples of how to configure Docker containers or Kubernetes PodSecurityPolicies to enforce them."
    ```
 
 8. **Dynamic Prompt Refinement**
 
    ```text
-   "Show how an agent can use its own logs or feedback loop to refine its prompts over time—e.g., if its summaries are too verbose, adjust the prompt to be more concise. Include code or pseudo-code."
+   "Show how an Autogen agent can use its own logs or feedback loop to refine its prompts over time—e.g., if its summaries are too verbose, adjust the prompt to be more concise. Include code or pseudo-code in Python."
    ```
 
 9. **Integrate External APIs in Agents**
 
    ```text
-   "Create a prompt template and runtime code for an agent that fetches real-time stock prices from an external API (e.g., Alpha Vantage), processes them, and makes buy/sell decisions."
+   "Create a prompt template and runtime code for a LangGraph agent that fetches real-time stock prices from Alpha Vantage, processes them, and makes buy/sell decisions. Show how to plug in API keys and error handling."
    ```
 
 10. **End-to-End Agentic AI Demo**
 
     ```text
-    "Compose a high-level README or tutorial that walks through building, testing, and deploying an agentic AI system: from local development, through unit/integration tests (using Keploy), to production orchestration and monitoring."
+    "Compose a high-level README or tutorial that walks through building, testing (using Keploy), and deploying an agentic AI system with CrewAI or Autogen: from local development, through CI/CD, to production orchestration and monitoring."
     ```
 
-Feel free to adapt these to your specific toolchain or use case!
+
