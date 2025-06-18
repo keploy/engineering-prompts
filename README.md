@@ -356,6 +356,12 @@ This repository contains prompt chains for the following domains:
   "Set up Keploy in your full-stack application to test both the backend and frontend after an update. Configure Keploy for automatic integration testing, focusing on testing API endpoints, data handling, and the interaction between the frontend and backend. Ensure that Keploy is set to capture all changes in the API response, including edge cases, and validate that the frontend works correctly with the updated backend. Return the setup configuration and steps to trigger Keploy for testing."
   ```
 
+* **Develop a Full-Stack Mobile Application**
+
+  ```text
+  "Create a full-stack mobile application using React Native for the frontend and Node.js with Express for the backend. Implement user authentication, a RESTful API for data management, and real-time updates using WebSockets. Return the project structure, key code snippets, and setup instructions for both frontend and backend."
+  ```
+
 ---
 
 ### **6. UX/UI & Design**
