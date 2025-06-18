@@ -495,3 +495,9 @@ This repository contains prompt chains for the following domains:
   ```text
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
   ```
+
+* **Concurrency & Multithreading**
+
+```text 
+  "Rewrite the following Python code using multithreading to parallelize I/O-bound operations. Ensure thread safety and measure performance gains. Use appropriate synchronization techniques if needed, and explain how concurrency improves efficiency in this context."
+```
