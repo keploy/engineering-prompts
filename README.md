@@ -24,7 +24,7 @@ This repository contains prompt chains for the following domains:
 
 ---
 
-## Use Cases and Prompts
+## Prompts by Domain
 
 ### **1. Code Refactoring & Development**
 
@@ -49,7 +49,7 @@ This repository contains prompt chains for the following domains:
 * **Provide Code Explanations**
 
   ```text
-  "Please analyze the provided code and explain its functionality step-by-step. Include explanations for each major part of the code and why it’s necessary. Keep the explanation clear and concise."
+  "Please analyze the provided code and explain its functionality step-by-step. Include explanations for each major part of the code and why it's necessary. Keep the explanation clear and concise."
   ```
 
 * **Generate Git Commit Messages**
@@ -405,7 +405,7 @@ This repository contains prompt chains for the following domains:
 * **Create a Personal Portfolio Website**
 
   ```text
-  "Help me build a personal portfolio website. The site should include sections for my bio, projects, skills, and contact information. Make sure it’s responsive and easy to navigate. Return the basic HTML/CSS/JS code for the website."
+  "Help me build a personal portfolio website. The site should include sections for my bio, projects, skills, and contact information. Make sure it's responsive and easy to navigate. Return the basic HTML/CSS/JS code for the website."
   ```
 
 * **Write SEO-Optimized Blog Content**
