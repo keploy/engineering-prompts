@@ -28,6 +28,13 @@ This repository contains prompt chains for the following domains:
 
 ### **1. Code Refactoring & Development**
 
+- **GitHub Repo Insight Generator**  
+
+```text
+  "Generate a structured insight into any public GitHub repository using its metadata (e.g., stars, forks, issues, contributors, README content, and file structure). This helps developers quickly understand unfamiliar projects before contributing or refactoring."
+  ```
+
+
 * **Refactor Code for Better Readability**
 
   ```text
@@ -360,6 +367,12 @@ This repository contains prompt chains for the following domains:
 
 ### **6. UX/UI & Design**
 
+**Modernize an Outdated App UI**
+
+```text
+"You are given screenshots of an outdated mobile app UI. Suggest modern design improvements based on current design trends, material design guidelines, and usability best practices."
+```
+
 * **Provide UX/UI Design Advice**
 
   ```text
@@ -449,6 +462,13 @@ This repository contains prompt chains for the following domains:
 ---
 
 ### **12. Web Development**
+
+**Build a Dark/Light Mode Toggle**
+
+```text
+"Add a dark/light mode switcher to a website using CSS variables and JavaScript. Ensure transitions are smooth and all elements follow the selected theme accurately."
+```
+
 
 * **Write Tests for Front-End Components**
 
