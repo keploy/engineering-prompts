@@ -456,6 +456,61 @@ This repository contains prompt chains for the following domains:
   "Write unit and integration tests for the provided front-end components using {testing_framework}. Ensure the tests cover all major use cases and edge cases. Return the test code with explanations."
   ```
 
+
+* **Implement Theme Switching with State Persistence**  
+  
+  ```text
+  "Provide a React or Next.js component to toggle between light and dark modes. Use CSS variables and persist user preference in `localStorage` or `cookies`, ensuring no hydration mismatch on rehydration."
+  ```
+
+* **Secure REST API Authentication Flow using JWT**
+
+  ```text
+  "Generate backend Express.js code to handle user login and registration using hashed passwords with bcrypt. Return a signed JWT on success and validate it via middleware for protected routes."
+  ```
+
+* **Generate a Scalable Folder Structure for a Full-Stack MERN App**
+
+  ```text  
+  "Design a scalable project structure for a MERN stack application, separating concerns like routes, controllers, services, models, and utilities. Include reasoning for each folder."
+  ```
+
+* **Optimize Frontend Performance in a React Application**  
+
+  ```text
+  "List concrete strategies and implement React code snippets to improve performance using memoization (`React.memo`, `useMemo`), lazy loading (`React.lazy`), and bundle splitting."
+  ```
+
+* **Implement Infinite Scrolling with Throttling and Pagination**  
+  
+  ```text
+  "Generate a React component to implement infinite scrolling on a blog post feed. Use intersection observer or scroll event handlers with throttling and server-side pagination."
+  ```
+
+* **Design a CMS-Agnostic Blog Template** 
+
+  ```text 
+  "Generate reusable and CMS-agnostic frontend components (in React/Next.js or HTML/Alpine.js) that can dynamically display blog post content using Markdown, MDX, or CMS API responses (e.g., Sanity or Contentful)."
+  ```
+
+* **Write Access-Control Middleware for Role-Based Routing**  
+  
+  ```text
+  "Provide middleware logic for a Node.js backend that implements role-based access control (RBAC). Include route protection for Admin, Editor, and Public user roles."
+  ```
+
+* **Implement Secure File Upload Handling in Express.js** 
+
+  ```text 
+  "Create a secure Express route using `multer` to handle image uploads with MIME type filtering, file size restrictions, and S3 bucket integration."
+  ```
+
+* **Transform JSON Schema to Form UI in React**  
+
+  ```text
+  "Generate a prompt chain or code logic that takes a JSON schema definition and renders a corresponding React form with input validation, field grouping, and dynamic rendering."
+  ```
+
 ---
 
 ### **13. API Development**
