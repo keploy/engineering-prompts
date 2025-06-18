@@ -365,7 +365,26 @@ This repository contains prompt chains for the following domains:
   ```text
   "Provide UX/UI design recommendations for the provided {website/app}. Focus on improving usability, accessibility, and aesthetics. Return a list of specific design improvements with examples where necessary."
   ```
+* **Optimize Viewport and Layout Adaptation**
 
+  ```text
+  "Evaluate how the provided {website/app} adapts to various viewport sizes and orientations. Suggest UX/UI changes to improve layout flexibility and content readability on mobile, tablet, and desktop devices."
+  ```
+* **Redesign Landing Page for Conversions with Code Samples**
+
+  ```text
+  "Review the frontend code for the landing page of the provided {website/app}. Offer UX/UI design advice to optimize for conversions, focusing on clarity, visual hierarchy, and call-to-action placement. Provide specific suggestions and corrected code examples where needed."
+  ```
+* **Make Navigation More User-Friendly with Code Fixes**
+
+  ```text
+  "Evaluate the frontend code for the navigation structure of the provided {website/app}. Propose UX/UI changes to make navigation more intuitive and accessible. List concrete recommendations and include corrected frontend code snippets."
+  ```
+* **Strengthen Visual Consistency and Branding**
+
+  ```text
+  "Evaluate the frontend implementation for visual consistency and branding on the provided {website/app}. Recommend UX/UI improvements to align design elements with brand guidelines."
+  ```
 ---
 
 ### **7. Security & Authentication**
