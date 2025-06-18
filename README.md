@@ -368,7 +368,7 @@ This repository contains prompt chains for the following domains:
 
 * **Design for inclusivity**
   ```text
-  "Choose an existing popular app or website (e.g., a social media platform, an e-commerce site, or a news portal) and redesign a specific section or feature to be more inclusive and accessible for users with a particular disability (e.g., visual impairment, motor impairment, cognitive disability)."
+  "Choose an existing popular app or website (e.g., a social media platform, an e-commerce site, or a news portal) and redesign a specific section or feature to be more inclusive and accessible for users with a particular disability (e.g., visual impairment, motor impairment, Cognitive disability)."
   ```
 ---
 
