@@ -468,13 +468,54 @@ This repository contains prompt chains for the following domains:
   ```text
   "Generate a blog post on {topic} optimized for SEO. Use keyword research to include high-traffic keywords naturally, structure the post with headings and subheadings, and ensure it is engaging and informative. Return the content with SEO suggestions."
   ```
+  
+* **Design a Social Media Content Calendar**
 
+  ```text
+  "Create a 30-day content calendar for social media marketing focused on {industry or brand}. Include post ideas for Instagram, LinkedIn, Twitter, and Facebook, along with captions, hashtags, and recommended posting times."
+  ```
+  
 * **Generate LinkedIn Summary and Job Descriptions**
 
   ```text
   "Generate a compelling LinkedIn summary and job description based on the following details: {job_title}, {skills}, {experience}. Ensure the summary is concise, professional, and highlights key achievements."
   ```
+  
+* **Create a Content Strategy for YouTube Channel Growth**
+  
+  ```text
+  "Help me develop a 3-month content strategy for a YouTube channel about {niche}. Include video ideas, SEO titles, descriptions, and tips to improve watch time and subscriber growth."
+  ```
 
+* **Generate Email Marketing Campaign Content**
+  
+  ```text
+  "Generate a sequence of 5 marketing emails for a {product/service} launch. Each email should have a specific goal (awareness, interest, decision, action) and include an engaging subject line, body copy, and CTA."
+  ```
+  
+* **Create Infographic Content for Marketing**
+  
+  ```text
+  "Generate content and layout suggestions for an infographic on {topic}. Include key statistics, headings, concise text blocks, and suggestions for visuals and icons."
+  ```
+  
+* **Write a Brand Story for Marketing Purposes**
+  
+  ```text
+  "Craft a compelling brand story for {company/brand name}. Include the origin, mission, values, and vision. The tone should resonate with {target audience} and be suitable for use on a website or promotional material."
+  ```
+   
+* **Develop Ad Copy for a Google/Facebook Ads Campaign**
+  
+  ```text
+  "Write 3 variations of ad copy for a Google or Facebook Ads campaign promoting {product/service}. Include strong hooks, benefits, and calls to action. Tailor the tone for {audience type}."
+  ```
+  
+* **Generate Podcast Episode Topics and Scripts**
+  
+  ```text
+  "Generate a list of 10 podcast episode topics on {theme/niche}. For one of them, provide a detailed script outline including intro, segment breakdowns, key talking points, and closing remarks."
+  ```
 ---
 
 ### **10. Infrastructure & System Administration**
