@@ -21,6 +21,7 @@ This repository contains prompt chains for the following domains:
 11. **System Monitoring & Debugging**
 12. **Web Development**
 13. **API Development**
+14. **Studying Research Papers efficiently**
 
 ---
 
@@ -495,3 +496,8 @@ This repository contains prompt chains for the following domains:
   ```text
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
   ```
+* **Studying Research Papers effeciently**  
+
+```text
+"Go though the uploaded paper in the pdf and explain it, include context and backgroud study of the paper with explaining terminologies properly. Then Focus on explaining Novelty of the paper and suggest future developments ca be made or furture directions of research."
+```
