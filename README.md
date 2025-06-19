@@ -375,6 +375,14 @@ This repository contains prompt chains for the following domains:
   ```text
   "Provide a list of security best practices for {application_type}. Focus on areas like authentication, authorization, data protection, and secure coding practices. Return actionable advice with examples where necessary."
   ```
+  * **Secure Code Review**
+    ```text
+  "Review the following code for security vulnerabilities, including OWASP Top 10 issues like injection, broken access control, or sensitive data exposure. Summarize the issues and suggest specific fixes. Use code blocks in the response."
+  ```
+  * **Threat Modeling**
+  ```text
+  "Act as a security architect. Given the following system description, perform a STRIDE threat model analysis. List threats under each STRIDE category and suggest mitigations for each."
+  ```
 
 * **Implement JWT-Based Authentication**
 
