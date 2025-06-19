@@ -252,6 +252,23 @@ This repository contains prompt chains for the following domains:
 
 ### **3. Database Management**
 
+* **Detect & Filter Redundant Data in PostgreSQL**
+
+  ```text
+  "Given the following PostgreSQL table structure: <Table columns with constraints>
+
+  I suspect redundant or repeated data might be coming from a process that re-inserts the same ______, ________ and ________ combination multiple times.
+
+  Write a SQL query to:
+
+  - Identify all such repeated entries.
+  - Filter out and create the new view without the duplicate entries.
+  - Create a reusable filter CTL query for documentation in the future use.
+  - Generate a delete statement that removes the duplicates but retains one unique record from each group.**
+
+  Provide the SQL in a safe and modular way so I can review duplicates before deletion."
+  ```
+
 * **Generate SQL Queries**
 
   ```text
