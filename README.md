@@ -355,6 +355,11 @@ This repository contains prompt chains for the following domains:
   ```text
   "Set up Keploy in your full-stack application to test both the backend and frontend after an update. Configure Keploy for automatic integration testing, focusing on testing API endpoints, data handling, and the interaction between the frontend and backend. Ensure that Keploy is set to capture all changes in the API response, including edge cases, and validate that the frontend works correctly with the updated backend. Return the setup configuration and steps to trigger Keploy for testing."
   ```
+* **Deploy a Full-Stack Django + React App Using Docker and Nginx**
+  
+  ```text
+  "Create a production-ready deployment setup for a full-stack web application using Django for backend and React for frontend. Use Docker to containerize both the frontend and backend services, and configure Nginx as a reverse proxy to serve the React app and route API requests to Django. Return the Dockerfiles, docker-compose configuration, Nginx configuration, and deployment instructions."
+  ```
 
 ---
 
