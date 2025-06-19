@@ -456,6 +456,10 @@ This repository contains prompt chains for the following domains:
   "Write unit and integration tests for the provided front-end components using {testing_framework}. Ensure the tests cover all major use cases and edge cases. Return the test code with explanations."
   ```
 
+* **IMPLEMENT ADVANCED FRONTEND PERFORMANCE OPTIMIZATION**
+    ```text
+  "Optimize the provided web application for maximum performance and Core Web Vitals compliance. Implement advanced techniques including code splitting with dynamic imports, tree shaking, bundle analysis and optimization, image optimization with WebP/AVIF formats, lazy loading with Intersection Observer API, and critical CSS extraction. Add performance monitoring with Real User Monitoring (RUM), implement resource hints (preload, prefetch, preconnect), optimize font loading strategies, and minimize JavaScript execution time. Target metrics: LCP < 2.5s, FID < 100ms, CLS < 0.1, and overall Lighthouse score > 95."
+  ```
 ---
 
 ### **13. API Development**
