@@ -358,7 +358,7 @@ This repository contains prompt chains for the following domains:
 * **Integrate an AI Text Generation API into a Full-Stack App**
 
   ```text
-  "Integrate an AI API such as OpenAI or Hugging Face into a full-stack application with Django and React. Set up the backend to handle API requests and the frontend to interact with the model for generating AI-powered responses. Return the complete code for integration."
+  "Integrate an AI API such as OpenAI or Hugging Face into a full-stack application with Django and React. Set up the backend to handle text generation requests using the API, and configure the frontend to capture user input and display AI-generated responses in real time. Return the complete code for integration."
   ```
 
 ---
