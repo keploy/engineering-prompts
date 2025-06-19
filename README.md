@@ -49,7 +49,7 @@ This repository contains prompt chains for the following domains:
 * **Provide Code Explanations**
 
   ```text
-  "Please analyze the provided code and explain its functionality step-by-step. Include explanations for each major part of the code and why it’s necessary. Keep the explanation clear and concise."
+  "Please analyze the provided code and explain its functionality step-by-step. Include explanations for each major part of the code and why it's necessary. Keep the explanation clear and concise."
   ```
 
 * **Generate Git Commit Messages**
@@ -405,7 +405,7 @@ This repository contains prompt chains for the following domains:
 * **Create a Personal Portfolio Website**
 
   ```text
-  "Help me build a personal portfolio website. The site should include sections for my bio, projects, skills, and contact information. Make sure it’s responsive and easy to navigate. Return the basic HTML/CSS/JS code for the website."
+  "Help me build a personal portfolio website. The site should include sections for my bio, projects, skills, and contact information. Make sure it's responsive and easy to navigate. Return the basic HTML/CSS/JS code for the website."
   ```
 
 * **Write SEO-Optimized Blog Content**
@@ -459,6 +459,12 @@ This repository contains prompt chains for the following domains:
 ---
 
 ### **13. API Development**
+
+* **Design and Implement Comprehensive API Gateway for Microservices Architecture**
+
+  ```text
+  "Design and implement a comprehensive API Gateway for microservices architecture using {gateway_framework} (Kong, AWS API Gateway, or custom solution). Implement advanced features including intelligent routing with service discovery, request/response transformation, rate limiting with sliding window algorithms, circuit breaker patterns, authentication/authorization middleware, request/response logging with correlation IDs, and API versioning strategies. Include health checks, load balancing, caching strategies, and monitoring with Prometheus/Grafana. Provide configuration for multiple environments (dev, staging, prod) with environment-specific settings and security policies."
+  ```
 
 * **Generate OpenAPI Schema from Source Code**
 
