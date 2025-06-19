@@ -23,8 +23,6 @@ This repository contains prompt chains for the following domains:
 13. **API Development**
 14. **AI / ML**
 
----
-
 ## Use Cases and Prompts
 
 ### **1. Code Refactoring & Development**
