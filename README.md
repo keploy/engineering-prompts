@@ -21,6 +21,7 @@ This repository contains prompt chains for the following domains:
 11. **System Monitoring & Debugging**
 12. **Web Development**
 13. **API Development**
+14. **Data Science & Machine Learning**
 
 ---
 
