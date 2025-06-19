@@ -303,7 +303,7 @@ This repository contains prompt chains for the following domains:
 * **Database Migration Strategy with Zero-Downtime Deployment**
 
   ```text
-  "Design a database migration strategy for {database_type} that ensures zero-downtime deployment. Include rollback procedures, data validation checkpoints, and gradual migration techniques. Account for large datasets and concurrent user access during migration. Return the migration scripts with deployment orchestration steps."
+  "Design a comprehensive database migration strategy for {database_type} that ensures zero-downtime deployment. First assess the current system architecture and constraints, then provide a migration plan that includes: rollback procedures, data validation checkpoints, gradual migration techniques, infrastructure requirements, and deployment orchestration steps. Account for various scenarios including large datasets, concurrent user access, limited infrastructure, and different deployment environments. Provide both high-level strategy and detailed implementation scripts."
   ---
 
 ### **4. Cloud & Kubernetes**
