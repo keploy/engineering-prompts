@@ -366,6 +366,24 @@ This repository contains prompt chains for the following domains:
   "Provide UX/UI design recommendations for the provided {website/app}. Focus on improving usability, accessibility, and aesthetics. Return a list of specific design improvements with examples where necessary."
   ```
 
+* **Evaluate Mobile Responsiveness**
+
+  ```text
+  "Evaluate the mobile responsiveness of the given {website/app}. Suggest layout or style adjustments for optimal viewing across different screen sizes, including phones and tablets."
+  ```
+
+* **Improve Onboarding Experience**
+
+  ```text
+  "Analyze the user onboarding process for {website/app}. Recommend improvements to reduce friction and increase user retention. Provide mockup ideas or flow adjustments if applicable."
+  ```
+
+* **Color & Typography Optimization**
+
+  ```text
+  "Audit the color scheme and typography of the {website/app}. Suggest changes to improve readability, contrast ratios, and visual consistency based on WCAG accessibility guidelines."
+  ```
+
 ---
 
 ### **7. Security & Authentication**
@@ -436,6 +454,18 @@ This repository contains prompt chains for the following domains:
   "Create a serverless architecture using Google Cloud Functions for {task}. The functions should trigger based on specific events and return the necessary code with setup instructions."
   ```
 
+* **Create Terraform Code for AWS Resources**
+
+  ```text
+  "Write Terraform configuration files to provision AWS resources (EC2, RDS, S3, etc.) for {application}. Include variable support and a README with deployment instructions."
+  ```
+
+* **Automate Backup & Disaster Recovery**
+
+  ```text
+  "Design an automated backup and disaster recovery plan for {infrastructure_type}. Include scripts/configuration to back up databases and VM instances with scheduled recovery points."
+  ```
+
 ---
 
 ### **11. System Monitoring & Debugging**
@@ -446,6 +476,24 @@ This repository contains prompt chains for the following domains:
   "Analyze the performance of the production system and identify bottlenecks. Suggest and implement optimizations to improve speed, reduce memory usage, and increase scalability. Return the optimized code and explanations."
   ```
 
+* **Log Analysis with ELK Stack**
+
+  ```text
+  "Configure log aggregation using the ELK (Elasticsearch, Logstash, Kibana) stack for {application/system}. Show how to filter and visualize critical events for debugging."
+  ```
+
+* **Create Health Check and Uptime Monitoring**
+
+  ```text
+  "Write health check endpoints and set up uptime monitoring using {tool like Pingdom, UptimeRobot}. Include alerting mechanisms and retry logic."
+  ```
+
+* **Analyze Memory Leaks in Node.js App**
+
+  ```text
+  "Identify and debug memory leaks in the provided Node.js application. Return optimized code, heap snapshot instructions, and memory profiling techniques."
+  ```
+
 ---
 
 ### **12. Web Development**
@@ -454,6 +502,24 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Write unit and integration tests for the provided front-end components using {testing_framework}. Ensure the tests cover all major use cases and edge cases. Return the test code with explanations."
+  ```
+
+* **Optimize Front-End Performance**
+
+  ```text
+  "Audit the performance of the given website. Suggest and implement optimizations such as lazy loading, code splitting, and CDN usage. Include metrics before and after."
+  ```
+
+* **SEO Optimization Checklist**
+
+  ```text
+   "Generate an SEO optimization checklist for {website}. Analyze meta tags, sitemap, robots.txt, image alt tags, structured data, and page speed. Return suggestions and corrected HTML snippets."
+  ```
+
+* **Secure Web App with Best Practices**
+
+  ```text
+  "Identify and fix security vulnerabilities in the provided web app code. Include fixes for XSS, CSRF, CORS misconfigurations, and session handling flaws."
   ```
 
 ---
