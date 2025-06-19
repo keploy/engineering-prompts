@@ -1,8 +1,11 @@
 # Engineering Prompts
 
-Welcome to the **Engineering Prompts** repository! This repository contains a collection of **AI prompt chains** organized by different domains, primarily for assisting developers in various tasks such as code refactoring, CI/CD setup, database management, cloud, Kubernetes deployment, web development, API Development, security, and more.
 
-Each prompt chain is designed to build context for ChatGPT before executing a task. They can be used in **ChatGPT Queue** for bulk prompting, job, or task-focused automation.
+> 🚀 Welcome to the **Engineering Prompts** repository!
+
+This repository contains a curated collection of **AI prompt chains** organized by domain. These prompts assist developers in a wide range of tasks including code refactoring, CI/CD setup, database management, cloud deployment, Kubernetes, web development, API building, security tasks, and more.
+
+Each prompt chain is designed to build context for ChatGPT before executing a task. They can also be used in **ChatGPT Queue** for bulk prompts, job automation, or task-specific workflows.
 
 ## Domains Covered
 
