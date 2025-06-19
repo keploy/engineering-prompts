@@ -159,6 +159,12 @@ This repository contains prompt chains for the following domains:
   ```text
   "After refactoring the code, use Keploy to run automated tests to check if any regressions have been introduced. Set up Keploy to verify that the refactored code behaves as expected, ensuring that all existing functionalities remain intact. The tests should include integration tests to verify that API endpoints, data handling, and user interactions still function properly. Ensure that Keploy is set to compare the current behavior with previously recorded test cases to detect any discrepancies or regressions. Return the Keploy test configuration, test cases, and results showing the behavior of the refactored code."
   ```
+  
+* **Generate GitHub Issue Templates Based on Project Type
+  ```text
+  "Generate a GitHub issue template for a {project_type} (e.g., MERN stack app, microservice, machine learning pipeline). The template should include sections like Summary, Steps to Reproduce, Expected Behavior, Actual Behavior, Logs, and Environment."
+  ```
+
 
 ---
 
