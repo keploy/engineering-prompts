@@ -49,7 +49,7 @@ This repository contains prompt chains for the following domains:
 * **Provide Code Explanations**
 
   ```text
-  "Please analyze the provided code and explain its functionality step-by-step. Include explanations for each major part of the code and why it’s necessary. Keep the explanation clear and concise."
+  "Please analyze the provided code and explain its functionality step-by-step. Include explanations for each major part of the code and why it's necessary. Keep the explanation clear and concise."
   ```
 
 * **Generate Git Commit Messages**
@@ -405,7 +405,7 @@ This repository contains prompt chains for the following domains:
 * **Create a Personal Portfolio Website**
 
   ```text
-  "Help me build a personal portfolio website. The site should include sections for my bio, projects, skills, and contact information. Make sure it’s responsive and easy to navigate. Return the basic HTML/CSS/JS code for the website."
+  "Help me build a personal portfolio website. The site should include sections for my bio, projects, skills, and contact information. Make sure it's responsive and easy to navigate. Return the basic HTML/CSS/JS code for the website."
   ```
 
 * **Write SEO-Optimized Blog Content**
@@ -454,6 +454,12 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Write unit and integration tests for the provided front-end components using {testing_framework}. Ensure the tests cover all major use cases and edge cases. Return the test code with explanations."
+  ```
+
+* **Audit Website for Accessibility Issues**
+
+  ```text
+  "Please review the provided website code and identify any accessibility issues according to WCAG guidelines. Suggest improvements for better accessibility, such as proper use of ARIA attributes, color contrast, keyboard navigation, and semantic HTML. Return a list of issues found and recommended code changes."
   ```
 
 ---
