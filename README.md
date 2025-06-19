@@ -49,7 +49,7 @@ This repository contains prompt chains for the following domains:
 * **Provide Code Explanations**
 
   ```text
-  "Please analyze the provided code and explain its functionality step-by-step. Include explanations for each major part of the code and why it’s necessary. Keep the explanation clear and concise."
+  "Please analyze the provided code and explain its functionality step-by-step. Include explanations for each major part of the code and why it's necessary. Keep the explanation clear and concise."
   ```
 
 * **Generate Git Commit Messages**
@@ -405,7 +405,7 @@ This repository contains prompt chains for the following domains:
 * **Create a Personal Portfolio Website**
 
   ```text
-  "Help me build a personal portfolio website. The site should include sections for my bio, projects, skills, and contact information. Make sure it’s responsive and easy to navigate. Return the basic HTML/CSS/JS code for the website."
+  "Help me build a personal portfolio website. The site should include sections for my bio, projects, skills, and contact information. Make sure it's responsive and easy to navigate. Return the basic HTML/CSS/JS code for the website."
   ```
 
 * **Write SEO-Optimized Blog Content**
@@ -454,6 +454,12 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Write unit and integration tests for the provided front-end components using {testing_framework}. Ensure the tests cover all major use cases and edge cases. Return the test code with explanations."
+  ```
+
+* **Build Progressive Web App (PWA) with Advanced Service Worker Implementation**
+
+  ```text
+  "Develop a comprehensive Progressive Web App for {application_type} with advanced service worker functionality. Implement intelligent caching strategies (cache-first, network-first, stale-while-revalidate), offline data synchronization, background sync for failed requests, and push notification handling. Include web app manifest configuration, installability criteria, app shell architecture, and performance optimization techniques. Add IndexedDB for offline data storage, lazy loading for assets, and code splitting for optimal performance. Ensure the PWA scores 90+ on Lighthouse audit across all categories."
   ```
 
 ---
