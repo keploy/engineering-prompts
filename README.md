@@ -1,26 +1,42 @@
+
 # Engineering Prompts
 
 Welcome to the **Engineering Prompts** repository! This repository contains a collection of **AI prompt chains** organized by different domains, primarily for assisting developers in various tasks such as code refactoring, CI/CD setup, database management, cloud, Kubernetes deployment, web development, API Development, security, and more.
 
 Each prompt chain is designed to build context for ChatGPT before executing a task. They can be used in **ChatGPT Queue** for bulk prompting, job, or task-focused automation.
 
-## Domains Covered
+## 🔗 Quick Access
 
-This repository contains prompt chains for the following domains:
+- [Code Refactoring & Development](#1-code-refactoring--development)
+- [CI/CD & DevOps](#2-cicd--devops)
+- [Database Management](#3-database-management)
+- [Cloud & Kubernetes](#4-cloud--kubernetes)
+- [Full-Stack Development](#5-full-stack-development)
+- [UX/UI & Design](#6-uxui--design)
+- [Security & Authentication](#7-security--authentication)
+- [Event-Driven Architecture](#8-event-driven-architecture--integration)
+- [Content & Marketing](#9-content-creation--marketing)
+- [Infrastructure & System Administration](#10-infrastructure--system-administration)
+- [System Monitoring](#11-system-monitoring--debugging)
+- [Web Development](#12-web-development)
+- [API Development](#13-api-development)
 
-1. **Code Refactoring & Development**
-2. **CI/CD & DevOps**
-3. **Database Management**
-4. **Cloud & Kubernetes**
-5. **Full-Stack Development**
-6. **UX/UI & Design**
-7. **Security & Authentication**
-8. **Event-Driven Architecture & Integration**
-9. **Content Creation & Marketing**
-10. **Infrastructure & System Administration**
-11. **System Monitoring & Debugging**
-12. **Web Development**
-13. **API Development**
+---
+
+> 💡 Boost your developer productivity with reusable AI prompt chains, optimized for real-world engineering tasks.
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions to expand and improve the prompt library.  
+Please read our [contributing guidelines](./contributing.md) to get started.
+
+---
+
+## 📄 License
+
+This project is licensed under the [Apache 2.0 License](./LICENSE).
 
 ---
 
