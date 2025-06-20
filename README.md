@@ -159,6 +159,11 @@ This repository contains prompt chains for the following domains:
   ```text
   "After refactoring the code, use Keploy to run automated tests to check if any regressions have been introduced. Set up Keploy to verify that the refactored code behaves as expected, ensuring that all existing functionalities remain intact. The tests should include integration tests to verify that API endpoints, data handling, and user interactions still function properly. Ensure that Keploy is set to compare the current behavior with previously recorded test cases to detect any discrepancies or regressions. Return the Keploy test configuration, test cases, and results showing the behavior of the refactored code."
   ```
+* **Explain Java Inheritance with Code Example**
+
+  ```text
+  "Explain the concept of inheritance in Java using a code example with a base class and a derived class. Describe how method overriding works, and return the sample code along with a step-by-step explanation of how inheritance is applied."
+
 
 ---
 
@@ -495,7 +500,3 @@ This repository contains prompt chains for the following domains:
   ```text
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
   ```
-* **Explain Java Inheritance with Code Example**
-
-  ```text
-  "Explain the concept of inheritance in Java using a code example with a base class and a derived class. Describe how method overriding works, and return the sample code along with a step-by-step explanation of how inheritance is applied."
