@@ -161,9 +161,8 @@ This repository contains prompt chains for the following domains:
   ```
 * **Explain Java Inheritance with Code Example**
 
-  ```text
-  "Explain the concept of inheritance in Java using a code example with a base class and a derived class. Describe how method overriding works, and return the sample code along with a step-by-step explanation of how inheritance is applied."
-```
+```text
+"Explain the concept of inheritance in Java using a code example with a base class and a derived class. Describe how method overriding works, and return the sample code along with a step-by-step explanation of how inheritance is applied."
 
 ---
 
