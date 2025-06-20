@@ -495,3 +495,35 @@ This repository contains prompt chains for the following domains:
   ```text
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
   ```
+
+### **14. AI Applications & Intelligent Systems Prompts**
+
+* **AI Chatbots for Mental Health Support**
+
+  ```text
+  "How can AI-driven chatbots be personalized for mental health support, taking into account user emotion, conversation history, and therapy guidelines?"
+  ```
+
+* **Predict Student Learning Outcomes**
+
+  ```text
+"Design an AI model to predict student learning outcomes based on online behavior such as quiz performance, video engagement, and discussion activity."
+```
+
+* **Emergency Response Coordination using AI**
+
+  ```text
+"How can intelligent systems assist in real-time emergency response coordination by integrating data from sensors, communication networks, and geolocation services?"
+
+* **AI for Stock Trend Forecasting**
+
+  ```text
+"Develop a method using AI to forecast stock market trends based on real-time analysis of social media sentiment, financial news, and trading volumes."
+```
+
+* **AI in Sustainable Agriculture**
+
+  ```text
+"What role can AI play in optimizing sustainable agriculture in rural India by predicting crop yields, monitoring soil health, and automating irrigation systems?"
+```
+
