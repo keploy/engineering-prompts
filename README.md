@@ -164,14 +164,6 @@ This repository contains prompt chains for the following domains:
 ```text
 "Explain the concept of inheritance in Java using a code example with a base class and a derived class. Describe how method overriding works, and return the sample code along with a step-by-step explanation of how inheritance is applied."
 
----
-
-### **2. CI/CD & DevOps**
-
-* **Set up CI/CD Pipelines**
-
-  ```text
-  "Help set up a CI/CD pipeline for the project using {CI_tool}. The pipeline should include stages for building, testing, and deploying the application. Provide configuration files and explanations of each stage."
   ```
 
 * **Automate Code Formatting**
