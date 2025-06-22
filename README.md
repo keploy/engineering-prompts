@@ -456,6 +456,12 @@ This repository contains prompt chains for the following domains:
   "Write unit and integration tests for the provided front-end components using {testing_framework}. Ensure the tests cover all major use cases and edge cases. Return the test code with explanations."
   ```
 
+* **Create a Reusable Form Component in React**
+
+  ```text
+  "Create a reusable React form component that takes input configuration as props, such as (validation rules, field names, and types). Give an example of how you would use it to create sign-up and login forms. Explain form state handling and include code."
+  ```
+
 ---
 
 ### **13. API Development**
