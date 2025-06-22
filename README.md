@@ -408,6 +408,12 @@ This repository contains prompt chains for the following domains:
   "Help me build a personal portfolio website. The site should include sections for my bio, projects, skills, and contact information. Make sure it’s responsive and easy to navigate. Return the basic HTML/CSS/JS code for the website."
   ```
 
+* **Create platform-specific strategies development**
+
+```text
+"Evaluate the content strategy of the given {brand/website}. Suggest improvements for audience engagement, SEO, and brand voice. Provide actionable content ideas, platform-specific strategies, and examples to enhance reach and conversion."
+
+
 * **Write SEO-Optimized Blog Content**
 
   ```text
