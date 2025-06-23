@@ -324,7 +324,7 @@ This repository contains prompt chains for the following domains:
 * **Amazon S3 as a Static Website with CI/CD**
 
  ```text
-   "Show how to host a static website on Amazon S3 and automate deployment using GitHub Actions. Include IAM policy setup, bucket website configuration, and the workflow YAML for uploading files on push."
+   "Demonstrate how to host a static website on Amazon S3 and automate its deployment with GitHub Actions. Include S3 bucket website configuration, IAM policy setup, and a GitHub Actions workflow that uploads files on every push to the main branch."
   ```
 
 ---
