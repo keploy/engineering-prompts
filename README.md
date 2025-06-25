@@ -325,7 +325,7 @@ This repository contains prompt chains for the following domains:
 * **Kubernetes Observability Stack with Prometheus, Grafana, and Loki**
 
   ```text
-  "Help me deploy a complete observability stack (Prometheus, Grafana, Loki) in Kubernetes using Helm charts. Configure dashboards, alerts, and log aggregation. Provide the YAML and values files required for each component."
+  "Deploy a fully integrated observability stack in Kubernetes using Helm—configure Prometheus for metrics and alerts, Grafana for dashboards, and Loki for centralized log aggregation with all necessary YAML and values files.."
   ```
 
 ---
