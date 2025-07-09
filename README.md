@@ -390,7 +390,12 @@ This repository contains prompt chains for the following domains:
   ```text
   "Provide UX/UI design recommendations for the provided {website/app}. Focus on improving usability, accessibility, and aesthetics. Return a list of specific design improvements with examples where necessary."
   ```
+  * **UX/UI Review for Onboarding Flow**
 
+  ```text
+  "Evaluate the onboarding experience of the provided {website/app}. Suggest UX/UI improvements that enhance first-time user engagement, reduce friction, and promote task completion. Focus on clarity of instructions, visual hierarchy, button placement, and accessibility. Return actionable recommendations with examples where applicable."
+  ```
+  
 * **Provide Improvements to Redesign**
 
   ```text
