@@ -359,6 +359,11 @@ This repository contains prompt chains for the following domains:
   ```text
   "Set up Keploy in your full-stack application to test both the backend and frontend after an update. Configure Keploy for automatic integration testing, focusing on testing API endpoints, data handling, and the interaction between the frontend and backend. Ensure that Keploy is set to capture all changes in the API response, including edge cases, and validate that the frontend works correctly with the updated backend. Return the setup configuration and steps to trigger Keploy for testing."
   ```
+* **Implement Role-Based Access Control (RBAC) in a Full-Stack App**
+
+  ```text
+  "Implement role-based access control in a full-stack application using Django and React. Define roles like Admin, Editor, and Viewer. Restrict access to specific backend API routes and conditionally render frontend components based on roles. Return the role-check logic, middleware, and protected route implementation."
+  ```
 
 * **Build Production-Ready MERN Stack Application with Advanced Features**
 
