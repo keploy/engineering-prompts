@@ -351,7 +351,6 @@ This repository contains prompt chains for the following domains:
   ```
 
 * **Test Backend and Frontend for Regression Using Keploy**
-
   ```text
   "Set up Keploy in your full-stack application to test both the backend and frontend after an update. Configure Keploy for automatic integration testing, focusing on testing API endpoints, data handling, and the interaction between the frontend and backend. Ensure that Keploy is set to capture all changes in the API response, including edge cases, and validate that the frontend works correctly with the updated backend. Return the setup configuration and steps to trigger Keploy for testing."
   ```
@@ -360,6 +359,10 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Develop a comprehensive production-ready full-stack application using the MERN stack (MongoDB, Express.js, React, Node.js) with advanced features including user authentication with JWT and refresh tokens, role-based access control (RBAC), real-time notifications with Socket.io, file upload handling with AWS S3 integration, comprehensive error handling and logging, API rate limiting and security middleware, responsive design with Material-UI or Tailwind CSS, automated testing suite with Jest and Cypress, Docker containerization, CI/CD pipeline with GitHub Actions, and performance optimization techniques. Include proper project structure, environment configuration, database seeding, API documentation with Swagger, and deployment instructions for cloud platforms. Return the complete application architecture, code implementation, and deployment guide."
+
+* **Build a Flutter + Node.js Full-Stack App with ML Integration and Firebase Auth** 
+  ```text 
+  "Build a full-stack application with Flutter as the frontend and Node.js (Express) as the backend. Use Firebase Authentication for user login/signup and MongoDB for storing data. Integrate a pre-trained machine learning model via a Python API or hosted service (e.g., for recommendation, classification, or NLP). Ensure the frontend captures user input, sends it to the backend, triggers the ML model, and returns results to display in the UI. Return code for each layer along with setup instructions and architecture overview."
   ```
 
 ---
@@ -371,6 +374,28 @@ This repository contains prompt chains for the following domains:
   ```text
   "Provide UX/UI design recommendations for the provided {website/app}. Focus on improving usability, accessibility, and aesthetics. Return a list of specific design improvements with examples where necessary."
   ```
+
+* **Provide Improvements to Redesign**
+
+  ```text
+  "An app is not accessible to visually impaired users. Redesign the app to ensure full accessibility for all users. Consider navigation, screen reader compatibility, color contrast, and touch targets."
+  ```
+  
+* **Provide Acessible Color Palettes**
+
+  ```text
+  "Provide a set of accessible color palettes that comply with WCAG standards. The palettes should offer sufficient contrast and visual distinction for users with visual impairments. Return color combinations in hex codes and explain the accessibility rationale."
+  ```
+
+* **Audit UI for WCAG Compliance**
+  ```text
+  "Analyze the provided website or application UI and identify issues related to WCAG 2.1 accessibility compliance. Suggest specific changes to improve color contrast, keyboard navigation, screen reader support, and overall usability."
+  ```
+
+* **Create Animations using Framer Motion or GSAP**
+```text
+"Create animation strategies using Framer Motion or GSAP for enhancing user experience on{given_web_application}. Include code snippets for entrance animations, transitions, and hover effects."
+```
 
 ---
 
@@ -452,6 +477,16 @@ This repository contains prompt chains for the following domains:
   "Analyze the performance of the production system and identify bottlenecks. Suggest and implement optimizations to improve speed, reduce memory usage, and increase scalability. Return the optimized code and explanations."
   ```
 
+* **Integrate Prometheus and Grafana Dashboards**
+  ```text
+  "Set up Prometheus and Grafana to monitor a Node.js application. Include steps for exporting application metrics, configuring Prometheus scraping, and creating a custom dashboard in Grafana to visualize performance and error metrics."
+  ```
+
+* **Debug Memory Leaks in Node.js or Python**
+  ```text
+  "Help diagnose memory leaks in a Node.js/Python application. Analyze heap snapshots or memory usage patterns, suggest tools like `memory_profiler` or `clinic.js`, and provide steps to fix common causes of leaks."
+  ```
+
 ---
 
 ### **12. Web Development**
@@ -460,6 +495,11 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Write unit and integration tests for the provided front-end components using {testing_framework}. Ensure the tests cover all major use cases and edge cases. Return the test code with explanations."
+  ```
+
+* **Implement Lazy Loading of Components**
+  ```text
+  "Implement lazy loading in a React or Vue application to improve initial load time. Return code snippets using dynamic imports, explain how to apply it to routes or components, and describe the impact on performance."
   ```
 
 ---
@@ -500,4 +540,25 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
+  ```
+
+---
+### **14. Testing & Quality Assurance**
+
+* **Write Unit Testing for a Function**
+
+  ```text
+  "Write unit tests for the following function in {programming_language}: {function_name}. The tests using Jest or Mocha."
+  ```
+
+* **Set Up Integration Tests for REST APIs**
+
+  ```text
+  "Set up integration testing for the provided REST API using a testing framework like Supertest or Postman/Newman. Include tests for success cases, validation errors, and authentication flows."
+  ```
+
+* **Test REST APIs for Functional and Edge Cases**
+
+  ```text
+  "Write a comprehensive API test suite for the following RESTful endpoints using a tool like Postman, REST Assured, or Supertest. Include  tests for valid inputs, invalid inputs, edge cases, and authorization scenarios. Validate response status codes, payload structures, and headers. Return test scripts or collection exports along with a description of each test case."
   ```
