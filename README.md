@@ -521,13 +521,11 @@ This repository contains prompt chains for the following domains:
   "Help diagnose memory leaks in a Node.js/Python application. Analyze heap snapshots or memory usage patterns, suggest tools like `memory_profiler` or `clinic.js`, and provide steps to fix common causes of leaks."
   ```
 
-
 * **Generate Test Cases from Logs**
 
   ```text
   " Design an efficient test suite for the production environment to ensure stability, scalability, and minimal downtime. Include unit, integration, and stress test scenarios with explanations. Return test case examples and tools used."
   ```
-
 ---
 
 ### **12. Web Development**
@@ -597,6 +595,7 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "How can Keploy be used to capture and replay backend responses for APIs built with Spring Boot and AI/ML models (such as a spam/ham email classifier), ensuring consistent integration testing even when model outputs vary due to randomness or training state?"
+
   ```
 
 * **Automated Keploy Testing for AI APIs in CI/CD Pipelines**
@@ -605,7 +604,6 @@ This repository contains prompt chains for the following domains:
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. 
   Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
   ```
-
 
 * **Build a Text Classification Model Using Scikit-learn**
 
@@ -721,7 +719,7 @@ This repository contains prompt chains for the following domains:
 
 ---
 
-### **14. Testing & Quality Assurance**
+### **15. Testing & Quality Assurance**
 
 * **Write Unit Testing for a Function**
 
