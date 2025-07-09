@@ -21,6 +21,7 @@ This repository contains prompt chains for the following domains:
 11. **System Monitoring & Debugging**
 12. **Web Development**
 13. **API Development**
+14. **AI/ML Integration**
 
 ---
 
@@ -585,6 +586,21 @@ This repository contains prompt chains for the following domains:
 * **Keploy CI/CD Integration Setup**
 
   ```text
+  "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
+  ```
+
+---
+
+### **14. AI/ML Integration**
+
+* **Mocking AI/ML Output in Spring Boot APIs**
+
+  ```text
+  "How can Keploy be used to capture and replay backend responses for APIs built with Spring Boot and AI/ML models (such as a spam/ham email classifier), ensuring consistent integration testing even when model outputs vary due to randomness or training state?"
+ ```
+
+ 
+=======
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."  ```
 
 ### **14. AI / ML**
