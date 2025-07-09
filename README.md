@@ -597,25 +597,6 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "How can Keploy be used to capture and replay backend responses for APIs built with Spring Boot and AI/ML models (such as a spam/ham email classifier), ensuring consistent integration testing even when model outputs vary due to randomness or training state?"
- ```
-
- 
-=======
-  "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."  ```
-
-### **14. AI / ML**
-
-* **Build a Text Classification Model Using Scikit-learn**
-
-  ```text
-  "You're a Python ML assistant. Build a binary text classifier using Scikit-learn.
-  1. Load `sci.space` and `comp.graphics` from the 20 Newsgroups dataset.
-  2. Preprocess using `TfidfVectorizer` (stop words removed, max_df=0.7).
-  3. Split data 80/20.
-  4. Train a `LogisticRegression` model.
-  5. Evaluate with `classification_report`.
-  Return: commented code, sample output, and a suggestion for improvement."
-  ```
 
 * **Fine-Tune a BERT Model for Sentiment Analysis**
 
