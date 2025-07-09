@@ -351,9 +351,13 @@ This repository contains prompt chains for the following domains:
   ```
 
 * **Test Backend and Frontend for Regression Using Keploy**
-
   ```text
   "Set up Keploy in your full-stack application to test both the backend and frontend after an update. Configure Keploy for automatic integration testing, focusing on testing API endpoints, data handling, and the interaction between the frontend and backend. Ensure that Keploy is set to capture all changes in the API response, including edge cases, and validate that the frontend works correctly with the updated backend. Return the setup configuration and steps to trigger Keploy for testing."
+  ```
+
+* **Build a Flutter + Node.js Full-Stack App with ML Integration and Firebase Auth** 
+  ```text 
+  "Build a full-stack application with Flutter as the frontend and Node.js (Express) as the backend. Use Firebase Authentication for user login/signup and MongoDB for storing data. Integrate a pre-trained machine learning model via a Python API or hosted service (e.g., for recommendation, classification, or NLP). Ensure the frontend captures user input, sends it to the backend, triggers the ML model, and returns results to display in the UI. Return code for each layer along with setup instructions and architecture overview."
   ```
 
 ---
