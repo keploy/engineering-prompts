@@ -305,6 +305,13 @@ This repository contains prompt chains for the following domains:
   "Explain the concepts of multi-threading and concurrency in {programming_language}. Focus on thread management, race conditions, and synchronization techniques. Provide code examples where applicable."
   ```
 
+* **Create a Seed Script to Seed data to a database**
+
+  ```text
+  "Based on the schemas file, model file and service layer file I attached for the {a_table_in_the_database} and {a_specific_program_component}, please return a PostgreSQL seed script for the database. Please create realistic sample data"
+  ```
+
+---
 * **Database Migration Strategy with Zero-Downtime Deployment**
 
   ```text
