@@ -514,6 +514,14 @@ This repository contains prompt chains for the following domains:
 
 ---
 
+* **Generate Test Cases from Logs**
+
+  ```text
+  " Design an efficient test suite for the production environment to ensure stability, scalability, and minimal downtime. Include unit, integration, and stress test scenarios with explanations. Return test case examples and tools used."
+  ```
+
+---
+
 ### **12. Web Development**
 
 * **Write Tests for Front-End Components**
@@ -571,7 +579,6 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
-  
 
 ---
 ### **14. Testing & Quality Assurance**
