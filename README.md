@@ -160,7 +160,12 @@ This repository contains prompt chains for the following domains:
   "After refactoring the code, use Keploy to run automated tests to check if any regressions have been introduced. Set up Keploy to verify that the refactored code behaves as expected, ensuring that all existing functionalities remain intact. The tests should include integration tests to verify that API endpoints, data handling, and user interactions still function properly. Ensure that Keploy is set to compare the current behavior with previously recorded test cases to detect any discrepancies or regressions. Return the Keploy test configuration, test cases, and results showing the behavior of the refactored code."
   ```
 
----
+* **Convert Monolithic code to Microservices**
+  
+  ```text
+  "Break down the provided monolithic code into a modular microservices architecture. Ensure each microservice encapsulates a distinct business capability with clear separation of concerns. Maintain equivalent functionality across the system. For each extracted microservice, define its responsibility, input/output interface (e.g., REST API or message queue), and any dependencies it requires. Use clean, readable code following best practices for maintainability. After refactoring, explain the major architectural changes made, including how responsibilities were divided, how the services communicate, and any significant improvements in modularity or readability. Also, highlight trade-offs involved in the transformation from monolith to microservices, such as increased complexity or network overhead."
+  ```
+
 
 ### **2. CI/CD & DevOps**
 
@@ -546,7 +551,7 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
-  ```
+  
 
 ---
 ### **14. Testing & Quality Assurance**
