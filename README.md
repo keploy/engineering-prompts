@@ -580,6 +580,12 @@ This repository contains prompt chains for the following domains:
   ```text
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
 
+* **Scaffold Django REST API from Specification**  
+  
+  ```text
+  "Given a model name and its fields, generate Django model code, serializer, views (class-based using DRF), and URL configuration to build a complete CRUD API. Also include sample cURL requests and instructions for enabling JWT authentication in settings.py."
+  ```
+
 ---
 ### **14. Testing & Quality Assurance**
 
@@ -600,3 +606,4 @@ This repository contains prompt chains for the following domains:
   ```text
   "Write a comprehensive API test suite for the following RESTful endpoints using a tool like Postman, REST Assured, or Supertest. Include  tests for valid inputs, invalid inputs, edge cases, and authorization scenarios. Validate response status codes, payload structures, and headers. Return test scripts or collection exports along with a description of each test case."
   ```
+
