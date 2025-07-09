@@ -305,7 +305,11 @@ This repository contains prompt chains for the following domains:
   "Explain the concepts of multi-threading and concurrency in {programming_language}. Focus on thread management, race conditions, and synchronization techniques. Provide code examples where applicable."
   ```
 
----
+* **Database Migration Strategy with Zero-Downtime Deployment**
+
+  ```text
+  "Design a comprehensive database migration strategy for {database_type} that ensures zero-downtime deployment. First assess the current system architecture and constraints, then provide a migration plan that includes: rollback procedures, data validation checkpoints, gradual migration techniques, infrastructure requirements, and deployment orchestration steps. Account for various scenarios including large datasets, concurrent user access, limited infrastructure, and different deployment environments. Provide both high-level strategy and detailed implementation scripts."
+  ---
 
 ### **4. Cloud & Kubernetes**
 
