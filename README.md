@@ -365,6 +365,13 @@ This repository contains prompt chains for the following domains:
   ```text
   "Provide UX/UI design recommendations for the provided {website/app}. Focus on improving usability, accessibility, and aesthetics. Return a list of specific design improvements with examples where necessary."
   ```
+
+* **Provide Improvements to Redesign**
+
+  ```text
+  "An app is not accessible to visually impaired users. Redesign the app to ensure full accessibility for all users. Consider navigation, screen reader compatibility, color contrast, and touch targets."
+  ```
+  
 * **Provide Acessible Color Palettes**
 
   ```text
