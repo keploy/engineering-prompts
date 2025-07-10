@@ -422,6 +422,30 @@ This repository contains prompt chains for the following domains:
   ```text
   "Set up Keploy in your full-stack application to test both the backend and frontend after an update. Configure Keploy for automatic integration testing, focusing on testing API endpoints, data handling, and the interaction between the frontend and backend. Ensure that Keploy is set to capture all changes in the API response, including edge cases, and validate that the frontend works correctly with the updated backend. Return the setup configuration and steps to trigger Keploy for testing."
   ```
+ 
+* **Newsletter Subscription System with MongoDB**
+
+  ```text
+  "Implement a backend newsletter subscription system using Express.js and MongoDB. Users should be able to subscribe by submitting their email address. Validate email format, prevent duplicate entries, and support unsubscription. Store all subscriber data in MongoDB. Return the full implementation including routes, email validation, MongoDB schema, and success/failure responses."
+  ```
+
+* **JWT-Based Authentication for Full-Stack App**
+
+  ```text 
+  "Secure a full-stack application using JSON Web Token (JWT) authentication. In the backend (Node.js + Express), implement user login and protected routes, generate JWT tokens, and use middleware to validate tokens. In the frontend (React), store the token securely using HttpOnly cookies or localStorage, send it with API requests, and protect routes using React Router. Return complete backend implementation and frontend logic for login, token storage, and route protection."
+  ```
+
+* **Transactional Order Confirmation Emails Using Nodemailer**
+
+  ```text
+  "Develop a backend service in Node.js to send transactional order confirmation emails using Nodemailer with SMTP configuration. Use a template engine like EJS or Handlebars to generate dynamic HTML emails. The email should include the customer's name, order ID, list of ordered items, total amount, and estimated delivery time. Return the complete code including SMTP setup, email template rendering, and the sendMail function."
+  ```
+
+* **OTP-Based Login System Using Node.js and MongoDB**
+
+  ```text
+  "Build an OTP (One-Time Password) based login system using Node.js and Express. The backend should generate a time-limited numeric OTP, send it to the user's phone or email, and validate it upon user input. Use MongoDB for OTP storage with expiry. Return the complete backend code including OTP generation, storage, verification, expiry logic, and rate limiting."
+  ```
 
 * **Develop a Full-Stack Mobile Application**
 
