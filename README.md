@@ -362,6 +362,12 @@ This repository contains prompt chains for the following domains:
   "Please provide the steps for setting up cloud storage using Amazon S3. Include how to create a bucket, set permissions, and manage files programmatically via AWS SDKs. Return the necessary code examples for integration."
   ```
 
+* **Kubernetes Observability Stack with Prometheus, Grafana, and Loki**
+
+  ```text
+  "Deploy a fully integrated observability stack in Kubernetes using Helm—configure Prometheus for metrics and alerts, Grafana for dashboards, and Loki for centralized log aggregation with all necessary YAML and values files.."
+  ```
+
 ---
 
 ### **5. Full-Stack Development**
@@ -736,6 +742,7 @@ This repository contains prompt chains for the following domains:
   3. Match detected faces with known encodings.
   Return: working code with recognition overlay on video."
   ```
+
 
 * **Scaffold Django REST API from Specification**  
   
