@@ -459,6 +459,25 @@ This repository contains prompt chains for the following domains:
 "Create animation strategies using Framer Motion or GSAP for enhancing user experience on{given_web_application}. Include code snippets for entrance animations, transitions, and hover effects."
 ```
 
+* **Suggest UX Improvements Based on User Goals**
+
+  ```text
+  "Analyze a digital product intended for {user persona} with the primary goal of {goal}. Suggest UX improvements that reduce friction, clarify CTAs, and guide the user efficiently. Include ideas for onboarding, navigation, and error prevention/recovery."
+  ```
+
+* **Improve Interaction Design**
+
+  ```text
+  "Review the interaction design for this component/page: {description or link}. Suggest improvements that would make the experience smoother and more intuitive. Consider animation timing, gesture control (if mobile), transitions, and feedback cues."
+  ```
+
+
+* **UX Writing Improvements**
+
+  ```text
+  "Review the UX writing and microcopy for this interface: {screen/page/component}. Suggest clearer, more helpful, and user-friendly alternatives. Focus on button labels, error messages, tooltips, and onboarding text."
+  ```
+
 ---
 
 ### **7. Security & Authentication**
@@ -511,6 +530,12 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Generate a compelling LinkedIn summary and job description based on the following details: {job_title}, {skills}, {experience}. Ensure the summary is concise, professional, and highlights key achievements."
+  ```
+
+* **Email Marketing Campaign Writer**
+
+  ```text
+  "Create a 5-part email marketing sequence for a product/service called "{product_name}". The goal is to {goal}. Each email should be short, persuasive, and follow copywriting frameworks like AIDA or PAS. Include subject lines, preview text, and CTAs."
   ```
 
 ---
