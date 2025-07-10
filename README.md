@@ -30,7 +30,7 @@ This repository contains prompt chains for the following domains:
 
 ### **1. Code Refactoring & Development**
 
-- **GitHub Repo Insight Generator**  
+* **GitHub Repo Insight Generator**  
 
 ```text
  "Take a public GitHub repository link and give a simple summary of what the project is about. Include basic details like stars, forks, issues, contributors, README info, and file structure. This will help new developers quickly understand the project before working on it."
@@ -629,6 +629,11 @@ This repository contains prompt chains for the following domains:
   ```text
   "Write unit and integration tests for the provided front-end components using {testing_framework}. Ensure the tests cover all major use cases and edge cases. Return the test code with explanations."
   ```
+
+* **Create a Reusable Form Component in React**
+
+  ```text
+  "Create a reusable React form component that takes input configuration as props, such as (validation rules, field names, and types). Give an example of how you would use it to create sign-up and login forms. Explain form state handling and include code."
 
 * **Implement Theme Switching with State Persistence**  
   
