@@ -21,7 +21,8 @@ This repository contains prompt chains for the following domains:
 11. **System Monitoring & Debugging**
 12. **Web Development**
 13. **API Development**
-
+14. **AI/ML Integration**
+15. **Testing & Quality Assurance**
 ---
 
 ## Use Cases and Prompts
@@ -49,7 +50,7 @@ This repository contains prompt chains for the following domains:
 * **Provide Code Explanations**
 
   ```text
-  "Please analyze the provided code and explain its functionality step-by-step. Include explanations for each major part of the code and why it’s necessary. Keep the explanation clear and concise."
+  "Please analyze the provided code and explain its functionality step-by-step. Include explanations for each major part of the code and why it's necessary. Keep the explanation clear and concise."
   ```
 
 * **Generate Git Commit Messages**
@@ -158,6 +159,12 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "After refactoring the code, use Keploy to run automated tests to check if any regressions have been introduced. Set up Keploy to verify that the refactored code behaves as expected, ensuring that all existing functionalities remain intact. The tests should include integration tests to verify that API endpoints, data handling, and user interactions still function properly. Ensure that Keploy is set to compare the current behavior with previously recorded test cases to detect any discrepancies or regressions. Return the Keploy test configuration, test cases, and results showing the behavior of the refactored code."
+  ```
+
+* **Convert Monolithic code to Microservices**
+  
+  ```text
+  "Break down the provided monolithic code into a modular microservices architecture. Ensure each microservice encapsulates a distinct business capability with clear separation of concerns. Maintain equivalent functionality across the system. For each extracted microservice, define its responsibility, input/output interface (e.g., REST API or message queue), and any dependencies it requires. Use clean, readable code following best practices for maintainability. After refactoring, explain the major architectural changes made, including how responsibilities were divided, how the services communicate, and any significant improvements in modularity or readability. Also, highlight trade-offs involved in the transformation from monolith to microservices, such as increased complexity or network overhead."
   ```
 
 ---
@@ -300,7 +307,40 @@ This repository contains prompt chains for the following domains:
   "Explain the concepts of multi-threading and concurrency in {programming_language}. Focus on thread management, race conditions, and synchronization techniques. Provide code examples where applicable."
   ```
 
----
+* **Implement Query Migration**
+
+  ```text
+  "You are a database query migration expert. Given a {query} written for a specified {source_database}, convert it to be fully compatible with a specified {target_database}.  
+  Adapt all syntax, functions, data types, and conventions as necessary. Ensure that the output query:  
+
+  - Preserves the original logic,  
+  - Uses correct equivalents in the target system,  
+  - Is optimized according to best practices.  
+
+  Provide brief explanations for non-trivial changes when applicable.  
+
+  Input fields:  
+  - source_database: (e.g., Oracle, MySQL, SQL Server)  
+  - target_database: (e.g., PostgreSQL, SQLite, MariaDB)  
+  - query: (Original source query to be migrated)  
+
+  Output:  
+  - A fully converted query compatible with the target database  
+  - Optional: Short explanation of major differences or adaptations"
+
+  ```
+  
+* **Create a Seed Script to Seed data to a database**
+
+  ```text
+  "Based on the schemas file, model file and service layer file I attached for the {a_table_in_the_database} and {a_specific_program_component}, please return a PostgreSQL seed script for the database. Please create realistic sample data"
+  ```
+
+* **Database Migration Strategy with Zero-Downtime Deployment**
+
+  ```text
+  "Design a comprehensive database migration strategy for {database_type} that ensures zero-downtime deployment. First assess the current system architecture and constraints, then provide a migration plan that includes: rollback procedures, data validation checkpoints, gradual migration techniques, infrastructure requirements, and deployment orchestration steps. Account for various scenarios including large datasets, concurrent user access, limited infrastructure, and different deployment environments. Provide both high-level strategy and detailed implementation scripts."
+  ---
 
 ### **4. Cloud & Kubernetes**
 
@@ -351,9 +391,29 @@ This repository contains prompt chains for the following domains:
   ```
 
 * **Test Backend and Frontend for Regression Using Keploy**
-
   ```text
   "Set up Keploy in your full-stack application to test both the backend and frontend after an update. Configure Keploy for automatic integration testing, focusing on testing API endpoints, data handling, and the interaction between the frontend and backend. Ensure that Keploy is set to capture all changes in the API response, including edge cases, and validate that the frontend works correctly with the updated backend. Return the setup configuration and steps to trigger Keploy for testing."
+  ```
+
+* **Integrate an AI Text Generation API into a Full-Stack App**
+
+  ```text
+  "Integrate an AI API such as OpenAI or Hugging Face into a full-stack application with Django and React. Set up the backend to handle text generation requests using the API, and configure the frontend to capture user input and display AI-generated responses in real time. Return the complete code for integration."
+
+* **Implement Role-Based Access Control (RBAC) in a Full-Stack App**
+
+  ```text
+  "Implement role-based access control in a full-stack application using Django and React. Define roles like Admin, Editor, and Viewer. Restrict access to specific backend API routes and conditionally render frontend components based on roles. Return the role-check logic, middleware, and protected route implementation."
+  ```
+
+* **Build Production-Ready MERN Stack Application with Advanced Features**
+
+  ```text
+  "Develop a comprehensive production-ready full-stack application using the MERN stack (MongoDB, Express.js, React, Node.js) with advanced features including user authentication with JWT and refresh tokens, role-based access control (RBAC), real-time notifications with Socket.io, file upload handling with AWS S3 integration, comprehensive error handling and logging, API rate limiting and security middleware, responsive design with Material-UI or Tailwind CSS, automated testing suite with Jest and Cypress, Docker containerization, CI/CD pipeline with GitHub Actions, and performance optimization techniques. Include proper project structure, environment configuration, database seeding, API documentation with Swagger, and deployment instructions for cloud platforms. Return the complete application architecture, code implementation, and deployment guide."
+
+* **Build a Flutter + Node.js Full-Stack App with ML Integration and Firebase Auth** 
+  ```text 
+  "Build a full-stack application with Flutter as the frontend and Node.js (Express) as the backend. Use Firebase Authentication for user login/signup and MongoDB for storing data. Integrate a pre-trained machine learning model via a Python API or hosted service (e.g., for recommendation, classification, or NLP). Ensure the frontend captures user input, sends it to the backend, triggers the ML model, and returns results to display in the UI. Return code for each layer along with setup instructions and architecture overview."
   ```
 
 ---
@@ -365,6 +425,33 @@ This repository contains prompt chains for the following domains:
   ```text
   "Provide UX/UI design recommendations for the provided {website/app}. Focus on improving usability, accessibility, and aesthetics. Return a list of specific design improvements with examples where necessary."
   ```
+  * **UX/UI Review for Onboarding Flow**
+
+  ```text
+  "Evaluate the onboarding experience of the provided {website/app}. Suggest UX/UI improvements that enhance first-time user engagement, reduce friction, and promote task completion. Focus on clarity of instructions, visual hierarchy, button placement, and accessibility. Return actionable recommendations with examples where applicable."
+  ```
+  
+* **Provide Improvements to Redesign**
+
+  ```text
+  "An app is not accessible to visually impaired users. Redesign the app to ensure full accessibility for all users. Consider navigation, screen reader compatibility, color contrast, and touch targets."
+  ```
+  
+* **Provide Acessible Color Palettes**
+
+  ```text
+  "Provide a set of accessible color palettes that comply with WCAG standards. The palettes should offer sufficient contrast and visual distinction for users with visual impairments. Return color combinations in hex codes and explain the accessibility rationale."
+  ```
+
+* **Audit UI for WCAG Compliance**
+  ```text
+  "Analyze the provided website or application UI and identify issues related to WCAG 2.1 accessibility compliance. Suggest specific changes to improve color contrast, keyboard navigation, screen reader support, and overall usability."
+  ```
+
+* **Create Animations using Framer Motion or GSAP**
+```text
+"Create animation strategies using Framer Motion or GSAP for enhancing user experience on{given_web_application}. Include code snippets for entrance animations, transitions, and hover effects."
+```
 
 ---
 
@@ -405,7 +492,7 @@ This repository contains prompt chains for the following domains:
 * **Create a Personal Portfolio Website**
 
   ```text
-  "Help me build a personal portfolio website. The site should include sections for my bio, projects, skills, and contact information. Make sure it’s responsive and easy to navigate. Return the basic HTML/CSS/JS code for the website."
+  "Help me build a personal portfolio website. The site should include sections for my bio, projects, skills, and contact information. Make sure it's responsive and easy to navigate. Return the basic HTML/CSS/JS code for the website."
   ```
 
 * **Write SEO-Optimized Blog Content**
@@ -446,6 +533,21 @@ This repository contains prompt chains for the following domains:
   "Analyze the performance of the production system and identify bottlenecks. Suggest and implement optimizations to improve speed, reduce memory usage, and increase scalability. Return the optimized code and explanations."
   ```
 
+* **Integrate Prometheus and Grafana Dashboards**
+  ```text
+  "Set up Prometheus and Grafana to monitor a Node.js application. Include steps for exporting application metrics, configuring Prometheus scraping, and creating a custom dashboard in Grafana to visualize performance and error metrics."
+  ```
+
+* **Debug Memory Leaks in Node.js or Python**
+  ```text
+  "Help diagnose memory leaks in a Node.js/Python application. Analyze heap snapshots or memory usage patterns, suggest tools like `memory_profiler` or `clinic.js`, and provide steps to fix common causes of leaks."
+  ```
+
+* **Generate Test Cases from Logs**
+
+  ```text
+  " Design an efficient test suite for the production environment to ensure stability, scalability, and minimal downtime. Include unit, integration, and stress test scenarios with explanations. Return test case examples and tools used."
+  ```
 ---
 
 ### **12. Web Development**
@@ -460,9 +562,20 @@ This repository contains prompt chains for the following domains:
     ```text
   "Optimize the provided web application for maximum performance and Core Web Vitals compliance. Implement advanced techniques including code splitting with dynamic imports, tree shaking, bundle analysis and optimization, image optimization with WebP/AVIF formats, lazy loading with Intersection Observer API, and critical CSS extraction. Add performance monitoring with Real User Monitoring (RUM), implement resource hints (preload, prefetch, preconnect), optimize font loading strategies, and minimize JavaScript execution time. Target metrics: LCP < 2.5s, FID < 100ms, CLS < 0.1, and overall Lighthouse score > 95."
   ```
+  
+* **Implement Lazy Loading of Components**
+  ```text
+  "Implement lazy loading in a React or Vue application to improve initial load time. Return code snippets using dynamic imports, explain how to apply it to routes or components, and describe the impact on performance."
+  ```
 ---
 
 ### **13. API Development**
+
+* **Design and Implement Comprehensive API Gateway for Microservices Architecture**
+
+  ```text
+  "Design and implement a comprehensive API Gateway for microservices architecture using {gateway_framework} (Kong, AWS API Gateway, or custom solution). Implement advanced features including intelligent routing with service discovery, request/response transformation, rate limiting with sliding window algorithms, circuit breaker patterns, authentication/authorization middleware, request/response logging with correlation IDs, and API versioning strategies. Include health checks, load balancing, caching strategies, and monitoring with Prometheus/Grafana. Provide configuration for multiple environments (dev, staging, prod) with environment-specific settings and security policies."
+  ```
 
 * **Generate OpenAPI Schema from Source Code**
 
@@ -498,4 +611,156 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
+  ```
+
+---
+
+### **14. AI/ML Integration**
+
+* **Mocking AI/ML Output in Spring Boot APIs**
+
+  ```text
+  "How can Keploy be used to capture and replay backend responses for APIs built with Spring Boot and AI/ML models (such as a spam/ham email classifier), ensuring consistent integration testing even when model outputs vary due to randomness or training state?"
+
+  ```
+
+* **Automated Keploy Testing for AI APIs in CI/CD Pipelines**
+
+  ```text
+  "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. 
+  Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
+  ```
+
+* **Build a Text Classification Model Using Scikit-learn**
+
+  ```text
+  "You're a Python ML assistant. Build a binary text classifier using Scikit-learn.
+  1. Load `sci.space` and `comp.graphics` from the 20 Newsgroups dataset.
+  2. Preprocess using `TfidfVectorizer` (stop words removed, max_df=0.7).
+  3. Split data 80/20.
+  4. Train a `LogisticRegression` model.
+  5. Evaluate with `classification_report`.
+  Return: commented code, sample output, and a suggestion for improvement."
+  ```
+
+* **Fine-Tune a BERT Model for Sentiment Analysis**
+
+  ```text
+  "Fine-tune a BERT model using Hugging Face Transformers for sentiment analysis.
+  1. Load IMDB or custom dataset.
+  2. Tokenize using `BertTokenizer`.
+  3. Use `Trainer` API for training and evaluation.
+  4. Run prediction on new input.
+  Return: training code, evaluation metrics, and how to save the fine-tuned model."
+  ```
+
+* **Build an Image Classifier Using CNN (Keras/TensorFlow)**
+
+  ```text
+  "Build an image classification model using CNN in TensorFlow/Keras.
+  1. Load CIFAR-10 dataset.
+  2. Normalize and augment images.
+  3. Create a CNN model with Conv2D, MaxPooling, and Dense layers.
+  4. Train and evaluate the model.
+  Return: training accuracy graph and confusion matrix."
+  ```
+
+* **Detect Anomalies in Streaming Data Using Isolation Forest**
+
+  ```text
+  "Simulate real-time anomaly detection using Isolation Forest.
+  1. Generate synthetic streaming data.
+  2. Train Isolation Forest on initial batch.
+  3. Detect and flag anomalies in subsequent batches.
+  Return: Python code with anomaly detection logic and visualization using matplotlib."
+  ```
+
+* **Deploy a Machine Learning Model Using FastAPI**
+
+  ```text
+  "Create a FastAPI service to serve ML predictions.
+  1. Train and save a Scikit-learn model (e.g., RandomForest).
+  2. Build a FastAPI app with a `/predict` endpoint.
+  3. Accept JSON input and return predictions.
+  Return: Python code for API setup and example API call with curl."
+  ```
+
+* **Tune Hyperparameters of XGBoost Using Optuna**
+
+  ```text
+  "Use Optuna to find optimal hyperparameters for an XGBoost model.
+  1. Load any tabular dataset (e.g., Titanic).
+  2. Define objective function for `study.optimize()`.
+  3. Output best parameters and accuracy.
+  Return: Python code with study summary and plot."
+  ```
+
+* **Build a PDF Q&A Bot Using LangChain and FAISS**
+
+  ```text
+  "Create a bot that answers questions from a PDF using LangChain and FAISS.
+  1. Extract text using PyMuPDF.
+  2. Generate embeddings with Hugging Face.
+  3. Store vectors in FAISS.
+  4. Use LangChain’s Retriever to answer queries.
+  Return: complete pipeline and example Q&A results."
+  ```
+
+* **Train a Regression Model Using PyCaret**
+
+  ```text
+  "Build and evaluate a regression model using PyCaret.
+  1. Load a housing dataset.
+  2. Use `setup()`, `compare_models()`, and `predict_model()` functions.
+  3. Analyze performance (R², MAE).
+  Return: code with minimal effort using PyCaret."
+  ```
+
+* **Generate Synthetic Data Using SDV for Tabular ML Tasks**
+
+  ```text
+  "Use SDV to generate synthetic tabular data.
+  1. Load a real CSV dataset.
+  2. Train SDV's `GaussianCopula` model.
+  3. Generate synthetic samples.
+  4. Compare real vs. synthetic distributions.
+  Return: Python code with evaluation using `sdmetrics`."
+  ```
+
+* **Real-Time Face Recognition System Using OpenCV**
+
+  ```text
+  "Build a real-time face recognition system using OpenCV and face encodings.
+  1. Load and encode known faces.
+  2. Capture webcam video and detect faces.
+  3. Match detected faces with known encodings.
+  Return: working code with recognition overlay on video."
+  ```
+
+* **Scaffold Django REST API from Specification**  
+  
+  ```text
+  "Given a model name and its fields, generate Django model code, serializer, views (class-based using DRF), and URL configuration to build a complete CRUD API. Also include sample cURL requests and instructions for enabling JWT authentication in settings.py."
+  ```
+
+---
+
+### **15. Testing & Quality Assurance**
+
+* **Write Unit Testing for a Function**
+
+  ```text
+  "Write unit tests for the following function in {programming_language}: {function_name}. The tests using Jest or Mocha."
+  ```
+
+* **Set Up Integration Tests for REST APIs**
+
+  ```text
+  "Set up integration testing for the provided REST API using a testing framework like Supertest or Postman/Newman. Include tests for success cases, validation errors, and authentication flows."
+  ```
+
+* **Test REST APIs for Functional and Edge Cases**
+
+  ```text
+  "Write a comprehensive API test suite for the following RESTful endpoints using a tool like Postman, REST Assured, or Supertest. Include  tests for valid inputs, invalid inputs, edge cases, and authorization scenarios. Validate response status codes, payload structures, and headers. Return test scripts or collection exports along with a description of each test case."
   ```
