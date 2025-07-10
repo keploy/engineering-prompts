@@ -423,6 +423,11 @@ This repository contains prompt chains for the following domains:
   "Set up Keploy in your full-stack application to test both the backend and frontend after an update. Configure Keploy for automatic integration testing, focusing on testing API endpoints, data handling, and the interaction between the frontend and backend. Ensure that Keploy is set to capture all changes in the API response, including edge cases, and validate that the frontend works correctly with the updated backend. Return the setup configuration and steps to trigger Keploy for testing."
   ```
 
+* **Develop a Full-Stack Mobile Application**
+
+  ```text
+  "Create a full-stack mobile application using React Native for the frontend and Node.js with Express for the backend. Implement user authentication, a RESTful API for data management, and real-time updates using WebSockets. Return the project structure, key code snippets, and setup instructions for both frontend and backend."
+
 * **Integrate an AI Text Generation API into a Full-Stack App**
 
   ```text
@@ -448,18 +453,19 @@ This repository contains prompt chains for the following domains:
 
 ### **6. UX/UI & Design**
 
-**Modernize an Outdated App UI**
-
-```text
-"You are given screenshots of an outdated mobile app UI. Suggest modern design improvements based on current design trends, material design guidelines, and usability best practices."
-```
+* **Modernize an Outdated App UI**
+ 
+  ```text
+  "You are given screenshots of an outdated mobile app UI. Suggest modern design improvements based on current design trends, material design guidelines, and usability best practices."
+  ```
 
 * **Provide UX/UI Design Advice**
 
   ```text
   "Provide UX/UI design recommendations for the provided {website/app}. Focus on improving usability, accessibility, and aesthetics. Return a list of specific design improvements with examples where necessary."
   ```
-  * **UX/UI Review for Onboarding Flow**
+
+* **UX/UI Review for Onboarding Flow**
 
   ```text
   "Evaluate the onboarding experience of the provided {website/app}. Suggest UX/UI improvements that enhance first-time user engagement, reduce friction, and promote task completion. Focus on clarity of instructions, visual hierarchy, button placement, and accessibility. Return actionable recommendations with examples where applicable."
@@ -886,7 +892,7 @@ This repository contains prompt chains for the following domains:
   "Write a comprehensive API test suite for the following RESTful endpoints using a tool like Postman, REST Assured, or Supertest. Include  tests for valid inputs, invalid inputs, edge cases, and authorization scenarios. Validate response status codes, payload structures, and headers. Return test scripts or collection exports along with a description of each test case."
   ```
 
-### **14. Agentic AI**
+### **16. Agentic AI**
 
 1. **Design a Multi-Agent Workflow**  
    ```text
