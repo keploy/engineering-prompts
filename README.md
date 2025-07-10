@@ -155,6 +155,12 @@ This repository contains prompt chains for the following domains:
   "Suggest a comprehensive testing strategy for {project_type}. The strategy should include unit tests, integration tests, and end-to-end tests. Provide recommendations for testing frameworks and tools, along with examples."
   ```
 
+  * **Intelligent Legacy Code Modernizer**
+
+  ```text
+  "Analyze this legacy codebase and produce a step-by-step modernization plan. Suggest incremental refactoring, API replacements, and removal of deprecated dependencies. For each step, provide sample code snippets or commands to automate the transformation safely, with explanations of risks and benefits."
+  ```
+
 * **Test for Regressions After Refactoring Code with Keploy**
 
   ```text
@@ -643,7 +649,7 @@ This repository contains prompt chains for the following domains:
   ```text
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
   ```
-
+  
 ---
 
 ### **14. AI/ML Integration**
