@@ -307,13 +307,35 @@ This repository contains prompt chains for the following domains:
   "Explain the concepts of multi-threading and concurrency in {programming_language}. Focus on thread management, race conditions, and synchronization techniques. Provide code examples where applicable."
   ```
 
+* **Implement Query Migration**
+
+  ```text
+  "You are a database query migration expert. Given a {query} written for a specified {source_database}, convert it to be fully compatible with a specified {target_database}.  
+  Adapt all syntax, functions, data types, and conventions as necessary. Ensure that the output query:  
+
+  - Preserves the original logic,  
+  - Uses correct equivalents in the target system,  
+  - Is optimized according to best practices.  
+
+  Provide brief explanations for non-trivial changes when applicable.  
+
+  Input fields:  
+  - source_database: (e.g., Oracle, MySQL, SQL Server)  
+  - target_database: (e.g., PostgreSQL, SQLite, MariaDB)  
+  - query: (Original source query to be migrated)  
+
+  Output:  
+  - A fully converted query compatible with the target database  
+  - Optional: Short explanation of major differences or adaptations"
+
+  ```
+  
 * **Create a Seed Script to Seed data to a database**
 
   ```text
   "Based on the schemas file, model file and service layer file I attached for the {a_table_in_the_database} and {a_specific_program_component}, please return a PostgreSQL seed script for the database. Please create realistic sample data"
   ```
 
----
 * **Database Migration Strategy with Zero-Downtime Deployment**
 
   ```text
