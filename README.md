@@ -32,9 +32,8 @@ This repository contains prompt chains for the following domains:
 
 * **GitHub Repo Insight Generator**  
 
-```text
- "Take a public GitHub repository link and give a simple summary of what the project is about. Include basic details like stars, forks, issues, contributors, README info, and file structure. This will help new developers quickly understand the project before working on it."
-
+  ```text
+  "Take a public GitHub repository link and give a simple summary of what the project is about. Include basic details like stars, forks, issues, contributors, README info, and file structure. This will help new developers quickly understand the project before working on it."
   ```
 
 
@@ -176,6 +175,12 @@ This repository contains prompt chains for the following domains:
   "After refactoring the code, use Keploy to run automated tests to check if any regressions have been introduced. Set up Keploy to verify that the refactored code behaves as expected, ensuring that all existing functionalities remain intact. The tests should include integration tests to verify that API endpoints, data handling, and user interactions still function properly. Ensure that Keploy is set to compare the current behavior with previously recorded test cases to detect any discrepancies or regressions. Return the Keploy test configuration, test cases, and results showing the behavior of the refactored code."
   ```
 
+* **AI-Powered Tech Debt Quantifier**
+
+```text
+  "Create a script that analyzes codebases to generate a tech debt heatmap using ML models. Output severity scores for code smells, outdated dependencies, and test coverage gaps with remediation priorities. Include integration with Jira/Trello."
+  ```
+  
 * **Convert Monolithic code to Microservices**
   
   ```text
@@ -270,6 +275,12 @@ This repository contains prompt chains for the following domains:
   "Optimize the provided Docker development environment. Focus on reducing build time, improving caching, and streamlining container configurations. Return the optimized Dockerfile and Docker Compose file."
   ```
 
+* **Chaos Engineering Pipeline Injector**
+
+  ```text
+  "Design a CI/CD stage that randomly introduces controlled failures (network latency, pod terminations) during pre-prod deployments. Generate resilience reports with recovery time metrics and weak spot visualizations."
+  ```
+
 ---
 
 ### **3. Database Management**
@@ -329,6 +340,12 @@ This repository contains prompt chains for the following domains:
   "Explain the concepts of multi-threading and concurrency in {programming_language}. Focus on thread management, race conditions, and synchronization techniques. Provide code examples where applicable."
   ```
 
+* **Automated Query Optimization Assistant**
+
+  ```text
+  "Given a set of slow SQL queries and the current database schema, use AI to suggest and apply index improvements, query rewrites, and partitioning strategies. Return the optimized queries, new index statements, and a summary of expected performance gains."
+  ``
+
 * **Implement Query Migration**
 
   ```text
@@ -362,7 +379,9 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Design a comprehensive database migration strategy for {database_type} that ensures zero-downtime deployment. First assess the current system architecture and constraints, then provide a migration plan that includes: rollback procedures, data validation checkpoints, gradual migration techniques, infrastructure requirements, and deployment orchestration steps. Account for various scenarios including large datasets, concurrent user access, limited infrastructure, and different deployment environments. Provide both high-level strategy and detailed implementation scripts."
-  ---
+  ```
+  
+---
 
 ### **4. Cloud & Kubernetes**
 
@@ -384,7 +403,13 @@ This repository contains prompt chains for the following domains:
   "Please provide the steps for setting up cloud storage using Amazon S3. Include how to create a bucket, set permissions, and manage files programmatically via AWS SDKs. Return the necessary code examples for integration."
   ```
 
-* **Kubernetes Observability Stack with Prometheus, Grafana, and Loki**
+* **Cloud Cost Anomaly Detector**
+  
+  ```text
+  "Set up a monitoring system in Kubernetes that uses ML to detect and alert on unusual spikes in cloud resource costs. Include sample Prometheus/Grafana configurations and a script for automated cost anomaly remediation (e.g., scaling down unused pods)."
+   ```
+    
+  * **Kubernetes Observability Stack with Prometheus, Grafana, and Loki**
 
   ```text
   "Deploy a fully integrated observability stack in Kubernetes using Helm—configure Prometheus for metrics and alerts, Grafana for dashboards, and Loki for centralized log aggregation with all necessary YAML and values files.."
@@ -489,6 +514,12 @@ This repository contains prompt chains for the following domains:
   "Provide UX/UI design recommendations for the provided {website/app}. Focus on improving usability, accessibility, and aesthetics. Return a list of specific design improvements with examples where necessary."
   ```
 
+* **Accessibility-First Redesign Assistant**
+  
+  ```text
+  "Review the provided web interface and generate a redesign plan that achieves WCAG 2.2 AA accessibility compliance. Include annotated wireframes, color contrast checks, and ARIA attribute recommendations."
+  ```
+  
 * **UX/UI Review for Onboarding Flow**
 
   ```text
@@ -552,6 +583,12 @@ This repository contains prompt chains for the following domains:
   "Implement JSON Web Token (JWT) authentication in the provided application. The system should handle token generation, validation, and secure access to protected routes. Return the code with explanations."
   ```
 
+* **Zero Trust Architecture Quickstart**
+  
+  ```text
+  "Transform the current system architecture into a Zero Trust model. Output a step-by-step migration plan, including network segmentation, identity verification at every layer, and continuous authentication strategies. Provide sample policies and enforcement scripts."
+  ```
+
 ---
 
 ### **8. Event-Driven Architecture & Integration**
@@ -610,6 +647,12 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Create a serverless architecture using Google Cloud Functions for {task}. The functions should trigger based on specific events and return the necessary code with setup instructions."
+  ```
+
+* **Proactive Incident Simulation Toolkit**
+  
+  ```text
+  "Create a toolkit that simulates real-world infrastructure incidents (e.g., server outage, DNS failure, disk full) and provides automated runbooks for detection, alerting, and step-by-step resolution. Include sample scripts and monitoring configurations."
   ```
 
 ---
@@ -767,6 +810,12 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
+  ```
+
+* **Dynamic API Mocking & Contract Validator**
+  
+  ```text
+  "For the provided OpenAPI schema, generate a dynamic mock server that validates incoming requests against the schema and returns realistic, randomized responses. Include contract testing scripts to ensure client and server compatibility."
   ``` 
 ---
 
