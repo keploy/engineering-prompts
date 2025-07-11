@@ -944,7 +944,7 @@ This repository contains prompt chains for the following domains:
   ```text
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
   ```
----
+ ---
 
 ### **14. AI/ML Integration**
 
@@ -1094,7 +1094,11 @@ This repository contains prompt chains for the following domains:
   Here is the model:
   <model implementation or functions>"
   ```
-
+* **Resume Compatibility Evaluator**  
+  ```text
+    "Create a prompt chain that takes as input a resume and job description. The output should include: a compatibility percentage, key aligned skills, missing qualifications, and actionable improvement tips for better job matching."
+  ```
+ 
 ---
 
 ### **15. Testing & Quality Assurance**
@@ -1198,9 +1202,6 @@ This repository contains prompt chains for the following domains:
 
 * **Create a FastAPI Backend for RAG App**
 
-  ```text
-  "* **Create a FastAPI Backend for RAG App**  
-  
   ```text
   "You're a senior AI backend engineer. Build a FastAPI-based backend to serve a Retrieval-Augmented Generation (RAG) pipeline using LangChain or custom Python modules. The backend should expose relevant endpoints for uploading documents, querying questions, and retrieving responses — as defined in the user requirements. Integrate with a vector store like ChromaDB, and implement the RAG pipeline components: document ingestion, chunking, embedding, retrieval, and answer generation. Follow modular design principles and structure the codebase to support scalability, clarity, and future extension. Ensure the implementation meets the functional needs as defined above."
   "
