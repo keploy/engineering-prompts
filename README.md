@@ -944,7 +944,7 @@ This repository contains prompt chains for the following domains:
   ```text
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
   ```
- ---
+---
 
 ### **14. AI/ML Integration**
 
@@ -1067,7 +1067,6 @@ This repository contains prompt chains for the following domains:
   Return: working code with recognition overlay on video."
   ```
 
-
 * **Scaffold Django REST API from Specification**  
   
   ```text
@@ -1095,9 +1094,28 @@ This repository contains prompt chains for the following domains:
   <model implementation or functions>"
   ```
 * **Resume Compatibility Evaluator**  
-  ```text
+ 
+ ```text
     "Create a prompt chain that takes as input a resume and job description. The output should include: a compatibility percentage, key aligned skills, missing qualifications, and actionable improvement tips for better job matching."
   ```
+  
+* **Set Up ML Model Monitoring**
+
+```text
+  Design a system to monitor the performance and drift of a deployed machine learning model. Include steps for collecting model metrics, setting up alerts, and visualizing results. Return a sample configuration and explanation.
+```
+
+* **Automate ML Pipeline Deployment**
+
+```text
+  Create a pipeline to automate the training, evaluation, and deployment of a machine learning model using {tool/framework}. Return the pipeline definition and instructions for setup.
+```
+
+* **Explain Model Interpretability Techniques**
+
+```text
+  Explain the key techniques for interpreting and explaining machine learning model predictions, such as SHAP, LIME, or feature importance. Provide example code for one technique.
+```
  
 ---
 
@@ -1120,6 +1138,7 @@ This repository contains prompt chains for the following domains:
   ```text
   "Write a comprehensive API test suite for the following RESTful endpoints using a tool like Postman, REST Assured, or Supertest. Include  tests for valid inputs, invalid inputs, edge cases, and authorization scenarios. Validate response status codes, payload structures, and headers. Return test scripts or collection exports along with a description of each test case."
   ```
+---
 
 ### **16. Agentic AI**
 
@@ -1182,6 +1201,8 @@ This repository contains prompt chains for the following domains:
     "Compose a high-level README or tutorial that walks through building, testing (using Keploy), and deploying an agentic AI system with CrewAI or Autogen: from local development, through CI/CD, to production orchestration and monitoring."
     ```
     
+---
+
 ### **17. RAG Application Development**
 
 * **Generate a Complete RAG App Codebase (Python + LangChain)**  
