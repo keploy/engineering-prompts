@@ -591,19 +591,29 @@ This repository contains prompt chains for the following domains:
 
 ---
 
-### **8. Event-Driven Architecture & Integration**
+  ### 8. Event-Driven Architecture & Integration
 
-* **Set Up an Event-Driven Architecture with Kafka**
+* **Design Scalable Kafka Event Architecture**  
+  "Design an event-driven architecture using Apache Kafka. Define at least two Kafka topics with justification for their partitioning and replication factors. Provide producer and consumer code in [Language] (e.g., Python, Java) for one topic, including configuration details for idempotence, compression, and fault tolerance. Explain how the setup handles backpressure and scales under load."
 
-  ```text
-  "Set up an event-driven architecture with Kafka. Define the Kafka topics, producers, and consumers to handle real-time data processing. Return the code with configuration details."
-  ```
+* **Robust Third-Party Service Integration**  
+  "Integrate {third_party_service} into the existing project. Detail setup steps (dependency installation, environment variables), authentication (API keys/OAuth 2.0 flow), and rate-limited API interactions. Provide error-handling code for network failures and invalid responses, with a circuit-breaker implementation. Include a workflow diagram illustrating data flow between components."
 
-* **Help Integrate Third-Party Services**
+* **Implement Change Data Capture (CDC) Pipeline**  
+  "Design a CDC system using Debezium and Kafka Connect. Configure connectors for {database_type} to capture real-time database changes. Provide deployment manifests, transformation logic for schema evolution, and dead-letter queue handling for failed events. Include monitoring setup for lag and throughput metrics."
 
-  ```text
-  "Integrate {third_party_service} into the existing project. Provide step-by-step instructions for setup, authentication, and API interaction. Return the integration code with explanations of how it works."
-  ```
+* **Build Event Sourcing/CQRS System**  
+  "Implement an event-sourced architecture using Kafka as the event store. Define event schemas for {domain_entity} state changes, command handlers, and read-model projections. Provide code for idempotent event processing, snapshotting strategy, and consistency validation between write/read models."
+
+* **Design Cross-Cluster Event Replication**  
+  "Configure MirrorMaker2 for geo-replication between Kafka clusters. Define replication policies, topology discovery, and offset synchronization. Provide Terraform modules for multi-region deployment with metrics for replication latency and failover procedures during region outages."
+
+* **Integrate Serverless Event Consumers**  
+  "Connect Kafka to serverless platforms (AWS Lambda/Google Cloud Functions). Develop consumer functions in [Language] with checkpointing, batch processing, and autoscaling configuration. Include cold-start optimization and cost analysis for different throughput scenarios."
+
+* **Create Schema Registry Governance**  
+  "Implement schema evolution governance using Confluent Schema Registry. Define compatibility rules (BACKWARD/FORWARD), schema lifecycle management, and client serialization/deserialization logic. Provide CI/CD pipeline for schema validation and version rollback procedures."
+
 
 ---
 
