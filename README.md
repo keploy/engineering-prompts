@@ -24,6 +24,8 @@ This repository contains prompt chains for the following domains:
 14. **AI/ML Integration**
 15. **Testing & Quality Assurance**
 16. **Agentic AI**
+17. **RAG Application Development**
+
 ---
 
 ## Use Cases and Prompts
@@ -35,7 +37,6 @@ This repository contains prompt chains for the following domains:
   ```text
   "Take a public GitHub repository link and give a simple summary of what the project is about. Include basic details like stars, forks, issues, contributors, README info, and file structure. This will help new developers quickly understand the project before working on it."
   ```
-
 
 * **Refactor Code for Better Readability**
 
@@ -163,7 +164,7 @@ This repository contains prompt chains for the following domains:
   "Suggest a comprehensive testing strategy for {project_type}. The strategy should include unit tests, integration tests, and end-to-end tests. Provide recommendations for testing frameworks and tools, along with examples."
   ```
 
-  * **Intelligent Legacy Code Modernizer**
+* **Intelligent Legacy Code Modernizer**
 
   ```text
   "Analyze this legacy codebase and produce a step-by-step modernization plan. Suggest incremental refactoring, API replacements, and removal of deprecated dependencies. For each step, provide sample code snippets or commands to automate the transformation safely, with explanations of risks and benefits."
@@ -174,10 +175,16 @@ This repository contains prompt chains for the following domains:
   ```text
   "After refactoring the code, use Keploy to run automated tests to check if any regressions have been introduced. Set up Keploy to verify that the refactored code behaves as expected, ensuring that all existing functionalities remain intact. The tests should include integration tests to verify that API endpoints, data handling, and user interactions still function properly. Ensure that Keploy is set to compare the current behavior with previously recorded test cases to detect any discrepancies or regressions. Return the Keploy test configuration, test cases, and results showing the behavior of the refactored code."
   ```
+  
+* **Generate GitHub Issue Templates Based on Project Type**
+  ```text
+  "Generate a GitHub issue template for a {project_type} (e.g., MERN stack app, microservice, machine learning pipeline). The template should include sections like Summary, Steps to Reproduce, Expected Behavior, Actual Behavior, Logs, and Environment."
+  ```
+
 
 * **AI-Powered Tech Debt Quantifier**
 
-```text
+  ```text
   "Create a script that analyzes codebases to generate a tech debt heatmap using ML models. Output severity scores for code smells, outdated dependencies, and test coverage gaps with remediation priorities. Include integration with Jira/Trello."
   ```
   
@@ -285,6 +292,22 @@ This repository contains prompt chains for the following domains:
 
 ### **3. Database Management**
 
+* **Detect & Filter Redundant Data in PostgreSQL**
+
+  ```text
+  "Given the following PostgreSQL table structure: <Table columns with constraints>
+
+  I suspect redundant or repeated data might be coming from a process that re-inserts the same ______, ________ and ________ combination multiple times.
+
+  Write a SQL query to:
+
+  - Identify all such repeated entries.
+  - Filter out and create the new view without the duplicate entries.
+  - Create a reusable filter CTL query for documentation in the future use.
+  - Generate a delete statement that removes the duplicates but retains one unique record from each group.**
+
+  Provide the SQL in a safe and modular way so I can review duplicates before deletion."
+  ```
 
 * **Design a General Entity-Relationship Diagram**
 
@@ -340,6 +363,24 @@ This repository contains prompt chains for the following domains:
   "Explain the concepts of multi-threading and concurrency in {programming_language}. Focus on thread management, race conditions, and synchronization techniques. Provide code examples where applicable."
   ```
 
+* **Setup Prisma with PostgreSQL in Node.js project**
+
+  ```text
+  "Guide me through setting up Prisma with PostgreSQL in a Node.js project. Include steps to install dependencies, initialize Prisma, connect to a local PostgreSQL database, create a sample schema, and run migrations. Show the full commands and explain how the schema.prisma file works. Ensure the example includes one sample model like User"
+  ```
+
+* **Build CRUD API using Prisma and Express**
+
+  ```text
+  "Help me build a complete CRUD REST API using Express.js and Prisma. Use a User model with fields like id, name, email, and createdAt. Include the routes for Create, Read (single & all), Update, and Delete. Show how Prisma Client is used in each route. Return the full Express route code with explanations."
+  ```
+
+* **Define and query relations in Prisma**
+
+  ```text
+  "Teach me how to define and query relational data in Prisma. Use an example with two models: User and Post, where a user can have many posts. Show how to define the relation in schema.prisma, run migrations, and write queries to fetch a user with their posts. Include how to use include and select with Prisma Client"
+  ```
+
 * **Automated Query Optimization Assistant**
 
   ```text
@@ -380,8 +421,7 @@ This repository contains prompt chains for the following domains:
   ```text
   "Design a comprehensive database migration strategy for {database_type} that ensures zero-downtime deployment. First assess the current system architecture and constraints, then provide a migration plan that includes: rollback procedures, data validation checkpoints, gradual migration techniques, infrastructure requirements, and deployment orchestration steps. Account for various scenarios including large datasets, concurrent user access, limited infrastructure, and different deployment environments. Provide both high-level strategy and detailed implementation scripts."
   ```
-  
----
+ ---
 
 ### **4. Cloud & Kubernetes**
 
@@ -402,6 +442,11 @@ This repository contains prompt chains for the following domains:
   ```text
   "Please provide the steps for setting up cloud storage using Amazon S3. Include how to create a bucket, set permissions, and manage files programmatically via AWS SDKs. Return the necessary code examples for integration."
   ```
+* **Amazon S3 as a Static Website with CI/CD**
+
+ ```text
+   "Demonstrate how to host a static website on Amazon S3 and automate its deployment with GitHub Actions. Include S3 bucket website configuration, IAM policy setup, and a GitHub Actions workflow that uploads files on every push to the main branch."
+  ```
 
 * **Cloud Cost Anomaly Detector**
   
@@ -413,6 +458,18 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Deploy a fully integrated observability stack in Kubernetes using Helm—configure Prometheus for metrics and alerts, Grafana for dashboards, and Loki for centralized log aggregation with all necessary YAML and values files.."
+  ```
+
+* **Enable Auto-Scaling for Kubernetes Workloads**
+
+  ```text
+  "Guide me through setting up Horizontal Pod Autoscaler (HPA) in Kubernetes. Include CPU-based scaling configuration, metric server setup, and example deployment with auto-scaling enabled. Return sample YAML files and scaling thresholds."
+  ```
+  
+* **Deploy a Multi-Container Pod in Kubernetes**
+
+  ```text
+  "Demonstrate how to deploy a multi-container pod (sidecar pattern) in Kubernetes. Explain use cases, share the pod definition YAML, and describe container interaction."
   ```
 
 ---
@@ -491,7 +548,42 @@ This repository contains prompt chains for the following domains:
   ```text
   "Set up Keploy in your full-stack application to test both the backend and frontend after an update. Configure Keploy for automatic integration testing, focusing on testing API endpoints, data handling, and the interaction between the frontend and backend. Ensure that Keploy is set to capture all changes in the API response, including edge cases, and validate that the frontend works correctly with the updated backend. Return the setup configuration and steps to trigger Keploy for testing."
   ```
- 
+
+* **Implement JWT-Based Authentication**
+  ```text
+  "Set up JWT-based authentication in a full-stack app using Express.js and React. Include login, token handling, and protected routes."
+  ```
+
+* **Use Context API and Custom Hooks in React**
+
+  ```text
+  "Show how to manage global state in React using Context API and custom hooks for session management or theme switching."
+  ```
+
+* **Connect React Frontend to Flask Backend**
+    
+  ```text
+  "Build a full-stack app with a Flask backend and React frontend. Show how the frontend fetches data from Flask APIs."
+  ```
+
+* **Write Tests for Backend and Frontend**
+
+  ```text
+  "Guide me on writing unit and integration tests for a full-stack app using Jest for the backend and React Testing Library for the frontend."
+  ```
+
+* **Use Redux Toolkit in E-Commerce App**
+
+  ```text
+  "Build a full-stack e-commerce app where Redux Toolkit manages cart and user state in the frontend and Express/MongoDB powers the backend."
+  ```
+
+* **Deploy Full-Stack App on Render or Vercel**
+
+  ```text
+  "Explain how to deploy a full-stack app with React frontend on Vercel and Node.js/Django backend on Railway or Render. Include environment setup steps."
+  ```
+  
 * **Newsletter Subscription System with MongoDB**
 
   ```text
@@ -557,7 +649,78 @@ This repository contains prompt chains for the following domains:
   ```text
   "Provide UX/UI design recommendations for the provided {website/app}. Focus on improving usability, accessibility, and aesthetics. Return a list of specific design improvements with examples where necessary."
   ```
+* **Improve Font Pairings for Visual Hierarchy**Add commentMore actions
 
+  ```text
+  "Review the current font pairings for the provided {website/app}. Suggest improvements to create a clear visual hierarchy and enhance readability. Provide examples of effective font combinations that align with the brand’s personality."
+  ```
+* **Recommend Color Schemes for Brand Consistency**
+
+  ```text
+  "Evaluate the current color palette for the provided {website/app}. Recommend color schemes that reinforce brand identity, improve user engagement, and ensure accessibility. Provide examples of harmonious color combinations."
+  ```
+* **Create User Stories for Empathy-Driven Design**
+
+  ```text
+  "Develop user stories for the provided {website/app}. Focus on empathy-driven design by describing typical user personas, goals, and pain points."
+  ```
+* **Review Wireframe for Visual Hierarchy**
+
+  ```text
+  "Review a provided UI wireframe and offer feedback on the visual hierarchy and element placement. Suggest improvements for clarity and user focus."
+  ```
+* **Optimize Viewport and Layout Adaptation**
+
+  ```text
+  "Assess how the provided {website/app} adapts to various screen sizes and orientations. Suggest UI/UX changes to improve layout flexibility and content readability on different devices."
+  ```
+* **Optimize for Cross-Cultural User Experience**
+
+  ```text
+  "Propose UI/UX changes to optimize the provided {website/app} for a cross-cultural user base. Consider language, imagery, and cultural norms."
+  ```  
+  
+* **Create a Wireframe from App Description**
+
+  ```text
+  "Based on the following app idea or description, suggest a low-fidelity wireframe layout for key screens. Include layout, navigation flow, and key UI elements. Return the structure as a textual or block-based wireframe."
+  ```
+  
+* **Suggest a Color Palette and Typography**
+
+  ```text
+  "Suggest a modern, accessible color palette and complementary typography for a {type of app/website}. Justify the choices based on contrast, readability, and emotional impact."
+  ```
+ 
+* **Design for inclusivity**
+  ```text
+  "Choose an existing popular app or website (e.g., a social media platform, an e-commerce site, or a news portal) and redesign a specific section or feature to be more inclusive and accessible for users with a particular disability (e.g., visual impairment, motor impairment, Cognitive disability)."
+  ```
+  
+* **Improve Landing Page Layout**
+
+  ```text
+  "Evaluate the provided landing page layout. Suggest improvements in layout hierarchy, visual balance, and call-to-action placement. Return a list of actionable layout changes."
+  ```
+
+* **Evaluate Mobile Responsiveness**
+
+  ```text
+  "Evaluate the mobile responsiveness of the given {website/app}. Suggest layout or style adjustments for optimal viewing across different screen sizes, including phones and tablets."
+  ```
+
+* **Improve Onboarding Experience**
+
+  ```text
+  "Analyze the user onboarding process for {website/app}. Recommend improvements to reduce friction and increase user retention. Provide mockup ideas or flow adjustments if applicable."
+  ```
+
+* **Color & Typography Optimization**
+
+  ```text
+  "Audit the color scheme and typography of the {website/app}. Suggest changes to improve readability, contrast ratios, and visual consistency based on WCAG accessibility guidelines."
+  ```
+  
 * **Accessibility-First Redesign Assistant**
   
   ```text
@@ -583,14 +746,16 @@ This repository contains prompt chains for the following domains:
   ```
 
 * **Audit UI for WCAG Compliance**
+
   ```text
   "Analyze the provided website or application UI and identify issues related to WCAG 2.1 accessibility compliance. Suggest specific changes to improve color contrast, keyboard navigation, screen reader support, and overall usability."
   ```
 
 * **Create Animations using Framer Motion or GSAP**
-```text
-"Create animation strategies using Framer Motion or GSAP for enhancing user experience on{given_web_application}. Include code snippets for entrance animations, transitions, and hover effects."
-```
+
+  ```text
+  "Create animation strategies using Framer Motion or GSAP for enhancing user experience on{given_web_application}. Include code snippets for entrance animations, transitions, and hover effects."
+  ```
 
 * **Suggest UX Improvements Based on User Goals**
 
@@ -604,13 +769,12 @@ This repository contains prompt chains for the following domains:
   "Review the interaction design for this component/page: {description or link}. Suggest improvements that would make the experience smoother and more intuitive. Consider animation timing, gesture control (if mobile), transitions, and feedback cues."
   ```
 
-
 * **UX Writing Improvements**
 
   ```text
   "Review the UX writing and microcopy for this interface: {screen/page/component}. Suggest clearer, more helpful, and user-friendly alternatives. Focus on button labels, error messages, tooltips, and onboarding text."
   ```
-
+  
 ---
 ### **7. Security & Authentication**
 
@@ -629,18 +793,48 @@ This repository contains prompt chains for the following domains:
 
 ---
 
-### **8. Event-Driven Architecture & Integration**
+### 8. Event-Driven Architecture & Integration
 
-* **Set Up an Event-Driven Architecture with Kafka**
+* **Design Scalable Kafka Event Architecture**  
 
   ```text
-  "Set up an event-driven architecture with Kafka. Define the Kafka topics, producers, and consumers to handle real-time data processing. Return the code with configuration details."
+  "Design an event-driven architecture using Apache Kafka. Define at least two Kafka topics with justification for their partitioning and replication factors. Provide producer and consumer code in [Language] (e.g., Python, Java) for one topic, including configuration details for idempotence, compression, and fault tolerance. Explain how the setup handles backpressure and scales under load."
   ```
 
-* **Help Integrate Third-Party Services**
+* **Robust Third-Party Service Integration** 
 
+  ```text 
+  "Integrate {third_party_service} into the existing project. Detail setup steps (dependency installation, environment variables), authentication (API keys/OAuth 2.0 flow), and rate-limited API interactions. Provide error-handling code for network failures and invalid responses, with a circuit-breaker implementation. Include a workflow diagram illustrating data flow between components."
+  ```
+
+* **Implement Change Data Capture (CDC) Pipeline**  
+ 
   ```text
-  "Integrate {third_party_service} into the existing project. Provide step-by-step instructions for setup, authentication, and API interaction. Return the integration code with explanations of how it works."
+  "Design a CDC system using Debezium and Kafka Connect. Configure connectors for {database_type} to capture real-time database changes. Provide deployment manifests, transformation logic for schema evolution, and dead-letter queue handling for failed events. Include monitoring setup for lag and throughput metrics."
+  ```
+
+* **Build Event Sourcing/CQRS System**  
+  
+  ```text
+  "Implement an event-sourced architecture using Kafka as the event store. Define event schemas for {domain_entity} state changes, command handlers, and read-model projections. Provide code for idempotent event processing, snapshotting strategy, and consistency validation between write/read models."
+  ```
+
+* **Design Cross-Cluster Event Replication**  
+
+```text
+  "Configure MirrorMaker2 for geo-replication between Kafka clusters. Define replication policies, topology discovery, and offset synchronization. Provide Terraform modules for multi-region deployment with metrics for replication latency and failover procedures during region outages."
+  ```
+
+* **Integrate Serverless Event Consumers**  
+
+```text
+  "Connect Kafka to serverless platforms (AWS Lambda/Google Cloud Functions). Develop consumer functions in [Language] with checkpointing, batch processing, and autoscaling configuration. Include cold-start optimization and cost analysis for different throughput scenarios."
+  ```  
+
+* **Create Schema Registry Governance**  
+ 
+ ```text
+  "Implement schema evolution governance using Confluent Schema Registry. Define compatibility rules (BACKWARD/FORWARD), schema lifecycle management, and client serialization/deserialization logic. Provide CI/CD pipeline for schema validation and version rollback procedures."
   ```
 
 ---
@@ -653,16 +847,64 @@ This repository contains prompt chains for the following domains:
   "Help me build a personal portfolio website. The site should include sections for my bio, projects, skills, and contact information. Make sure it's responsive and easy to navigate. Return the basic HTML/CSS/JS code for the website."
   ```
 
+* **Create platform-specific strategies development**
+
+  ```text
+  "Evaluate the content strategy of the given {brand/website}. Suggest improvements for audience engagement, SEO, and brand voice. Provide actionable content ideas, platform-specific strategies, and examples to enhance reach and conversion."
+  ```
+
 * **Write SEO-Optimized Blog Content**
 
   ```text
   "Generate a blog post on {topic} optimized for SEO. Use keyword research to include high-traffic keywords naturally, structure the post with headings and subheadings, and ensure it is engaging and informative. Return the content with SEO suggestions."
   ```
+  
+* **Design a Social Media Content Calendar**
 
+  ```text
+  "Create a 30-day content calendar for social media marketing focused on {industry or brand}. Include post ideas for Instagram, LinkedIn, Twitter, and Facebook, along with captions, hashtags, and recommended posting times."
+  ```
+  
 * **Generate LinkedIn Summary and Job Descriptions**
 
   ```text
   "Generate a compelling LinkedIn summary and job description based on the following details: {job_title}, {skills}, {experience}. Ensure the summary is concise, professional, and highlights key achievements."
+  ```
+  
+* **Create a Content Strategy for YouTube Channel Growth**
+  
+  ```text
+  "Help me develop a 3-month content strategy for a YouTube channel about {niche}. Include video ideas, SEO titles, descriptions, and tips to improve watch time and subscriber growth."
+  ```
+
+* **Generate Email Marketing Campaign Content**
+  
+  ```text
+  "Generate a sequence of 5 marketing emails for a {product/service} launch. Each email should have a specific goal (awareness, interest, decision, action) and include an engaging subject line, body copy, and CTA."
+  ```
+  
+* **Create Infographic Content for Marketing**
+  
+  ```text
+  "Generate content and layout suggestions for an infographic on {topic}. Include key statistics, headings, concise text blocks, and suggestions for visuals and icons."
+  ```
+  
+* **Write a Brand Story for Marketing Purposes**
+  
+  ```text
+  "Craft a compelling brand story for {company/brand name}. Include the origin, mission, values, and vision. The tone should resonate with {target audience} and be suitable for use on a website or promotional material."
+  ```
+   
+* **Develop Ad Copy for a Google/Facebook Ads Campaign**
+  
+  ```text
+  "Write 3 variations of ad copy for a Google or Facebook Ads campaign promoting {product/service}. Include strong hooks, benefits, and calls to action. Tailor the tone for {audience type}."
+  ```
+  
+* **Generate Podcast Episode Topics and Scripts**
+  
+  ```text
+  "Generate a list of 10 podcast episode topics on {theme/niche}. For one of them, provide a detailed script outline including intro, segment breakdowns, key talking points, and closing remarks."
   ```
 
 * **Email Marketing Campaign Writer**
@@ -687,6 +929,17 @@ This repository contains prompt chains for the following domains:
   "Create a serverless architecture using Google Cloud Functions for {task}. The functions should trigger based on specific events and return the necessary code with setup instructions."
   ```
 
+* **Create Terraform Code for AWS Resources**
+
+  ```text
+  "Write Terraform configuration files to provision AWS resources (EC2, RDS, S3, etc.) for {application}. Include variable support and a README with deployment instructions."
+  ```
+
+* **Automate Backup & Disaster Recovery**
+
+  ```text
+  "Design an automated backup and disaster recovery plan for {infrastructure_type}. Include scripts/configuration to back up databases and VM instances with scheduled recovery points."
+  ```
 * **Proactive Incident Simulation Toolkit**
   
   ```text
@@ -701,6 +954,24 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Analyze the performance of the production system and identify bottlenecks. Suggest and implement optimizations to improve speed, reduce memory usage, and increase scalability. Return the optimized code and explanations."
+  ```
+
+* **Log Analysis with ELK Stack**
+
+  ```text
+  "Configure log aggregation using the ELK (Elasticsearch, Logstash, Kibana) stack for {application/system}. Show how to filter and visualize critical events for debugging."
+  ```
+
+* **Create Health Check and Uptime Monitoring**
+
+  ```text
+  "Write health check endpoints and set up uptime monitoring using {tool like Pingdom, UptimeRobot}. Include alerting mechanisms and retry logic."
+  ```
+
+* **Analyze Memory Leaks in Node.js App**
+
+  ```text
+  "Identify and debug memory leaks in the provided Node.js application. Return optimized code, heap snapshot instructions, and memory profiling techniques."
   ```
 
 * **Integrate Prometheus and Grafana Dashboards**
@@ -722,10 +993,117 @@ This repository contains prompt chains for the following domains:
 
 ### **12. Web Development**
 
+* **Build a Dark/Light Mode Toggle**
+
+  ```text
+  "Add a dark/light mode switcher to a website using CSS variables and JavaScript. Ensure transitions are smooth and all elements follow the selected theme accurately."
+  ```
+
+* **Write Tests for Front-End Components**
+
   ```text
   "Restructure a full-stack or frontend-only project for better scalability and maintainability. Group files by feature, separate core logic, and organize shared utilities for cleaner architecture."
   ```
 
+* **Build Progressive Web App (PWA) with Advanced Service Worker Implementation**
+
+  ```text
+  "Develop a comprehensive Progressive Web App for {application_type} with advanced service worker functionality. Implement intelligent caching strategies (cache-first, network-first, stale-while-revalidate), offline data synchronization, background sync for failed requests, and push notification handling. Include web app manifest configuration, installability criteria, app shell architecture, and performance optimization techniques. Add IndexedDB for offline data storage, lazy loading for assets, and code splitting for optimal performance. Ensure the PWA scores 90+ on Lighthouse audit across all categories."
+  ```
+  
+* **Optimize Front-End Performance**
+
+  ```text
+  "Audit the performance of the given website. Suggest and implement optimizations such as lazy loading, code splitting, and CDN usage. Include metrics before and after."
+  ```
+
+* **SEO Optimization Checklist**
+
+  ```text
+   "Generate an SEO optimization checklist for {website}. Analyze meta tags, sitemap, robots.txt, image alt tags, structured data, and page speed. Return suggestions and corrected HTML snippets."
+  ```
+
+* **Secure Web App with Best Practices**
+
+  ```text
+  "Identify and fix security vulnerabilities in the provided web app code. Include fixes for XSS, CSRF, CORS misconfigurations, and session handling flaws."
+  ```
+  
+* **Audit Website for Accessibility Issues**
+
+  ```text
+  "Please review the provided website code and identify any accessibility issues according to WCAG guidelines. Suggest improvements for better accessibility, such as proper use of ARIA attributes, color contrast, keyboard navigation, and semantic HTML. Return a list of issues found and recommended code changes."
+  ```
+
+* **Create a Reusable Form Component in React**
+
+  ```text
+  "Create a reusable React form component that takes input configuration as props, such as (validation rules, field names, and types). Give an example of how you would use it to create sign-up and login forms. Explain form state handling and include code."
+  ```
+
+* **Implement Theme Switching with State Persistence**  
+  
+  ```text
+  "Provide a React or Next.js component to toggle between light and dark modes. Use CSS variables and persist user preference in `localStorage` or `cookies`, ensuring no hydration mismatch on rehydration."
+  ```
+
+* **Secure REST API Authentication Flow using JWT**
+
+  ```text
+  "Generate backend Express.js code to handle user login and registration using hashed passwords with bcrypt. Return a signed JWT on success and validate it via middleware for protected routes."
+  ```
+
+* **Generate a Scalable Folder Structure for a Full-Stack MERN App**
+
+  ```text  
+  "Design a scalable project structure for a MERN stack application, separating concerns like routes, controllers, services, models, and utilities. Include reasoning for each folder."
+  ```
+
+* **Optimize Frontend Performance in a React Application**  
+
+  ```text
+  "List concrete strategies and implement React code snippets to improve performance using memoization (`React.memo`, `useMemo`), lazy loading (`React.lazy`), and bundle splitting."
+  ```
+
+* **Implement Infinite Scrolling with Throttling and Pagination**  
+  
+  ```text
+  "Generate a React component to implement infinite scrolling on a blog post feed. Use intersection observer or scroll event handlers with throttling and server-side pagination."
+  ```
+
+* **Design a CMS-Agnostic Blog Template** 
+
+  ```text 
+  "Generate reusable and CMS-agnostic frontend components (in React/Next.js or HTML/Alpine.js) that can dynamically display blog post content using Markdown, MDX, or CMS API responses (e.g., Sanity or Contentful)."
+  ```
+
+* **Write Access-Control Middleware for Role-Based Routing**  
+  
+  ```text
+  "Provide middleware logic for a Node.js backend that implements role-based access control (RBAC). Include route protection for Admin, Editor, and Public user roles."
+  ```
+
+* **Implement Secure File Upload Handling in Express.js** 
+
+  ```text 
+  "Create a secure Express route using `multer` to handle image uploads with MIME type filtering, file size restrictions, and S3 bucket integration."
+  ```
+
+* **Transform JSON Schema to Form UI in React**  
+
+  ```text
+  "Generate a prompt chain or code logic that takes a JSON schema definition and renders a corresponding React form with input validation, field grouping, and dynamic rendering."
+  ```
+
+* **IMPLEMENT ADVANCED FRONTEND PERFORMANCE OPTIMIZATION**
+    ```text
+  "Optimize the provided web application for maximum performance and Core Web Vitals compliance. Implement advanced techniques including code splitting with dynamic imports, tree shaking, bundle analysis and optimization, image optimization with WebP/AVIF formats, lazy loading with Intersection Observer API, and critical CSS extraction. Add performance monitoring with Real User Monitoring (RUM), implement resource hints (preload, prefetch, preconnect), optimize font loading strategies, and minimize JavaScript execution time. Target metrics: LCP < 2.5s, FID < 100ms, CLS < 0.1, and overall Lighthouse score > 95."
+  ```
+  
+* **Implement Lazy Loading of Components**
+  ```text
+  "Implement lazy loading in a React or Vue application to improve initial load time. Return code snippets using dynamic imports, explain how to apply it to routes or components, and describe the impact on performance."
+  ```
 
 ---
 
@@ -741,6 +1119,12 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "Given the following source code for a RESTful API implemented in {programming_language} with endpoints {list_of_endpoints}, generate an OpenAPI 3.0 schema that describes the API. The schema should include paths, request/response parameters, status codes, authentication methods, and other relevant details. Return the complete OpenAPI schema in YAML format."
+  ```
+* **Create a responsive web dashboard with real-time data**
+
+```text
+ "Build a responsive admin dashboard using {frontend_framework} that displays real-time data from a mock API or backend service. Include components such as charts, tables, summary cards, and a sidebar. The layout should adapt to mobile, tablet, and desktop views. Return the complete frontend code with comments explaining each section."
+
   ```
 
 * **Generate Curl Commands for Testing OpenAPI Endpoints**
@@ -772,12 +1156,6 @@ This repository contains prompt chains for the following domains:
   ```text
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
   ```
-
-* **Dynamic API Mocking & Contract Validator**
-  
-  ```text
-  "For the provided OpenAPI schema, generate a dynamic mock server that validates incoming requests against the schema and returns realistic, randomized responses. Include contract testing scripts to ensure client and server compatibility."
-  ``` 
 ---
 
 ### **14. AI/ML Integration**
@@ -786,7 +1164,6 @@ This repository contains prompt chains for the following domains:
 
   ```text
   "How can Keploy be used to capture and replay backend responses for APIs built with Spring Boot and AI/ML models (such as a spam/ham email classifier), ensuring consistent integration testing even when model outputs vary due to randomness or training state?"
-
   ```
 
 * **Automated Keploy Testing for AI APIs in CI/CD Pipelines**
@@ -902,13 +1279,56 @@ This repository contains prompt chains for the following domains:
   Return: working code with recognition overlay on video."
   ```
 
-
 * **Scaffold Django REST API from Specification**  
   
   ```text
   "Given a model name and its fields, generate Django model code, serializer, views (class-based using DRF), and URL configuration to build a complete CRUD API. Also include sample cURL requests and instructions for enabling JWT authentication in settings.py."
   ```
+ 
+* **Exploratory Data Analysis (EDA) with Recommendations**
 
+  ```text
+  "Perform an in-depth exploratory data analysis on the given dataset (CSV format). Identify key trends, missing values, outliers, and feature correlations. Summarize findings and suggest three actionable insights for business decision-making."
+  ```
+
+* **Feature Engineering Automation**
+
+  ```text
+  "Here is the header format of the dataset and also the attached csv file for a binary classification problem with both categorical and numerical features, generate automated feature engineering steps using modern libraries (e.g., Featuretools, Scikit-learn). Include encoding, transformations, and feature selection methods."
+  ```
+
+* **ML Model Deployment with FastAPI**
+
+  ```text
+  "Wrap this trained machine learning model into a FastAPI app for real-time inference. Include endpoint for /predict, input schema validation using Pydantic, and Dockerfile for containerization. Give me the production level organization of code. Prefer to modularize the provided model if needed to enhance code readability. Provide me with the detailed python code with annotations.
+
+  Here is the model:
+  <model implementation or functions>"
+  ```
+* **Resume Compatibility Evaluator**  
+ 
+ ```text
+    "Create a prompt chain that takes as input a resume and job description. The output should include: a compatibility percentage, key aligned skills, missing qualifications, and actionable improvement tips for better job matching."
+  ```
+  
+* **Set Up ML Model Monitoring**
+
+```text
+  Design a system to monitor the performance and drift of a deployed machine learning model. Include steps for collecting model metrics, setting up alerts, and visualizing results. Return a sample configuration and explanation.
+```
+
+* **Automate ML Pipeline Deployment**
+
+```text
+  Create a pipeline to automate the training, evaluation, and deployment of a machine learning model using {tool/framework}. Return the pipeline definition and instructions for setup.
+```
+
+* **Explain Model Interpretability Techniques**
+
+```text
+  Explain the key techniques for interpreting and explaining machine learning model predictions, such as SHAP, LIME, or feature importance. Provide example code for one technique.
+```
+ 
 ---
 
 ### **15. Testing & Quality Assurance**
@@ -930,64 +1350,142 @@ This repository contains prompt chains for the following domains:
   ```text
   "Write a comprehensive API test suite for the following RESTful endpoints using a tool like Postman, REST Assured, or Supertest. Include  tests for valid inputs, invalid inputs, edge cases, and authorization scenarios. Validate response status codes, payload structures, and headers. Return test scripts or collection exports along with a description of each test case."
   ```
+---
 
 ### **16. Agentic AI**
 
-1. **Design a Multi-Agent Workflow**  
+* **Design a Multi-Agent Workflow**  
    ```text
    "Outline a multi-agent workflow for {task} using frameworks like LangGraph or CrewAI. Define each agent’s role (e.g., DataCollector, Planner, Executor, Verifier), their inputs/outputs, and how they communicate. Provide a sequence diagram or step-by-step description."
    ``` 
 
-2. **Implement an Agent with Memory**
+* **Implement an Agent with Memory**
 
    ```text
    "Show me how to implement an agent in Autogen that persists conversation history and key facts in ChromaDB. Include code snippets (e.g., using the langchain or CrewAI SDK) for saving, retrieving, and integrating memory into prompts."
    ```
 
-3. **Agent Task Delegation Strategy**
+* **Agent Task Delegation Strategy**
 
    ```text
    "Given a high-level goal (e.g., ‘Analyze market trends and generate a summary report’), write a prompt chain that uses LangGraph to break it into subtasks, assigns them to specialized agents, and then aggregates their outputs."
    ```
 
-4. **Error Handling & Recovery in Agents**
+* **Error Handling & Recovery in Agents**
 
    ```text
    "Demonstrate how to detect and handle failures in an autonomous agent pipeline built with CrewAI (e.g., a web-scraping agent times out). Provide prompt or code templates for retry logic, fallback strategies, and alerting."
    ```
 
-5. **Evaluate Agent Performance Metrics**
+* **Evaluate Agent Performance Metrics**
 
    ```text
    "Define quantitative and qualitative metrics (e.g., task completion rate, avg. response time, accuracy) to evaluate an autonomous agent’s performance in Autogen, and show how to log and visualize these using a monitoring framework like Prometheus or Grafana."
    ```
 
-6. **Agent Orchestration with LangGraph**
+* **Agent Orchestration with LangGraph**
 
    ```text
    "Write a LangGraph configuration that orchestrates three agents—ResearchAgent, AnalysisAgent, and NotificationAgent—with dependencies and data passing defined. Include sample YAML or JSON."
    ```
 
-7. **Secure Agent Actions**
+* **Secure Agent Actions**
 
    ```text
    "Explain best practices for sandboxing or restricting file, network, and system access for agents running under CrewAI. Provide examples of how to configure Docker containers or Kubernetes PodSecurityPolicies to enforce them."
    ```
 
-8. **Dynamic Prompt Refinement**
+* **Dynamic Prompt Refinement**
 
    ```text
    "Show how an Autogen agent can use its own logs or feedback loop to refine its prompts over time—e.g., if its summaries are too verbose, adjust the prompt to be more concise. Include code or pseudo-code in Python."
    ```
 
-9. **Integrate External APIs in Agents**
+* **Integrate External APIs in Agents**
 
    ```text
    "Create a prompt template and runtime code for a LangGraph agent that fetches real-time stock prices from Alpha Vantage, processes them, and makes buy/sell decisions. Show how to plug in API keys and error handling."
    ```
 
-10. **End-to-End Agentic AI Demo**
+* **End-to-End Agentic AI Demo**
 
     ```text
     "Compose a high-level README or tutorial that walks through building, testing (using Keploy), and deploying an agentic AI system with CrewAI or Autogen: from local development, through CI/CD, to production orchestration and monitoring."
     ```
+    
+---
+
+### **17. RAG Application Development**
+
+* **Generate a Complete RAG App Codebase (Python + LangChain)**  
+  
+  ```text
+  ""You're a senior AI engineer. Build a modular Retrieval-Augmented Generation (RAG) application in Python using LangChain and ChromaDB. The application should support:
+
+  1. Document ingestion from PDF, Markdown, and CSV formats.
+  2. Text preprocessing with chunking and metadata tagging.
+  3. Embedding generation using either OpenAI or HuggingFace Transformers.
+  4. Persistent vector store setup with ChromaDB (local mode).
+  5. A retrieval pipeline that supports top-k semantic search.
+  6. An interactive QA interface using Streamlit for user queries and answer display.
+
+  Ensure code quality with modular file structure, comments, and environment setup files (requirements.txt). Use best practices for scalability and readability."
+  "
+  ```
+
+* **Create a FastAPI Backend for RAG App**
+
+  ```text
+  "You're a senior AI backend engineer. Build a FastAPI-based backend to serve a Retrieval-Augmented Generation (RAG) pipeline using LangChain or custom Python modules. The backend should expose relevant endpoints for uploading documents, querying questions, and retrieving responses — as defined in the user requirements. Integrate with a vector store like ChromaDB, and implement the RAG pipeline components: document ingestion, chunking, embedding, retrieval, and answer generation. Follow modular design principles and structure the codebase to support scalability, clarity, and future extension. Ensure the implementation meets the functional needs as defined above."
+  "
+  ```
+
+* **Set Up Vector Store with ChromaDB**
+
+  ```text
+  "Provide Python code to set up a local ChromaDB instance for storing and querying document embeddings. Include functionality for creating collections, adding documents, and retrieving the top-k similar results for a user query."
+  ```
+
+* **Use HuggingFace Embeddings with FAISS**
+
+  ```text
+  "Write a Python script using HuggingFace Transformers to convert documents into embeddings and store them in a FAISS index. Enable functionality to search and retrieve the most relevant chunks based on cosine similarity."
+  ```
+
+* **Build a Streamlit UI for a RAG Chatbot**
+
+  ```text
+  "Create a Streamlit interface for a Retrieval-Augmented Generation chatbot. Allow users to upload files, ask questions, and receive contextual answers. Integrate with a backend that uses a vector store and a language model."
+  ```
+
+* **Generate Preprocessing & Chunking Pipeline**
+
+  ```text
+  "Design a text preprocessing and chunking pipeline for RAG. The pipeline should clean text, split it into overlapping chunks, and tag each chunk with metadata such as source, index, or timestamp. Optimize for embedding and retrieval accuracy."
+  ```
+
+* **LangChain RetrievalQA Pipeline with Prompt Template**
+
+  ```text
+  "Set up a RetrievalQA pipeline in LangChain using FAISS and OpenAI embeddings. Load documents, embed them, and create a prompt template to retrieve concise and context-aware answers to user queries."
+  ```
+
+* **Develop RAG App with Local LLM (e.g. Mistral-7B)**
+
+  ```text
+  "Build a RAG pipeline using a local language model like Mistral-7B. Include document ingestion, embedding via SentenceTransformers, ChromaDB for retrieval, and local inference for generating final answers."
+  ```
+
+* **Enable PDF Upload and Parsing for RAG**
+
+  ```text
+  "Add functionality to allow users to upload PDFs. Extract the text using PyMuPDF or pdfminer and convert it into clean, chunked segments for embedding and storage in the RAG pipeline."
+  ```
+
+* **Deploy RAG App on Render or Railway**
+
+  ```text
+  "Provide deployment instructions to host a RAG application on Render or Railway using FastAPI or Streamlit. Include a requirements.txt, Procfile, or Dockerfile for proper environment setup and execution."
+  ```
+
+---
