@@ -436,6 +436,11 @@ This repository contains prompt chains for the following domains:
   ```text
   "Please provide the steps for setting up cloud storage using Amazon S3. Include how to create a bucket, set permissions, and manage files programmatically via AWS SDKs. Return the necessary code examples for integration."
   ```
+* **Amazon S3 as a Static Website with CI/CD**
+
+ ```text
+   "Demonstrate how to host a static website on Amazon S3 and automate its deployment with GitHub Actions. Include S3 bucket website configuration, IAM policy setup, and a GitHub Actions workflow that uploads files on every push to the main branch."
+  ```
 
 * **Cloud Cost Anomaly Detector**
   
