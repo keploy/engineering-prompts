@@ -176,7 +176,7 @@ This repository contains prompt chains for the following domains:
   "After refactoring the code, use Keploy to run automated tests to check if any regressions have been introduced. Set up Keploy to verify that the refactored code behaves as expected, ensuring that all existing functionalities remain intact. The tests should include integration tests to verify that API endpoints, data handling, and user interactions still function properly. Ensure that Keploy is set to compare the current behavior with previously recorded test cases to detect any discrepancies or regressions. Return the Keploy test configuration, test cases, and results showing the behavior of the refactored code."
   ```
   
-* **Generate GitHub Issue Templates Based on Project Type
+* **Generate GitHub Issue Templates Based on Project Type**
   ```text
   "Generate a GitHub issue template for a {project_type} (e.g., MERN stack app, microservice, machine learning pipeline). The template should include sections like Summary, Steps to Reproduce, Expected Behavior, Actual Behavior, Logs, and Environment."
   ```
@@ -605,6 +605,36 @@ This repository contains prompt chains for the following domains:
   ```text
   "Provide UX/UI design recommendations for the provided {website/app}. Focus on improving usability, accessibility, and aesthetics. Return a list of specific design improvements with examples where necessary."
   ```
+* **Improve Font Pairings for Visual Hierarchy**Add commentMore actions
+
+  ```text
+  "Review the current font pairings for the provided {website/app}. Suggest improvements to create a clear visual hierarchy and enhance readability. Provide examples of effective font combinations that align with the brand’s personality."
+  ```
+* **Recommend Color Schemes for Brand Consistency**
+
+  ```text
+  "Evaluate the current color palette for the provided {website/app}. Recommend color schemes that reinforce brand identity, improve user engagement, and ensure accessibility. Provide examples of harmonious color combinations."
+  ```
+* **Create User Stories for Empathy-Driven Design**
+
+  ```text
+  "Develop user stories for the provided {website/app}. Focus on empathy-driven design by describing typical user personas, goals, and pain points."
+  ```
+* **Review Wireframe for Visual Hierarchy**
+
+  ```text
+  "Review a provided UI wireframe and offer feedback on the visual hierarchy and element placement. Suggest improvements for clarity and user focus."
+  ```
+* **Optimize Viewport and Layout Adaptation**
+
+  ```text
+  "Assess how the provided {website/app} adapts to various screen sizes and orientations. Suggest UI/UX changes to improve layout flexibility and content readability on different devices."
+  ```
+* **Optimize for Cross-Cultural User Experience**
+
+  ```text
+  "Propose UI/UX changes to optimize the provided {website/app} for a cross-cultural user base. Consider language, imagery, and cultural norms."
+  ```  
   
 * **Create a Wireframe from App Description**
 
@@ -695,7 +725,7 @@ This repository contains prompt chains for the following domains:
   ```text
   "Review the UX writing and microcopy for this interface: {screen/page/component}. Suggest clearer, more helpful, and user-friendly alternatives. Focus on button labels, error messages, tooltips, and onboarding text."
   ```
-
+  
 ---
 
 ### **7. Security & Authentication**
