@@ -21,10 +21,11 @@ This repository contains prompt chains for the following domains:
 11. **System Monitoring & Debugging**
 12. **Web Development**
 13. **API Development**
-14. **AI/ML Integration**
-15. **Testing & Quality Assurance**
-16. **Agentic AI**
-17. **RAG Application Development**
+14. **Legal Tech & AI**
+15. **AI/ML Integration**
+16. **Testing & Quality Assurance**
+17. **Agentic AI**
+18. **RAG Application Development**
 
 ---
 
@@ -856,6 +857,8 @@ This repository contains prompt chains for the following domains:
 * **Write SEO-Optimized Blog Content**
 
   ```text
+
+=======
   "Generate a blog post on {topic} optimized for SEO. Use keyword research to include high-traffic keywords naturally, structure the post with headings and subheadings, and ensure it is engaging and informative. Return the content with SEO suggestions."
   ```
   
@@ -1489,3 +1492,18 @@ This repository contains prompt chains for the following domains:
   ```
 
 ---
+
+ "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
+  ```
+### **18. Legal Tech & AI**
+
+* **Evaluate Factual Accyracy of LLM Outputs**
+
+  ```text
+  "Given the following user query and the LLM's response, evaluate the factual accuracy of the output. Check if the response is consistent with the provided source text or expected knowledge base. Return a rating (1-5) and a brief explanation."
+
+  User Query: {query}  
+  LLM Response: {response}  
+  Reference Text: {reference}"
+  ```
+
