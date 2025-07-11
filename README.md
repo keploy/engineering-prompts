@@ -286,6 +286,22 @@ This repository contains prompt chains for the following domains:
 
 ### **3. Database Management**
 
+* **Detect & Filter Redundant Data in PostgreSQL**
+
+  ```text
+  "Given the following PostgreSQL table structure: <Table columns with constraints>
+
+  I suspect redundant or repeated data might be coming from a process that re-inserts the same ______, ________ and ________ combination multiple times.
+
+  Write a SQL query to:
+
+  - Identify all such repeated entries.
+  - Filter out and create the new view without the duplicate entries.
+  - Create a reusable filter CTL query for documentation in the future use.
+  - Generate a delete statement that removes the duplicates but retains one unique record from each group.**
+
+  Provide the SQL in a safe and modular way so I can review duplicates before deletion."
+  ```
 
 * **Design a General Entity-Relationship Diagram**
 
@@ -846,6 +862,7 @@ This repository contains prompt chains for the following domains:
   ```text
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
   ```
+---
 
 ### **14. AI/ML Integration**
 
@@ -974,6 +991,27 @@ This repository contains prompt chains for the following domains:
   
   ```text
   "Given a model name and its fields, generate Django model code, serializer, views (class-based using DRF), and URL configuration to build a complete CRUD API. Also include sample cURL requests and instructions for enabling JWT authentication in settings.py."
+  ```
+ 
+* **Exploratory Data Analysis (EDA) with Recommendations**
+
+  ```text
+  "Perform an in-depth exploratory data analysis on the given dataset (CSV format). Identify key trends, missing values, outliers, and feature correlations. Summarize findings and suggest three actionable insights for business decision-making."
+  ```
+
+* **Feature Engineering Automation**
+
+  ```text
+  "Here is the header format of the dataset and also the attached csv file for a binary classification problem with both categorical and numerical features, generate automated feature engineering steps using modern libraries (e.g., Featuretools, Scikit-learn). Include encoding, transformations, and feature selection methods."
+  ```
+
+* **ML Model Deployment with FastAPI**
+
+  ```text
+  "Wrap this trained machine learning model into a FastAPI app for real-time inference. Include endpoint for /predict, input schema validation using Pydantic, and Dockerfile for containerization. Give me the production level organization of code. Prefer to modularize the provided model if needed to enhance code readability. Provide me with the detailed python code with annotations.
+
+  Here is the model:
+  <model implementation or functions>"
   ```
 
 ---
