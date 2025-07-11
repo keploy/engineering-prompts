@@ -729,14 +729,22 @@ This repository contains prompt chains for the following domains:
   "Analyze this [URL/code] and generate specific, actionable fixes to achieve 90+ Lighthouse scores across all metrics, prioritizing [mobile/desktop], including code snippets for: bundle optimization, critical CSS, image compression, and caching strategies."
   ```
 
+
 * **Legacy System Modernization**
   ```text
   "Convert this [jQuery/Backbone] code to [React/Vue] with zero feature regression, including: automated codemod suggestions, gradual migration strategy, TypeScript integration, and compatibility layer for legacy dependencies."
   
+* **Audit Website for Accessibility Issues**
+
+  ```text
+  "Please review the provided website code and identify any accessibility issues according to WCAG guidelines. Suggest improvements for better accessibility, such as proper use of ARIA attributes, color contrast, keyboard navigation, and semantic HTML. Return a list of issues found and recommended code changes."
+  ```
+
 * **Create a Reusable Form Component in React**
 
   ```text
   "Create a reusable React form component that takes input configuration as props, such as (validation rules, field names, and types). Give an example of how you would use it to create sign-up and login forms. Explain form state handling and include code."
+  ```
 
 * **Implement Theme Switching with State Persistence**  
   
