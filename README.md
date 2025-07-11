@@ -740,7 +740,16 @@ This repository contains prompt chains for the following domains:
   ```text
   "Write unit and integration tests for the provided front-end components using {testing_framework}. Ensure the tests cover all major use cases and edge cases. Return the test code with explanations."
   ```
+* **Performance Optimization (Lighthouse 100)**
+  ```text
+  "Analyze this [URL/code] and generate specific, actionable fixes to achieve 90+ Lighthouse scores across all metrics, prioritizing [mobile/desktop], including code snippets for: bundle optimization, critical CSS, image compression, and caching strategies."
+  ```
 
+
+* **Legacy System Modernization**
+  ```text
+  "Convert this [jQuery/Backbone] code to [React/Vue] with zero feature regression, including: automated codemod suggestions, gradual migration strategy, TypeScript integration, and compatibility layer for legacy dependencies."
+  
 * **Audit Website for Accessibility Issues**
 
   ```text
@@ -757,67 +766,126 @@ This repository contains prompt chains for the following domains:
   
   ```text
   "Provide a React or Next.js component to toggle between light and dark modes. Use CSS variables and persist user preference in `localStorage` or `cookies`, ensuring no hydration mismatch on rehydration."
-  ```
 
 * **Secure REST API Authentication Flow using JWT**
 
   ```text
   "Generate backend Express.js code to handle user login and registration using hashed passwords with bcrypt. Return a signed JWT on success and validate it via middleware for protected routes."
-  ```
 
 * **Generate a Scalable Folder Structure for a Full-Stack MERN App**
 
   ```text  
   "Design a scalable project structure for a MERN stack application, separating concerns like routes, controllers, services, models, and utilities. Include reasoning for each folder."
-  ```
 
 * **Optimize Frontend Performance in a React Application**  
 
   ```text
   "List concrete strategies and implement React code snippets to improve performance using memoization (`React.memo`, `useMemo`), lazy loading (`React.lazy`), and bundle splitting."
-  ```
 
 * **Implement Infinite Scrolling with Throttling and Pagination**  
   
   ```text
   "Generate a React component to implement infinite scrolling on a blog post feed. Use intersection observer or scroll event handlers with throttling and server-side pagination."
-  ```
 
 * **Design a CMS-Agnostic Blog Template** 
 
   ```text 
   "Generate reusable and CMS-agnostic frontend components (in React/Next.js or HTML/Alpine.js) that can dynamically display blog post content using Markdown, MDX, or CMS API responses (e.g., Sanity or Contentful)."
-  ```
 
 * **Write Access-Control Middleware for Role-Based Routing**  
   
   ```text
   "Provide middleware logic for a Node.js backend that implements role-based access control (RBAC). Include route protection for Admin, Editor, and Public user roles."
-  ```
 
 * **Implement Secure File Upload Handling in Express.js** 
 
   ```text 
   "Create a secure Express route using `multer` to handle image uploads with MIME type filtering, file size restrictions, and S3 bucket integration."
-  ```
 
 * **Transform JSON Schema to Form UI in React**  
 
   ```text
   "Generate a prompt chain or code logic that takes a JSON schema definition and renders a corresponding React form with input validation, field grouping, and dynamic rendering."
-  ```
 
 * **IMPLEMENT ADVANCED FRONTEND PERFORMANCE OPTIMIZATION**
     ```text
   "Optimize the provided web application for maximum performance and Core Web Vitals compliance. Implement advanced techniques including code splitting with dynamic imports, tree shaking, bundle analysis and optimization, image optimization with WebP/AVIF formats, lazy loading with Intersection Observer API, and critical CSS extraction. Add performance monitoring with Real User Monitoring (RUM), implement resource hints (preload, prefetch, preconnect), optimize font loading strategies, and minimize JavaScript execution time. Target metrics: LCP < 2.5s, FID < 100ms, CLS < 0.1, and overall Lighthouse score > 95."
-  ```
   
 * **Implement Lazy Loading of Components**
   ```text
   "Implement lazy loading in a React or Vue application to improve initial load time. Return code snippets using dynamic imports, explain how to apply it to routes or components, and describe the impact on performance."
-  ```
+* **Legacy System Modernization**
+  ```text
+  "Convert this [jQuery/Backbone] code to [React/Vue] with zero feature regression, including: automated codemod suggestions, gradual migration strategy, TypeScript integration, and compatibility layer for legacy dependencies."
+* **Create a Reusable Form Component in React**
 
----
+  ```text
+  "Create a reusable React form component that takes input configuration as props, such as (validation rules, field names, and types). Give an example of how you would use it to create sign-up and login forms. Explain form state handling and include code."
+
+* **Implement Theme Switching with State Persistence**  
+  
+  ```text
+  "Provide a React or Next.js component to toggle between light and dark modes. Use CSS variables and persist user preference in `localStorage` or `cookies`, ensuring no hydration mismatch on rehydration."
+
+
+* **Secure REST API Authentication Flow using JWT**
+
+  ```text
+  "Generate backend Express.js code to handle user login and registration using hashed passwords with bcrypt. Return a signed JWT on success and validate it via middleware for protected routes."
+
+
+* **Generate a Scalable Folder Structure for a Full-Stack MERN App**
+
+  ```text  
+  "Design a scalable project structure for a MERN stack application, separating concerns like routes, controllers, services, models, and utilities. Include reasoning for each folder."
+
+
+* **Optimize Frontend Performance in a React Application**  
+
+  ```text
+  "List concrete strategies and implement React code snippets to improve performance using memoization (`React.memo`, `useMemo`), lazy loading (`React.lazy`), and bundle splitting."
+
+
+* **Implement Infinite Scrolling with Throttling and Pagination**  
+  
+  ```text
+  "Generate a React component to implement infinite scrolling on a blog post feed. Use intersection observer or scroll event handlers with throttling and server-side pagination."
+
+
+* **Design a CMS-Agnostic Blog Template** 
+
+  ```text 
+  "Generate reusable and CMS-agnostic frontend components (in React/Next.js or HTML/Alpine.js) that can dynamically display blog post content using Markdown, MDX, or CMS API responses (e.g., Sanity or Contentful)."
+
+
+* **Write Access-Control Middleware for Role-Based Routing**  
+  
+  ```text
+  "Provide middleware logic for a Node.js backend that implements role-based access control (RBAC). Include route protection for Admin, Editor, and Public user roles."
+ 
+
+* **Implement Secure File Upload Handling in Express.js** 
+
+  ```text 
+  "Create a secure Express route using `multer` to handle image uploads with MIME type filtering, file size restrictions, and S3 bucket integration."
+
+
+* **Transform JSON Schema to Form UI in React**  
+
+  ```text
+  "Generate a prompt chain or code logic that takes a JSON schema definition and renders a corresponding React form with input validation, field grouping, and dynamic rendering."
+
+
+* **IMPLEMENT ADVANCED FRONTEND PERFORMANCE OPTIMIZATION**
+    ```text
+  "Optimize the provided web application for maximum performance and Core Web Vitals compliance. Implement advanced techniques including code splitting with dynamic imports, tree shaking, bundle analysis and optimization, image optimization with WebP/AVIF formats, lazy loading with Intersection Observer API, and critical CSS extraction. Add performance monitoring with Real User Monitoring (RUM), implement resource hints (preload, prefetch, preconnect), optimize font loading strategies, and minimize JavaScript execution time. Target metrics: LCP < 2.5s, FID < 100ms, CLS < 0.1, and overall Lighthouse score > 95."
+
+  
+* **Implement Lazy Loading of Components**
+  ```text
+  "Implement lazy loading in a React or Vue application to improve initial load time. Return code snippets using dynamic imports, explain how to apply it to routes or components, and describe the impact on performance."
+
+
 
 ### **13. API Development**
 
