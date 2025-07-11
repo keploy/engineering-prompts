@@ -476,6 +476,50 @@ This repository contains prompt chains for the following domains:
 
 ### **5. Full-Stack Development**
 
+* **Build a Full-Stack Web Application (Any Stack)**
+
+  ```text
+  "Create a full-stack web application using a stack of your choice (e.g., MERN, MEVN, Django + React, etc.). Implement authentication, RESTful API communication, and a basic CRUD interface. Provide the project structure and example code."
+  ```
+
+* **Integrate a Payment Gateway (Generic)**
+
+  ```text
+  "Integrate a payment gateway (e.g., Stripe, Razorpay, or PayPal) in a full-stack application. Set up the backend to handle secure payment processing and the frontend to trigger and confirm transactions. Return example code for both layers."
+  ```
+
+* **Create a RESTful API Backend**
+
+  ```text
+  "Develop a RESTful API backend using Express.js, Django, or any other framework. Define routes and controllers for CRUD operations on a generic resource. Include code snippets and brief documentation for endpoints."
+  ```
+
+* **Implement Real-Time Updates (Any Stack)**
+
+  ```text
+  "Add real-time updates to a full-stack application using WebSockets (e.g., socket.io). Provide server-side and client-side integration code to handle live data streams such as chat, notifications, or dashboards."
+  ```
+
+* **Regression Testing with Keploy (Generic Full-Stack)**
+
+  ```text
+  "Configure Keploy in a full-stack app to perform regression testing. Set up automatic testing of backend APIs and frontend components post-update. Include steps to install, configure, and trigger Keploy for API snapshotting and validation."
+  ```
+
+* **Set Up Monorepo Architecture for Full-Stack App**
+
+  ```text
+  "Organize a full-stack web application in a monorepo using tools like Turborepo, Nx, or Yarn Workspaces. Structure the project for shared libraries, isolated services, and better CI/CD scalability."
+  ```
+
+* **Implement File Upload and Storage**
+
+  ```text
+  "Add support for file uploads in a full-stack application. Use Multer or a similar middleware on the backend, and integrate file previews and upload status on the frontend. Optionally integrate cloud storage like AWS S3."
+  ```
+
+---
+
 * **Develop a Full-Stack Web Application Using Django and React**
 
   ```text
@@ -732,7 +776,6 @@ This repository contains prompt chains for the following domains:
   ```
   
 ---
-
 ### **7. Security & Authentication**
 
 * **Offer Security Best Practices**
@@ -747,11 +790,6 @@ This repository contains prompt chains for the following domains:
   "Implement JSON Web Token (JWT) authentication in the provided application. The system should handle token generation, validation, and secure access to protected routes. Return the code with explanations."
   ```
 
-* **Zero Trust Architecture Quickstart**
-  
-  ```text
-  "Transform the current system architecture into a Zero Trust model. Output a step-by-step migration plan, including network segmentation, identity verification at every layer, and continuous authentication strategies. Provide sample policies and enforcement scripts."
-  ```
 
 ---
 
@@ -964,7 +1002,7 @@ This repository contains prompt chains for the following domains:
 * **Write Tests for Front-End Components**
 
   ```text
-  "Write unit and integration tests for the provided front-end components using {testing_framework}. Ensure the tests cover all major use cases and edge cases. Return the test code with explanations."
+  "Restructure a full-stack or frontend-only project for better scalability and maintainability. Group files by feature, separate core logic, and organize shared utilities for cleaner architecture."
   ```
 
 * **Build Progressive Web App (PWA) with Advanced Service Worker Implementation**
@@ -1088,7 +1126,6 @@ This repository contains prompt chains for the following domains:
  "Build a responsive admin dashboard using {frontend_framework} that displays real-time data from a mock API or backend service. Include components such as charts, tables, summary cards, and a sidebar. The layout should adapt to mobile, tablet, and desktop views. Return the complete frontend code with comments explaining each section."
 
   ```
-
 
 * **Generate Curl Commands for Testing OpenAPI Endpoints**
 
