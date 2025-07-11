@@ -1047,6 +1047,13 @@ This repository contains prompt chains for the following domains:
   ```text
   "Given the following source code for a RESTful API implemented in {programming_language} with endpoints {list_of_endpoints}, generate an OpenAPI 3.0 schema that describes the API. The schema should include paths, request/response parameters, status codes, authentication methods, and other relevant details. Return the complete OpenAPI schema in YAML format."
   ```
+* **Create a responsive web dashboard with real-time data**
+
+```text
+ "Build a responsive admin dashboard using {frontend_framework} that displays real-time data from a mock API or backend service. Include components such as charts, tables, summary cards, and a sidebar. The layout should adapt to mobile, tablet, and desktop views. Return the complete frontend code with comments explaining each section."
+
+  ```
+
 
 * **Generate Curl Commands for Testing OpenAPI Endpoints**
 
