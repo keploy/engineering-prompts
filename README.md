@@ -24,6 +24,8 @@ This repository contains prompt chains for the following domains:
 14. **AI/ML Integration**
 15. **Testing & Quality Assurance**
 16. **Agentic AI**
+17. **RAG Application Development**
+
 ---
 
 ## Use Cases and Prompts
@@ -838,13 +840,6 @@ This repository contains prompt chains for the following domains:
   "Set up a CI/CD pipeline to automatically run Keploy tests as part of the deployment process. Include configuration for GitHub Actions or Jenkins to run tests whenever new code is pushed to the repository."
   ```
 
-* **Dynamic API Mocking & Contract Validator**
-  
-  ```text
-  "For the provided OpenAPI schema, generate a dynamic mock server that validates incoming requests against the schema and returns realistic, randomized responses. Include contract testing scripts to ensure client and server compatibility."
-  ``` 
----
-
 ### **14. AI/ML Integration**
 
 * **Mocking AI/ML Output in Spring Boot APIs**
@@ -1056,3 +1051,81 @@ This repository contains prompt chains for the following domains:
     ```text
     "Compose a high-level README or tutorial that walks through building, testing (using Keploy), and deploying an agentic AI system with CrewAI or Autogen: from local development, through CI/CD, to production orchestration and monitoring."
     ```
+    
+### **17. RAG Application Development**
+
+* **Generate a Complete RAG App Codebase (Python + LangChain)**  
+  
+  ```text
+  ""You're a senior AI engineer. Build a modular Retrieval-Augmented Generation (RAG) application in Python using LangChain and ChromaDB. The application should support:
+
+  1. Document ingestion from PDF, Markdown, and CSV formats.
+  2. Text preprocessing with chunking and metadata tagging.
+  3. Embedding generation using either OpenAI or HuggingFace Transformers.
+  4. Persistent vector store setup with ChromaDB (local mode).
+  5. A retrieval pipeline that supports top-k semantic search.
+  6. An interactive QA interface using Streamlit for user queries and answer display.
+
+  Ensure code quality with modular file structure, comments, and environment setup files (requirements.txt). Use best practices for scalability and readability."
+  "
+  ```
+
+* **Create a FastAPI Backend for RAG App**
+
+  ```text
+  "* **Create a FastAPI Backend for RAG App**  
+  
+  ```text
+  "You're a senior AI backend engineer. Build a FastAPI-based backend to serve a Retrieval-Augmented Generation (RAG) pipeline using LangChain or custom Python modules. The backend should expose relevant endpoints for uploading documents, querying questions, and retrieving responses — as defined in the user requirements. Integrate with a vector store like ChromaDB, and implement the RAG pipeline components: document ingestion, chunking, embedding, retrieval, and answer generation. Follow modular design principles and structure the codebase to support scalability, clarity, and future extension. Ensure the implementation meets the functional needs as defined above."
+  "
+  ```
+
+* **Set Up Vector Store with ChromaDB**
+
+  ```text
+  "Provide Python code to set up a local ChromaDB instance for storing and querying document embeddings. Include functionality for creating collections, adding documents, and retrieving the top-k similar results for a user query."
+  ```
+
+* **Use HuggingFace Embeddings with FAISS**
+
+  ```text
+  "Write a Python script using HuggingFace Transformers to convert documents into embeddings and store them in a FAISS index. Enable functionality to search and retrieve the most relevant chunks based on cosine similarity."
+  ```
+
+* **Build a Streamlit UI for a RAG Chatbot**
+
+  ```text
+  "Create a Streamlit interface for a Retrieval-Augmented Generation chatbot. Allow users to upload files, ask questions, and receive contextual answers. Integrate with a backend that uses a vector store and a language model."
+  ```
+
+* **Generate Preprocessing & Chunking Pipeline**
+
+  ```text
+  "Design a text preprocessing and chunking pipeline for RAG. The pipeline should clean text, split it into overlapping chunks, and tag each chunk with metadata such as source, index, or timestamp. Optimize for embedding and retrieval accuracy."
+  ```
+
+* **LangChain RetrievalQA Pipeline with Prompt Template**
+
+  ```text
+  "Set up a RetrievalQA pipeline in LangChain using FAISS and OpenAI embeddings. Load documents, embed them, and create a prompt template to retrieve concise and context-aware answers to user queries."
+  ```
+
+* **Develop RAG App with Local LLM (e.g. Mistral-7B)**
+
+  ```text
+  "Build a RAG pipeline using a local language model like Mistral-7B. Include document ingestion, embedding via SentenceTransformers, ChromaDB for retrieval, and local inference for generating final answers."
+  ```
+
+* **Enable PDF Upload and Parsing for RAG**
+
+  ```text
+  "Add functionality to allow users to upload PDFs. Extract the text using PyMuPDF or pdfminer and convert it into clean, chunked segments for embedding and storage in the RAG pipeline."
+  ```
+
+* **Deploy RAG App on Render or Railway**
+
+  ```text
+  "Provide deployment instructions to host a RAG application on Render or Railway using FastAPI or Streamlit. Include a requirements.txt, Procfile, or Dockerfile for proper environment setup and execution."
+  ```
+
+---
