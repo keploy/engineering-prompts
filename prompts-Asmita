@@ -1,0 +1,19 @@
+
+
+1. Code Refactoring & Development
+Refactor Code for Better Readability
+"Please review the provided code and identify areas where we can refactor {code snippet/class/module} according to the SOLID principles such each class has one clear responsibility. Extract related logic into helper classes or services where needed. Focus mainly on making the codebase modular but without making it too complex and keep it user friendly"
+
+Provide Code Explanations
+"Explain line by line the code such that you would explain it to any layman. Explain the modules and the how each part of the code contributes to the entire program. Keep it clear and concise."
+
+6. UX/UI & Design
+Provide UX/UI Design Advice
+"You are a UI/UX designer following all the recent youth trends. Provide UX/UI design recommendations for the provided {website/app}, which has been made for teenagers. Suggest typography, color palettes, and layout patterns inspired by platforms like YouTube Shorts, Instagram reels, or Roblox. Focus on minimal yet energetic vibes that visually excite Gen Z. Suggest the required changes such that it is visually appealing to the teens."
+
+9. Content Creation & Marketing
+Create a Personal Portfolio Website
+"Create a responsive website for me which would would include my personal details, my projects and my achievements. The website must be appealing to audience of each age and mainly to the recruiters, and it must be mobile friendly too. It must include my name, basic details, skills, achievements, projects and experiences. It must have tiny icons for the tech languages I am accustomed to. It should also have a navigation bar, such that it's easy to navigate and easy and user friendly and creative. Avoid use of very complex designs and keep the layout clean. Return the basic HTML/CSS/JS code for the website." 
+
+Write SEO-Optimized Blog Content
+"You are a professional content strategist and SEO expert. Write a blog for {company name} and it must be SEO optimized. Insert keyword such as {enter keyword mostly used} and mostly used keyword for this definite topic. Make it user engaging and interesting. It should include a compelling introduction, clear subheadings with H2/H3 structure, keyword-rich content and at the end it must include a call to action that would make more users find it engaging. Use real world examples and use clear and concise paragraphs with a total word limit of {word limit}."
