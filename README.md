@@ -454,6 +454,18 @@ This repository contains prompt chains for the following domains:
   "Deploy a fully integrated observability stack in Kubernetes using Helm—configure Prometheus for metrics and alerts, Grafana for dashboards, and Loki for centralized log aggregation with all necessary YAML and values files.."
   ```
 
+* **Enable Auto-Scaling for Kubernetes Workloads**
+
+  ```text
+  "Guide me through setting up Horizontal Pod Autoscaler (HPA) in Kubernetes. Include CPU-based scaling configuration, metric server setup, and example deployment with auto-scaling enabled. Return sample YAML files and scaling thresholds."
+  ```
+  
+* **Deploy a Multi-Container Pod in Kubernetes**
+
+  ```text
+  "Demonstrate how to deploy a multi-container pod (sidecar pattern) in Kubernetes. Explain use cases, share the pod definition YAML, and describe container interaction."
+  ```
+
 ---
 
 ### **5. Full-Stack Development**
@@ -486,7 +498,42 @@ This repository contains prompt chains for the following domains:
   ```text
   "Set up Keploy in your full-stack application to test both the backend and frontend after an update. Configure Keploy for automatic integration testing, focusing on testing API endpoints, data handling, and the interaction between the frontend and backend. Ensure that Keploy is set to capture all changes in the API response, including edge cases, and validate that the frontend works correctly with the updated backend. Return the setup configuration and steps to trigger Keploy for testing."
   ```
- 
+
+* **Implement JWT-Based Authentication**
+  ```text
+  "Set up JWT-based authentication in a full-stack app using Express.js and React. Include login, token handling, and protected routes."
+  ```
+
+* **Use Context API and Custom Hooks in React**
+
+  ```text
+  "Show how to manage global state in React using Context API and custom hooks for session management or theme switching."
+  ```
+
+* **Connect React Frontend to Flask Backend**
+    
+  ```text
+  "Build a full-stack app with a Flask backend and React frontend. Show how the frontend fetches data from Flask APIs."
+  ```
+
+* **Write Tests for Backend and Frontend**
+
+  ```text
+  "Guide me on writing unit and integration tests for a full-stack app using Jest for the backend and React Testing Library for the frontend."
+  ```
+
+* **Use Redux Toolkit in E-Commerce App**
+
+  ```text
+  "Build a full-stack e-commerce app where Redux Toolkit manages cart and user state in the frontend and Express/MongoDB powers the backend."
+  ```
+
+* **Deploy Full-Stack App on Render or Vercel**
+
+  ```text
+  "Explain how to deploy a full-stack app with React frontend on Vercel and Node.js/Django backend on Railway or Render. Include environment setup steps."
+  ```
+  
 * **Newsletter Subscription System with MongoDB**
 
   ```text
@@ -552,6 +599,24 @@ This repository contains prompt chains for the following domains:
   ```text
   "Provide UX/UI design recommendations for the provided {website/app}. Focus on improving usability, accessibility, and aesthetics. Return a list of specific design improvements with examples where necessary."
   ```
+  
+* **Create a Wireframe from App Description**
+
+  ```text
+  "Based on the following app idea or description, suggest a low-fidelity wireframe layout for key screens. Include layout, navigation flow, and key UI elements. Return the structure as a textual or block-based wireframe."
+  ```
+  
+* **Suggest a Color Palette and Typography**
+
+  ```text
+  "Suggest a modern, accessible color palette and complementary typography for a {type of app/website}. Justify the choices based on contrast, readability, and emotional impact."
+  ```
+  
+* **Improve Landing Page Layout**
+
+  ```text
+  "Evaluate the provided landing page layout. Suggest improvements in layout hierarchy, visual balance, and call-to-action placement. Return a list of actionable layout changes."
+  ```
 
 * **Evaluate Mobile Responsiveness**
 
@@ -596,14 +661,16 @@ This repository contains prompt chains for the following domains:
   ```
 
 * **Audit UI for WCAG Compliance**
+
   ```text
   "Analyze the provided website or application UI and identify issues related to WCAG 2.1 accessibility compliance. Suggest specific changes to improve color contrast, keyboard navigation, screen reader support, and overall usability."
   ```
 
 * **Create Animations using Framer Motion or GSAP**
-```text
-"Create animation strategies using Framer Motion or GSAP for enhancing user experience on{given_web_application}. Include code snippets for entrance animations, transitions, and hover effects."
-```
+
+  ```text
+  "Create animation strategies using Framer Motion or GSAP for enhancing user experience on{given_web_application}. Include code snippets for entrance animations, transitions, and hover effects."
+  ```
 
 * **Suggest UX Improvements Based on User Goals**
 
@@ -647,40 +714,47 @@ This repository contains prompt chains for the following domains:
 
 ---
 
-  ### 8. Event-Driven Architecture & Integration
+### 8. Event-Driven Architecture & Integration
 
 * **Design Scalable Kafka Event Architecture**  
+
   ```text
   "Design an event-driven architecture using Apache Kafka. Define at least two Kafka topics with justification for their partitioning and replication factors. Provide producer and consumer code in [Language] (e.g., Python, Java) for one topic, including configuration details for idempotence, compression, and fault tolerance. Explain how the setup handles backpressure and scales under load."
   ```
 
 * **Robust Third-Party Service Integration** 
+
   ```text 
   "Integrate {third_party_service} into the existing project. Detail setup steps (dependency installation, environment variables), authentication (API keys/OAuth 2.0 flow), and rate-limited API interactions. Provide error-handling code for network failures and invalid responses, with a circuit-breaker implementation. Include a workflow diagram illustrating data flow between components."
   ```
 
 * **Implement Change Data Capture (CDC) Pipeline**  
+ 
   ```text
   "Design a CDC system using Debezium and Kafka Connect. Configure connectors for {database_type} to capture real-time database changes. Provide deployment manifests, transformation logic for schema evolution, and dead-letter queue handling for failed events. Include monitoring setup for lag and throughput metrics."
   ```
 
 * **Build Event Sourcing/CQRS System**  
+  
   ```text
   "Implement an event-sourced architecture using Kafka as the event store. Define event schemas for {domain_entity} state changes, command handlers, and read-model projections. Provide code for idempotent event processing, snapshotting strategy, and consistency validation between write/read models."
   ```
 
 * **Design Cross-Cluster Event Replication**  
-  ```text
+
+```text
   "Configure MirrorMaker2 for geo-replication between Kafka clusters. Define replication policies, topology discovery, and offset synchronization. Provide Terraform modules for multi-region deployment with metrics for replication latency and failover procedures during region outages."
   ```
 
 * **Integrate Serverless Event Consumers**  
-  ```text
+
+```text
   "Connect Kafka to serverless platforms (AWS Lambda/Google Cloud Functions). Develop consumer functions in [Language] with checkpointing, batch processing, and autoscaling configuration. Include cold-start optimization and cost analysis for different throughput scenarios."
   ```  
 
 * **Create Schema Registry Governance**  
-  ```text
+ 
+ ```text
   "Implement schema evolution governance using Confluent Schema Registry. Define compatibility rules (BACKWARD/FORWARD), schema lifecycle management, and client serialization/deserialization logic. Provide CI/CD pipeline for schema validation and version rollback procedures."
   ```
 
@@ -696,20 +770,62 @@ This repository contains prompt chains for the following domains:
 
 * **Create platform-specific strategies development**
 
-```text
-"Evaluate the content strategy of the given {brand/website}. Suggest improvements for audience engagement, SEO, and brand voice. Provide actionable content ideas, platform-specific strategies, and examples to enhance reach and conversion."
-```
+  ```text
+  "Evaluate the content strategy of the given {brand/website}. Suggest improvements for audience engagement, SEO, and brand voice. Provide actionable content ideas, platform-specific strategies, and examples to enhance reach and conversion."
+  ```
 
 * **Write SEO-Optimized Blog Content**
 
   ```text
   "Generate a blog post on {topic} optimized for SEO. Use keyword research to include high-traffic keywords naturally, structure the post with headings and subheadings, and ensure it is engaging and informative. Return the content with SEO suggestions."
   ```
+  
+* **Design a Social Media Content Calendar**
 
+  ```text
+  "Create a 30-day content calendar for social media marketing focused on {industry or brand}. Include post ideas for Instagram, LinkedIn, Twitter, and Facebook, along with captions, hashtags, and recommended posting times."
+  ```
+  
 * **Generate LinkedIn Summary and Job Descriptions**
 
   ```text
   "Generate a compelling LinkedIn summary and job description based on the following details: {job_title}, {skills}, {experience}. Ensure the summary is concise, professional, and highlights key achievements."
+  ```
+  
+* **Create a Content Strategy for YouTube Channel Growth**
+  
+  ```text
+  "Help me develop a 3-month content strategy for a YouTube channel about {niche}. Include video ideas, SEO titles, descriptions, and tips to improve watch time and subscriber growth."
+  ```
+
+* **Generate Email Marketing Campaign Content**
+  
+  ```text
+  "Generate a sequence of 5 marketing emails for a {product/service} launch. Each email should have a specific goal (awareness, interest, decision, action) and include an engaging subject line, body copy, and CTA."
+  ```
+  
+* **Create Infographic Content for Marketing**
+  
+  ```text
+  "Generate content and layout suggestions for an infographic on {topic}. Include key statistics, headings, concise text blocks, and suggestions for visuals and icons."
+  ```
+  
+* **Write a Brand Story for Marketing Purposes**
+  
+  ```text
+  "Craft a compelling brand story for {company/brand name}. Include the origin, mission, values, and vision. The tone should resonate with {target audience} and be suitable for use on a website or promotional material."
+  ```
+   
+* **Develop Ad Copy for a Google/Facebook Ads Campaign**
+  
+  ```text
+  "Write 3 variations of ad copy for a Google or Facebook Ads campaign promoting {product/service}. Include strong hooks, benefits, and calls to action. Tailor the tone for {audience type}."
+  ```
+  
+* **Generate Podcast Episode Topics and Scripts**
+  
+  ```text
+  "Generate a list of 10 podcast episode topics on {theme/niche}. For one of them, provide a detailed script outline including intro, segment breakdowns, key talking points, and closing remarks."
   ```
 
 * **Email Marketing Campaign Writer**
