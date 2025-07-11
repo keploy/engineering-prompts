@@ -359,21 +359,21 @@ This repository contains prompt chains for the following domains:
 
 * **Setup Prisma with PostgreSQL in Node.js project**
 
-```text
-"Guide me through setting up Prisma with PostgreSQL in a Node.js project. Include steps to install dependencies, initialize Prisma, connect to a local PostgreSQL database, create a sample schema, and run migrations. Show the full commands and explain how the schema.prisma file works. Ensure the example includes one sample model like User"
-```
+  ```text
+  "Guide me through setting up Prisma with PostgreSQL in a Node.js project. Include steps to install dependencies, initialize Prisma, connect to a local PostgreSQL database, create a sample schema, and run migrations. Show the full commands and explain how the schema.prisma file works. Ensure the example includes one sample model like User"
+  ```
 
 * **Build CRUD API using Prisma and Express**
 
-```text
-"Help me build a complete CRUD REST API using Express.js and Prisma. Use a User model with fields like id, name, email, and createdAt. Include the routes for Create, Read (single & all), Update, and Delete. Show how Prisma Client is used in each route. Return the full Express route code with explanations."
-```
+  ```text
+  "Help me build a complete CRUD REST API using Express.js and Prisma. Use a User model with fields like id, name, email, and createdAt. Include the routes for Create, Read (single & all), Update, and Delete. Show how Prisma Client is used in each route. Return the full Express route code with explanations."
+  ```
 
 * **Define and query relations in Prisma**
 
-```text
-"Teach me how to define and query relational data in Prisma. Use an example with two models: User and Post, where a user can have many posts. Show how to define the relation in schema.prisma, run migrations, and write queries to fetch a user with their posts. Include how to use include and select with Prisma Client"
-```
+  ```text
+  "Teach me how to define and query relational data in Prisma. Use an example with two models: User and Post, where a user can have many posts. Show how to define the relation in schema.prisma, run migrations, and write queries to fetch a user with their posts. Include how to use include and select with Prisma Client"
+  ```
 
 * **Automated Query Optimization Assistant**
 
@@ -926,6 +926,12 @@ This repository contains prompt chains for the following domains:
   "Write unit and integration tests for the provided front-end components using {testing_framework}. Ensure the tests cover all major use cases and edge cases. Return the test code with explanations."
   ```
 
+* **Build Progressive Web App (PWA) with Advanced Service Worker Implementation**
+
+  ```text
+  "Develop a comprehensive Progressive Web App for {application_type} with advanced service worker functionality. Implement intelligent caching strategies (cache-first, network-first, stale-while-revalidate), offline data synchronization, background sync for failed requests, and push notification handling. Include web app manifest configuration, installability criteria, app shell architecture, and performance optimization techniques. Add IndexedDB for offline data storage, lazy loading for assets, and code splitting for optimal performance. Ensure the PWA scores 90+ on Lighthouse audit across all categories."
+  ```
+  
 * **Optimize Front-End Performance**
 
   ```text
