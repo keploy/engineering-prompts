@@ -36,7 +36,6 @@ This repository contains prompt chains for the following domains:
   "Take a public GitHub repository link and give a simple summary of what the project is about. Include basic details like stars, forks, issues, contributors, README info, and file structure. This will help new developers quickly understand the project before working on it."
   ```
 
-
 * **Refactor Code for Better Readability**
 
   ```text
@@ -163,7 +162,7 @@ This repository contains prompt chains for the following domains:
   "Suggest a comprehensive testing strategy for {project_type}. The strategy should include unit tests, integration tests, and end-to-end tests. Provide recommendations for testing frameworks and tools, along with examples."
   ```
 
-  * **Intelligent Legacy Code Modernizer**
+* **Intelligent Legacy Code Modernizer**
 
   ```text
   "Analyze this legacy codebase and produce a step-by-step modernization plan. Suggest incremental refactoring, API replacements, and removal of deprecated dependencies. For each step, provide sample code snippets or commands to automate the transformation safely, with explanations of risks and benefits."
@@ -560,7 +559,6 @@ This repository contains prompt chains for the following domains:
   "Review the interaction design for this component/page: {description or link}. Suggest improvements that would make the experience smoother and more intuitive. Consider animation timing, gesture control (if mobile), transitions, and feedback cues."
   ```
 
-
 * **UX Writing Improvements**
 
   ```text
@@ -594,26 +592,39 @@ This repository contains prompt chains for the following domains:
   ### 8. Event-Driven Architecture & Integration
 
 * **Design Scalable Kafka Event Architecture**  
+  ```text
   "Design an event-driven architecture using Apache Kafka. Define at least two Kafka topics with justification for their partitioning and replication factors. Provide producer and consumer code in [Language] (e.g., Python, Java) for one topic, including configuration details for idempotence, compression, and fault tolerance. Explain how the setup handles backpressure and scales under load."
+  ```
 
-* **Robust Third-Party Service Integration**  
+* **Robust Third-Party Service Integration** 
+  ```text 
   "Integrate {third_party_service} into the existing project. Detail setup steps (dependency installation, environment variables), authentication (API keys/OAuth 2.0 flow), and rate-limited API interactions. Provide error-handling code for network failures and invalid responses, with a circuit-breaker implementation. Include a workflow diagram illustrating data flow between components."
+  ```
 
 * **Implement Change Data Capture (CDC) Pipeline**  
+  ```text
   "Design a CDC system using Debezium and Kafka Connect. Configure connectors for {database_type} to capture real-time database changes. Provide deployment manifests, transformation logic for schema evolution, and dead-letter queue handling for failed events. Include monitoring setup for lag and throughput metrics."
+  ```
 
 * **Build Event Sourcing/CQRS System**  
+  ```text
   "Implement an event-sourced architecture using Kafka as the event store. Define event schemas for {domain_entity} state changes, command handlers, and read-model projections. Provide code for idempotent event processing, snapshotting strategy, and consistency validation between write/read models."
+  ```
 
 * **Design Cross-Cluster Event Replication**  
+  ```text
   "Configure MirrorMaker2 for geo-replication between Kafka clusters. Define replication policies, topology discovery, and offset synchronization. Provide Terraform modules for multi-region deployment with metrics for replication latency and failover procedures during region outages."
+  ```
 
 * **Integrate Serverless Event Consumers**  
+  ```text
   "Connect Kafka to serverless platforms (AWS Lambda/Google Cloud Functions). Develop consumer functions in [Language] with checkpointing, batch processing, and autoscaling configuration. Include cold-start optimization and cost analysis for different throughput scenarios."
+  ```  
 
 * **Create Schema Registry Governance**  
+  ```text
   "Implement schema evolution governance using Confluent Schema Registry. Define compatibility rules (BACKWARD/FORWARD), schema lifecycle management, and client serialization/deserialization logic. Provide CI/CD pipeline for schema validation and version rollback procedures."
-
+  ```
 
 ---
 
@@ -624,6 +635,12 @@ This repository contains prompt chains for the following domains:
   ```text
   "Help me build a personal portfolio website. The site should include sections for my bio, projects, skills, and contact information. Make sure it's responsive and easy to navigate. Return the basic HTML/CSS/JS code for the website."
   ```
+
+* **Create platform-specific strategies development**
+
+```text
+"Evaluate the content strategy of the given {brand/website}. Suggest improvements for audience engagement, SEO, and brand voice. Provide actionable content ideas, platform-specific strategies, and examples to enhance reach and conversion."
+```
 
 * **Write SEO-Optimized Blog Content**
 
@@ -694,12 +711,11 @@ This repository contains prompt chains for the following domains:
 
 ### **12. Web Development**
 
-**Build a Dark/Light Mode Toggle**
+* **Build a Dark/Light Mode Toggle**
 
-```text
-"Add a dark/light mode switcher to a website using CSS variables and JavaScript. Ensure transitions are smooth and all elements follow the selected theme accurately."
-```
-
+  ```text
+  "Add a dark/light mode switcher to a website using CSS variables and JavaScript. Ensure transitions are smooth and all elements follow the selected theme accurately."
+  ```
 
 * **Write Tests for Front-End Components**
 
@@ -982,60 +998,60 @@ This repository contains prompt chains for the following domains:
 
 ### **16. Agentic AI**
 
-1. **Design a Multi-Agent Workflow**  
+* **Design a Multi-Agent Workflow**  
    ```text
    "Outline a multi-agent workflow for {task} using frameworks like LangGraph or CrewAI. Define each agent’s role (e.g., DataCollector, Planner, Executor, Verifier), their inputs/outputs, and how they communicate. Provide a sequence diagram or step-by-step description."
    ``` 
 
-2. **Implement an Agent with Memory**
+* **Implement an Agent with Memory**
 
    ```text
    "Show me how to implement an agent in Autogen that persists conversation history and key facts in ChromaDB. Include code snippets (e.g., using the langchain or CrewAI SDK) for saving, retrieving, and integrating memory into prompts."
    ```
 
-3. **Agent Task Delegation Strategy**
+* **Agent Task Delegation Strategy**
 
    ```text
    "Given a high-level goal (e.g., ‘Analyze market trends and generate a summary report’), write a prompt chain that uses LangGraph to break it into subtasks, assigns them to specialized agents, and then aggregates their outputs."
    ```
 
-4. **Error Handling & Recovery in Agents**
+* **Error Handling & Recovery in Agents**
 
    ```text
    "Demonstrate how to detect and handle failures in an autonomous agent pipeline built with CrewAI (e.g., a web-scraping agent times out). Provide prompt or code templates for retry logic, fallback strategies, and alerting."
    ```
 
-5. **Evaluate Agent Performance Metrics**
+* **Evaluate Agent Performance Metrics**
 
    ```text
    "Define quantitative and qualitative metrics (e.g., task completion rate, avg. response time, accuracy) to evaluate an autonomous agent’s performance in Autogen, and show how to log and visualize these using a monitoring framework like Prometheus or Grafana."
    ```
 
-6. **Agent Orchestration with LangGraph**
+* **Agent Orchestration with LangGraph**
 
    ```text
    "Write a LangGraph configuration that orchestrates three agents—ResearchAgent, AnalysisAgent, and NotificationAgent—with dependencies and data passing defined. Include sample YAML or JSON."
    ```
 
-7. **Secure Agent Actions**
+* **Secure Agent Actions**
 
    ```text
    "Explain best practices for sandboxing or restricting file, network, and system access for agents running under CrewAI. Provide examples of how to configure Docker containers or Kubernetes PodSecurityPolicies to enforce them."
    ```
 
-8. **Dynamic Prompt Refinement**
+* **Dynamic Prompt Refinement**
 
    ```text
    "Show how an Autogen agent can use its own logs or feedback loop to refine its prompts over time—e.g., if its summaries are too verbose, adjust the prompt to be more concise. Include code or pseudo-code in Python."
    ```
 
-9. **Integrate External APIs in Agents**
+* **Integrate External APIs in Agents**
 
    ```text
    "Create a prompt template and runtime code for a LangGraph agent that fetches real-time stock prices from Alpha Vantage, processes them, and makes buy/sell decisions. Show how to plug in API keys and error handling."
    ```
 
-10. **End-to-End Agentic AI Demo**
+* **End-to-End Agentic AI Demo**
 
     ```text
     "Compose a high-level README or tutorial that walks through building, testing (using Keploy), and deploying an agentic AI system with CrewAI or Autogen: from local development, through CI/CD, to production orchestration and monitoring."
