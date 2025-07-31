@@ -1105,6 +1105,11 @@ This repository contains prompt chains for the following domains:
   "Implement lazy loading in a React or Vue application to improve initial load time. Return code snippets using dynamic imports, explain how to apply it to routes or components, and describe the impact on performance."
   ```
 
+  * **Build a Skill Progress Tracker Web App**
+    ```text
+    Design a web application that allows users to track the progress of skills they are learning. Users should be able to add skills, assign statuses (e.g., Not Started, In Progress, Completed), and set milestones. Include progress visualization and focus on clean UI/UX. Bonus: add motivational quotes, theme toggle, or persistent storage.
+
+
 ---
 
 ### **13. API Development**
