@@ -137,7 +137,7 @@ This repository contains prompt chains for the following domains:
 * **Test for Compatibility After Upgrading Node.js Version**
 
   ```text
-  "After upgrading Node.js from version 14 to 18, use Keploy to run automated tests to ensure that the application is working as expected. Set up Keploy to perform integration tests and verify that the backend, APIs, and frontend components are compatible with the new Node.js version. The tests should focus on key areas such as API responses, performance, and compatibility with external dependencies that may have been affected by the Node.js upgrade. Ensure that Keploy compares the results with the previous behavior recorded under Node.js 14 to detect any regressions or issues introduced by the upgrade. Return the Keploy test configuration, test cases, and results."
+  "After upgrading Node.js from version 18 to 22, use Keploy to run automated tests to ensure that the application is working as expected. Set up Keploy to perform integration tests and verify that the backend, APIs, and frontend components are compatible with the new Node.js version. The tests should focus on key areas such as API responses, performance, and compatibility with external dependencies that may have been affected by the Node.js upgrade. Ensure that Keploy compares the results with the previous behavior recorded under Node.js 18 to detect any regressions or issues introduced by the upgrade. Return the Keploy test configuration, test cases, and results."
   ```
 
 * **Integrate Third-Party Services**
@@ -748,7 +748,7 @@ This repository contains prompt chains for the following domains:
 * **Audit UI for WCAG Compliance**
 
   ```text
-  "Analyze the provided website or application UI and identify issues related to WCAG 2.1 accessibility compliance. Suggest specific changes to improve color contrast, keyboard navigation, screen reader support, and overall usability."
+  "Analyze the provided website or application UI and identify issues related to WCAG 2.2 accessibility compliance. Suggest specific changes to improve color contrast, keyboard navigation, screen reader support, and overall usability."
   ```
 
 * **Create Animations using Framer Motion or GSAP**
